@@ -52,6 +52,13 @@ Linux基本操作
             alt + 1 ~ 9         切换终端标签页
             ctrl + shift + =    临时放大终端
             ctrl + -            临时缩小终端
+            shift + pageDown/pageUp 上下滚动
+            ctrl + c            结束当前终端运行程序
+            ctrl + d            结束输入
+            ctrl + l            清屏
+            ctrl + s            关闭回显
+            ctrl + q            退出回显模式
+            tab                 一次补全, 二次列表相关命令
 
     桌面快捷键:
         虚拟终端:
@@ -151,5 +158,4 @@ Linux基本操作
         列出当前路径内容: ls
 
         列出指定路径内容: ls 路径1 路径2...
-
 
