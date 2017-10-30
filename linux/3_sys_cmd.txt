@@ -93,4 +93,44 @@ bash shell
     终止进程(进程有机会做退出操作):
         kill -15 PID
 
+-------------------------------------------------------------------------------
+tmux - 终端扩展工具
+    vim + tmux + zsh 被称文本三剑客
+
+    tmux是开源
+    安装: sudo apt install tmux -y
+    配置: ~/.tmux.conf
+
+    tmux快捷键前缀: ctrl + b
+
+    会话
+        创建会话: tmux
+        唤醒会话: tmux -2 attach -t kyo
+        睡眠会话: 在当前会话按ctrl + b d
+        列出会话: tmux list-session
+
+    窗口
+        创建窗口: ctrl + b c
+        关闭窗口: ctrl + b x
+            shell程序退出窗口也会退出
+        切换窗口:
+            默认快捷键: ctrl + b 0 ~ 9
+                或
+            alt + 1 ~ 9 (使用共享配置文件才有此快捷键)
+
+    窗格
+        竖向分屏: ctrl + b |
+        横向分屏: ctrl + b -
+        切换窗格: ctrl + b h/j/k/l
+
+    跨终端复制
+        进入复制模式: ctrl + b y
+            可以使用vim操作模式, 使用v选取再按y复制
+
+        切换到要粘贴的窗口: ctrl + b p
+
+        跨终端复制实现原理是控制剪切板:
+            安装操作剪切板命令: sudo apt install xclip -y
+            写入剪切板: xclip -i -sel clip << "写入的内容"
+            读剪切板: xclip -o -sel clip
 
