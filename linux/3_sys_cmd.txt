@@ -131,6 +131,6 @@ tmux - 终端扩展工具
 
         跨终端复制实现原理是控制剪切板:
             安装操作剪切板命令: sudo apt install xclip -y
-            写入剪切板: xclip -i -sel clip << "写入的内容"
+            写入剪切板: xclip -i -sel clip <<< "写入的内容"
             读剪切板: xclip -o -sel clip
 
