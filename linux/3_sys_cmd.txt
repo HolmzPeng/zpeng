@@ -1,0 +1,43 @@
+bash shell
+    快捷键
+        tab     补全
+            一次补全， 二次列出相关命令
+
+        bash支持两大文本编辑器操作模式:
+            ctrl + a / ctrl + e属性emacs操作快捷键
+
+            改变bash操作模式(默认为emacs的操作模式):
+                set -o emacs
+                更改为vi操作模式:
+                    set -o vi
+
+                vi模式支持ctrl + l清屏功能:
+                    bind -m vi-insert c-l:clear-screen
+                    bind -m vi-command c-l:clear-screen
+
+    特殊符号(* {m..n} ~ - "" '' $)
+
+    命令历史 history
+        查看命令历史: history
+        执行命令历史: !
+            !!      执行最后一条命令历史
+            !848    执行命令历史的第848行
+            !mount  执行命令历史最后一条mount相关命令
+            !$      保存最后一条命令历史的最后一个参数
+
+        清空命令历史: history -c
+        保存命令历史: history -w 文件路径
+        追加命令历史: history -r 文件路径
+
+        默认命令历史存储文件: ~/.bash_history
+
+    命令别名    alias
+        列出当前命令别名: alias
+        创建命令别名: alias 别名="别名的命令"
+            alias m="sudo mount 3.3.3.3:/kyo /mnt"
+            alias p="ping -c 3 3.3.3.3"
+        删除命令别名: unalias 别名
+
+
+    环境变量
+    配置文件
