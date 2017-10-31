@@ -1,0 +1,79 @@
+Git
+    分布式版本控制系统
+    Git的前身: BitKeeper
+    Git的优势:
+        速度
+        分支轻量级
+        开源
+        跨平台
+        完全分布式(跨域协作)
+        GitHub
+        快照记录
+        完全本地执行
+
+    Git官方网: https://git-scm.com/
+
+    ubuntu安装: sudo apt install git
+
+Git将仓库分为三个状态:
+    工作目录        实际操作的文件目录
+    暂存区域        将工作目录下修改可以选择性提交
+    Git仓库         跟踪文件修改, 提供各种Git仓库的操作(还原)
+
+Git的配置
+    首次配置Git使用用户信息:
+        将以下内容追加到~/.gitconfig文件中
+        [user]
+            email = iprintf@qq.com
+            name = kyo
+
+Git基本使用
+    初始化仓库
+        进入需要初始化仓库的目录输入: git init
+
+    克隆仓库
+
+    查看状态
+        git status
+
+    添加文件(将文件放到暂存区)
+        git add 文件...
+
+    提交到仓库
+        git commit
+            弹出vim编辑此次提交的说明
+                第一行代表说明的标题
+                第二行必须是空行
+                第三行开始以下代表说明的详细信息
+
+                详细信息可省略, 标题建议必须写
+                #开头为注释，不会被提交
+
+        git commit -m "提交说明的标题"
+        git commit -m $'提交说明的标题\n\n提交说明详细信息'
+        git commit -a
+            将所有修改提交(省略add操作)
+        git commit -v
+            弹出vim编辑此次提交的说明(带修改信息)
+        git commit --amend
+            弹出vim对最后一次提交说明进行编辑
+
+    查看此次变动
+        git diff [文件]
+
+    查看暂存区变动
+        git diff --cached [文件]
+
+    查看提交历史
+        git log
+
+    查看提交修改
+        git show COMMIT
+            commit a067489d95e3675895c5ca73adb41ab8a71af81c
+                全写: a067489d95e3675895c5ca73adb41ab8a71af81c
+                简写(前4位以上): a067
+
+
+
+
+
