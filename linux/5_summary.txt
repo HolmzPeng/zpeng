@@ -1,0 +1,127 @@
+课程大纲
+授课环境
+GNU/Linux发展史(GNU UNIX 开源)
+Ubuntu系统的基本使用
+Shell程序概念(bash)
+命令的使用格式及原理
+
+如何在命令行操作硬盘上的数据?
+    ls -la/-d
+        $LS_COLORS
+    cd
+        ..
+        ~   $HOME
+        -   $OLDPWD
+    pwd
+        $PS1
+    mkdir -p
+    rm -rf
+    vim
+    cp -ruvap
+    mv
+    tar
+        tar -cf
+        tar -cjf
+        tar -xf
+
+GNU/Linux文件权限怎么控制?
+    sudo chmod chown su
+    /etc/passwd
+    /etc/shadow
+    /etc/group
+    /etc/gshadow
+
+如何将命令组合使用(管道)?
+    |
+
+如何实现文本处理?
+    重定向:
+        > >> 1> 2> &> 1>> 2>> &>> >>&
+        < << <<
+    cat head tail less grep wc diff
+
+网络故障如何排查?
+    ifconfig mii-tool dhclient ping route
+    service networking restart
+    /etc/hostname
+    /etc/hosts
+    /etc/network/interfaces
+    /etc/resolv.conf
+
+如何共享文件?
+    nc
+    mount
+    showmount -e
+    /etc/export
+    service nfs-kernel-server restart
+
+如何共享桌面?
+    vino-preferences
+    remmina
+
+如何在命令行高效操作(替代鼠标操作)?
+    tmux vim c-vim w3m ko(ktouch)
+    bash特性(快捷键 history alias export ~/.bashrc)
+
+终端无法操作/关机速度慢?
+    挂载网络共享目录，网络断开就会引出此问题
+    重新打开终端(ctrl + alt + f1): sudo umount -l ...
+
+键盘无法操作?
+    连接线出了问题(测试键盘灯)
+    mount 3.3.3.3:/kyo...
+        重新打开终端输入: sudo umount -l ...
+    remmina
+        因为不小心按了右ctrl键锁住键盘, 解锁再按右ctrl
+
+
+sudo提示解析主机错误?
+    /etc/hosts文件修改127.0.1.1和主机名对应关系，但实现主机名没有改变
+    hostnamectl set-hostname 主机名
+
+复制时提示略过目录?
+    cp命令没有加-r选项
+
+ping 3.3.3.3不通?
+    检测本机和3.3.3.3机子的网线
+    检测是否在同一网段
+    检测教师机网卡IP设置出了问题(重启或网络异常)
+        sudo service networking restart
+        sudo ifconfig enp2s0 up
+
+    由于鼠标禁用系统引发网络不通
+        教师机:
+            输入k l查看是否有IP列出
+                如果一个IP都没有列出:
+                    教师机输入: sudo k srv
+                    学生机输入: ls
+        学生机:
+            echo $KYO_SRV_IP
+                是否能打印出3.3.3.3
+
+                如果没有结果显示就需要重新安装投票程序(dm_ins)
+
+如何防止文件丢失?
+    创建目录并且进入目录: mkdir /dev/shm/test ; cd /dev/shm/test
+    创建仓库: git init
+    各种对此目录的操作: 对目录进行编辑(编辑文档 创建目录 删除文件)
+    创建一个历史结点: git add / git commit
+    ...
+    以上两个操作不停的重复
+
+
+如何文件共享通过外网共享(码云)?
+    注册码云 -> 创建项目仓库 -> 添加ssh公钥(~/.ssh/config)
+        Host os
+            ...
+
+    1. 想把本地项目合并到创建的新项目
+        进入本地项目: cd /kyo
+        添加远程仓库: git remote add osc os:iprintf/python-1025
+        拉取合并远程分支: git pull osc master
+            如果遇到冲突: 编辑冲突文件去解决冲突, 再合并: git merge osc/master
+        再推送本地分支到远程仓库: git push osc master
+
+    2. 本地没有项目, 则克隆
+        git clone os:iprintf/python-1025
+
