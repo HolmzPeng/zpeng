@@ -118,11 +118,12 @@ randLecture() {
     # 获取本次上台讲课日期时间
     date=$(getTeachDateTime)
     # 随机历史知识点
-    point=$(tail -n 30 point.txt | randStdin | head -n 1)
+    # point=$(tail -n 30 point.txt | randStdin | head -n 1)
+    point=$(randUniq point)
     # 随机奖励
     awards=$(randFile awards.txt | head -n 1)
     # 随机惩罚
-    punish=$(randUniq punish)
+    punish=$(randFile punish.txt | head -n 1)
     echo '------------------------------------------------'
     echo -e "$date点 由 \033[34;1m$name\033[0m 上台讲 '\033[36;1m$point\033[0m'"
     echo -e '\033[31;1mA级投票率60%以上奖励\033[0m: ' $awards
@@ -155,6 +156,8 @@ lectureEnd() {
     bp=${result#*:}
     ap=${result%:*}
 
+    test $2 -eq 1 && bp=70
+
     record=$(head -n 1 lecture.txt)
     award=$(awk -F'|' '{print $5}' <<< $record)
     punish=$(awk -F'|' '{print $6}' <<< $record)
@@ -175,7 +178,8 @@ lectureEnd() {
         re="$award|$punish|"
         state=2
     fi
-    record=$(sed -e "s/.$/$state/" -e "s/$re//" <<< $record)
+    # record=$(sed -e "s/.$/$state/" -e "s/$re//" <<< $record)
+    record=$(sed -e "s/.$/$state/" <<< $record)
     sed -i '1d' lecture.txt
     echo $record >> history.txt
     echo "=================================="
@@ -187,7 +191,7 @@ lectureEnd() {
 }
 
 run_vote_srv() {
-    votes $(k l | sort | uniq | wc -l) | lectureEnd $1
+    votes $(k l | sort | uniq | wc -l) | lectureEnd $1 $2
 }
 
 startVoteClient() {
@@ -199,7 +203,7 @@ startVoteClient() {
 lectureID=/tmp/lecture.run
 
 startVote() {
-    run_vote_srv $name &
+    run_vote_srv $name $1 &
     sleep 1     #等待服务器运行后才运行客户端
 
     startVoteClient
@@ -210,12 +214,12 @@ startLecture() {
     test -e /tmp/lecture.run && err_exit "已经运行了...."
     touch $lectureID
     name=$(head -n 1 lecture.txt | awk -F'|' '{print $3}')
-    workdir=/Works/$(ls /Works/ | grep "$name")/lecture
+    workdir=/Works/$(ls /Works/ | grep "_$name$")/lecture
     test -d $workdir  || mkdir -p $workdir
     gnome-terminal --working-directory=$workdir --full-screen -e "tmux"
-    trap startVote 2
+    trap "startVote 0" 2
     sleep 600
-    startVote
+    startVote 1
 }
 
 cd $(pwd)
