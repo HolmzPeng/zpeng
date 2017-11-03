@@ -1,12 +1,16 @@
 #!/usr/bin/env python3
 
+#导入随机模块
 import random
 
+#获取1到100之间的随机数并且赋值给randNum变量
 randNum = random.randint(1, 100)
 #  print("randNum = ", randNum)
 
+#定义猜数字的次数
 count = 6
 
+#根据猜数字的次数循环
 while count != 0:
     inputStr = input("请输入1到100的数字(你还有 %d 次机会): " % count)
 
