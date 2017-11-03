@@ -24,8 +24,24 @@ while i < 10:
         #  print(i, ". hello", sep='')
 
 i = 0
-while i < 50:
+while i < 51:
     print("\033[s<", "=" * i, "> ", i * 2, "%\033[u", sep='', end='', flush=True)
     i += 1
     time.sleep(0.1)
 print()
+
+
+i = 0
+print("\033[s")
+while  i < 100:
+    print('\033[u-', end='', flush=True)
+    time.sleep(0.1)
+    print('\033[u/', end='', flush=True)
+    time.sleep(0.1)
+    print('\033[u|', end='', flush=True)
+    time.sleep(0.1)
+    print('\033[u\\', end='', flush=True)
+    time.sleep(0.1)
+    i += 1
+
+
