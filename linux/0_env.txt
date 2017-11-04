@@ -1,0 +1,165 @@
+DevOps + Python课程
+    授课环境熟悉    4天
+    Python核心编程  15天
+    Web开发         20天
+    爬虫 数据分析   13天
+    自动化测试      3天
+    运维平台        10天
+    DevOps          10天
+
+授课环境
+    纯linux操作系统
+    禁用鼠标
+    分组
+    ko练习程序
+    随机上台复习
+    学习方法
+
+-------------------------------------------------------------------------------
+Linux概念
+    unix    1969
+    C语言的出现就是为了移植unix 1971
+    UNIX的分支:
+        Sys V
+        BSD
+
+    GNU组织 开源组织
+        目标: 实现类似UNIX操作系统
+        kernel(内核) + shell(人机交互)
+
+    91年linux1.0发布到开源社区
+    红帽RedHat -> linux + GNU
+
+
+    GNU/Linux发行版本:
+        ubuntu  deb
+        centos  rpm
+
+-------------------------------------------------------------------------------
+Linux基本操作
+    用户名和密码: zl / 1
+
+    终端程序
+        程序名: gnome-terminal
+        启动:
+            ctrl + alt + t
+            alt + F2 / 输入程序名
+            在桌面按菜单键(键盘右边alt和ctrl中间键, 除了win键) 再按E
+
+        终端快捷键:
+            ctrl + shift + n    新建终端
+            ctrl + shift + t    新建标签页
+            alt + 1 ~ 9         切换终端标签页
+            ctrl + shift + =    临时放大终端
+            ctrl + -            临时缩小终端
+            shift + pageDown/pageUp 上下滚动
+            ctrl + c            结束当前终端运行程序
+            ctrl + d            结束输入
+            ctrl + l            清屏
+            ctrl + s            关闭回显
+            ctrl + q            退出回显模式
+            tab                 一次补全, 二次列表相关命令
+
+    桌面快捷键:
+        虚拟终端:
+            ctrl + alt + F1 ~ F7
+
+        启动终端
+            ctrl + alt + t
+
+        运行程序
+            alt + f2
+
+        回到桌面
+            ctrl + win + d
+
+        切换程序
+            alt + tab
+
+        关闭程序
+            alt + F4
+
+        窗口放大
+            ctrl + win + 上
+
+        窗口缩小
+            ctrl + win + 下
+
+        关机
+            ctrl + alt + del
+
+系统基本操作命令
+    关机:
+        poweroff
+        shutdown
+        init 0
+
+    重启:
+        reboot
+        init 6
+
+    退出终端
+        exit
+        快捷键: ctrl + d
+
+    启动终端:
+        gnome-terminal
+
+    ko键盘练习程序:
+        ko list         列出练习文章名称
+        ko 文章名称     进入练习文章
+        ko rand         随机进入文章练习
+
+    访问课程课件
+        w3m http://3.3.3.3/
+            方向键  移动光标
+            回车键  进入链接/下载
+            q       退出
+
+    播放视频
+        获取mplayer控制命令帮助: mplayer
+            q       退出
+            f       全屏
+            空格键  播放/暂停
+            左右方向键 快进快退(10秒)
+
+        播放视频: mplayer 视频路径
+        快速播放视频: mplayer 视频路径 -fps 120
+
+    桌面共享
+        访问共享桌面: remmina
+            只要保存连接就会在~/.remmina/产生连接配置文件(zl.remmina)
+            有了连接配置文件就可以命令连接不需要交互:
+                remmina -c ~/.remmina/zl.remmina
+
+        共享自己桌面: vino-preferences
+
+    文件系统格式 (对应一个树型结构)
+        ntfs fat32 ext4
+        从根开始 文件系统的开始
+        windows: C:\ D:\
+        linux: /
+
+    路径
+        标识文件在树型结构访问的过程
+        路径分隔符:
+            windows: \\
+            linux: /
+
+        当前工作路径: 标识当前在树型结构的所在位置
+
+        绝对路径    从根开始的路径为绝对路径
+            /boot/grub/memdisk
+
+        相对路径    相对当前工作路径的路径
+            当前工作路径: /boot
+                grub/memdisk
+
+        获取当前工作路径: pwd
+
+        切换路径: cd 路径
+
+        列出当前路径内容: ls
+
+        列出指定路径内容: ls 路径1 路径2...
+

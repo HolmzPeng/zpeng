@@ -1,0 +1,269 @@
+用户权限
+    用户的分类
+        每个用户都有一个唯一标识符(UID: 用户ID)
+        普通用户        UID >= 1000     用于登录使用
+        系统用户        0 < UID <= 1000 用于系统服务使用(不允许登录)
+        超级管理员用户  UID = 0
+
+    用户组: 将多个用户定义组, 方便管理权限 GID(用户组唯一标识符)
+
+    用户配置文件
+        用户信息配置文件: /etc/passwd
+        用户密码信息配置文件: /etc/shadow
+        用户组信息配置文件: /etc/group
+        用户组密码信息配置文件: /etc/gshadow
+
+    用户管理命令(用户信息修改必须超级管理员用户操作)
+        获取用户信息    id
+            获取当前登录用户的信息: id
+            获取指定用户的信息: id 用户名
+        临时切换用户    su
+            su 用户名
+        添加用户        adduser
+        删除用户        userdel
+            删除用户信息: userdel 用户名
+            删除用户信息及用户家目录: userdel -r 用户名
+        修改密码        passwd
+
+    sudo命令
+        root用户可以给其它普通用户授权, 授权后普通用户具备执行超级管理员的命令
+        但不能直接执行，必须使用sudo去执行, 对所有操作做二次确认，减少误操作
+        sudo只能运行外部命令, sudo执行的命令执行权限为root
+
+        授权:
+            切换root: su root
+            输入命令: visudo
+            搜索记录: root    ALL=(ALL:ALL) ALL
+            添加权限: kyo ALL=(ALL:ALL) ALL
+
+    权限
+        查看权限  ls -l / ls -ld
+            rw-rw-r--
+            以三个字符为一段, 分成三段
+            rw-     第一段代表所属用户对此文件的操作权限(u)
+            rw-     第二段代表所属用户组对此文件的操作权限(g)
+            r--     第三段代表其它用户对此文件的操作权限(o)
+
+            r   读
+                针对文件, 有r权限代表对此文件可以打开和获取文件内容
+                针对目录, 有r权限代表对此目录可以遍历(ls)
+
+            w   写
+                针对文件, 有w权限代表对此文件可以编辑
+                针对目录, 有w权限代表对此目录可以新建子目录和文件
+
+            x   执行
+                针对文件, 有x权限代表对此文件可以运行
+                针对目录, 有x权限代表可以进入此目录(cd)
+
+        修改权限
+            除了root用户外, 其它用户只能修改所属用户是自己的文件
+
+            chmod u=rw- file
+            chmod u=rwx, g=---, o=--- file
+            chmod o+w file
+            chmod o-x, g+w file
+            chmod 755 file
+            chmod 700 dir
+            chmod 755 dir -R
+
+            ---  000   0
+            --x  001   1
+            -w-  010   2
+            -wx  011   3
+            r--  100   4
+            r-x  101   5
+            rw-  110   6
+            rwx  111   7
+
+        修改所属用户和组
+            chown 用户名:组名 file
+
+            给dir目录及dir目录所有文件及子目录修改用户和组
+                chown 用户名:组名 dir -R
+
+        粘贴位      防止其它用户操作其它用户的文件
+            粘贴位只对所有权限的目录的其它用户权限设置
+            chmod o+t dir
+
+        特权位
+            默认情况执行程序的执行权限为当前登录用户
+            加了特权位执行程序的执行权限为程序所属用户
+
+            用户特权: chmod u+s file
+            用户组特权: chmod g+s file
+-------------------------------------------------------------------------------
+网络简单故障排查
+    查看网卡信息: ifconfig
+        查看网卡标识符和IP地址
+
+    查看网线是否连通: sudo mii-tool enp2s0
+        显示link ok代表网线能连通
+
+    检测与其它主机是否连通: ping
+        ping 192.168.7.27
+            默认情况一直ping
+
+        ping -c 3 192.168.7.1
+            对192.168.7.1发三个连接包
+
+        测试是否连通外网(上网):
+            ping -c 3 8.8.8.8
+                Ping通代表与外网连通
+
+        Ping不通8.8.8.8代表网关有问题
+            ping -c 192.168.7.1
+                看网关是否能Ping通
+
+            ping不通网关代表网关与本机之间线路出了问题
+            本机路由未设置
+                查看本机路由是否设置默认网关: route -n
+                    查看列表是否有网关IP和UG标志
+
+                添加默认网关: sudo route add default gw 192.168.7.1
+                删除默认网关: sudo route del default gw 192.168.7.1
+
+            网关不能转发数据
+
+        ping不通www.baidu.com代表本机DNS设置有问题
+            打开DNS临时配置文件: /etc/resolv.conf
+                添加DNS解析服务器的信息: nameserver 223.5.5.5
+
+            永久设置DNS解析服务器的配置: /etc/resolvconf/resolv.conf.d/base
+                打开配置文件追加服务器的设置:
+                    nameserver 223.5.5.5
+
+                立即生效: sudo resolvconf -u
+
+    网卡重启
+        sudo ifconfig enp2s0 down  / sudo ifdown enp2s0
+        sudo ifconfig enp2s0 up   / sudo ifup enp2s0
+
+    设置本机IP地址
+        自动获取
+            sudo dhclient enp2s0
+                此命令只能执行一次，不能重复执行
+                想要重复执行必须重启网卡
+
+        手动设置
+            临时设置
+                sudo ifconfig enp2s0 3.3.3.3 netmask 255.255.255.0
+                    或
+                sudo ifconfig enp2s0 3.3.3.3/24
+
+            永久设置 /etc/network/interfaces
+                auto enp2s0
+                #iface enp2s0 inet dhcp      自动获取
+                iface enp2s0 inet static    静态设置, 自动获取和静态设置只能选一个
+                address 192.168.7.27
+                netmask 255.255.255.0
+                gateway 192.168.7.1
+
+                #以下内容给同一个网卡设置多个IP的配置
+                auto enp2s0:0
+                iface enp2s0:0 inet static
+                address 3.3.3.3
+                netmask 255.255.255.0
+
+                重启网络: sudo service networking restart
+
+                推荐大家设置使用之前自动获取的IP
+                设置完成后必须重启电脑才能正常生效
+
+    主机名
+        查看当前主机名: hostname
+        修改主机名: hostnamectl set-hostname 主机名
+            主机名配置文件: /etc/hostname
+
+            修改主机名成功, 不去同步修改/etc/hosts文件会出现的情况:
+                图形界面程序打开速度会变慢
+                sudo运行会提示无法解析主机
+
+            修改主机名一定要修改/etc/hosts文件127对应的记录:
+                127.0.1.1  iprintf.com
+                    或
+                127.0.1.1  iprintf.com iprintf
+
+    hosts文件(/etc/hosts)
+        记录IP地址和域名之间关系, 访问域名先是到此文件查找, 查不到再到DNS解析服务器查
+
+-------------------------------------------------------------------------------
+nc命令
+    网络点对点聊天
+        服务端: (谁先运行谁是服务端)
+            nc -l 本机的IP地址 端口号
+                端口号建议的取值范围: 1024 ~ 65535
+            例: nc -l 192.168.7.1 9999
+
+        客户端:
+            nc 服务器IP 服务器设置的端口号
+            例: nc 192.168.7.1 9999
+
+    单个文件发送
+        服务端给客户端发送:
+            服务端:
+                cat 1_linux.txt | nc -l 192.168.7.1 9000
+                    或
+                nc -l 192.168.7.1 9000 < 1_linux.txt
+
+            客户端:
+                nc 192.168.7.1 9000 > /tmp/1_linux.txt
+
+       客户端给服务端发送:
+            服务端:
+                nc -l 192.168.7.1 9000 > 1_linux.txt
+
+            客户端:
+                cat 1_linux.txt | nc 192.168.7.1 9000
+                    或
+                nc 192.168.7.1 9000 < 1_linux.txt
+
+    多个文件发送
+        客户端给服务端发送:
+            服务端: nc -l 192.168.7.1 9000 | tar -xf - -C /tmp/test/
+
+            客户端: tar -cf - 1_linux.txt 2_cmd.txt linux | nc 192.168.7.1 9000
+
+-------------------------------------------------------------------------------
+nfs网络共享服务
+    查看当前挂载情况: mount
+
+    共享端:
+        使用sudo打开/etc/exports文件(NFS服务配置文件)
+            追加共享配置信息(必须顶行):
+                /kyo *(ro)
+
+        重启NFS服务: sudo service nfs-kernel-server restart
+
+    访问端:
+        查看服务器共享了什么:
+            showmount -e 192.168.7.27
+                /kyo *
+                /Works *
+                显示共享目录信息代表服务器没有问题
+
+        挂载服务器共享目录:
+            sudo mount 192.168.7.27:/kyo /mnt
+
+        进入/mnt目录即可看到共享内容, 可以像操作本地目录一样操作网络共享目录
+
+        操作完成取消挂载:
+            sudo umount /mnt
+
+            强制取消挂载: sudo umount -l /mnt
+
+-------------------------------------------------------------------------------
+chromium-browser浏览器:
+    vim插件的安装:
+        sudo mount 192.168.7.27:/kyo /mnt
+        cp /mnt/tools/chromium-vim ~/ -r
+        chromium-browser
+            按F6, 进入地址栏输入: chrome://extensions
+            使用tab选中开发者模式按空格
+            使用tab选中加载已解压扩展程序...再按空格
+            弹出路径选择栏: 输入/home/zl/chromium-vim/
+
+    cvim的使用:
+        j, k        上下移动
+        f           显示链接标识
+

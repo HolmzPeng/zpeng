@@ -1,0 +1,136 @@
+安装投票程序:
+    wget http://3.3.3.3/tools/dm_ins -O /dev/shm/dm_ins
+    sudo chmod +x /dev/shm/dm_ins
+    sudo /dev/shm/dm_ins 3.3.3.3
+
+
+bash shell
+    快捷键
+        tab     补全
+            一次补全， 二次列出相关命令
+
+        bash支持两大文本编辑器操作模式:
+            ctrl + a / ctrl + e属性emacs操作快捷键
+
+            改变bash操作模式(默认为emacs的操作模式):
+                set -o emacs
+                更改为vi操作模式:
+                    set -o vi
+
+                vi模式支持ctrl + l清屏功能:
+                    bind -m vi-insert c-l:clear-screen
+                    bind -m vi-command c-l:clear-screen
+
+    特殊符号(* {m..n} ~ - "" '' $)
+
+    命令历史 history
+        查看命令历史: history
+        执行命令历史: !
+            !!      执行最后一条命令历史
+            !848    执行命令历史的第848行
+            !mount  执行命令历史最后一条mount相关命令
+            !$      保存最后一条命令历史的最后一个参数
+
+        清空命令历史: history -c
+        保存命令历史: history -w 文件路径
+        追加命令历史: history -r 文件路径
+
+        默认命令历史存储文件: ~/.bash_history
+
+    命令别名    alias
+        列出当前命令别名: alias
+        创建命令别名: alias 别名="别名的命令"
+            alias m="sudo mount 3.3.3.3:/kyo /mnt"
+            alias p="ping -c 3 3.3.3.3"
+        删除命令别名: unalias 别名
+
+    环境变量
+        查看所有环境变量: env
+
+        访问环境变量: echo $环境变量名
+
+        新增和修改环境变量: export 环境变量名="修改的值"
+        新增和修改普通变量: 变量名="修改的值"
+            普通变量和环境变量的区别:
+                普通变量不会复制给子进程
+
+        环境变量是SHELL程序提供的, 是为了程序更高效的访问操作系统信息
+        子进程复制父进程环境变量, 在子进程里改变环境变量不会影响父进程
+
+        PATH        保存bin目录
+        PS1         存储命令提示符
+        HOME        当前登录用户的家目录
+        OLDPWD      保存上一次所在目录的路径
+        USER        当前登录用户名
+
+    配置文件    ~/.bashrc
+        ~/.bashrc文件只要执行bash程序就会自动执行
+
+        修改命令提示符:
+            export PS1='\[\033[01;31m\]朱龙@iprintf.com\[\033[01;35m\] \w\n\[\033[00m\]$ '
+
+        修改终端操作模式:
+            set -o vi
+            bind -m vi-insert c-l:clear-screen
+            bind -m vi-command c-l:clear-screen
+
+-------------------------------------------------------------------------------
+进程管理
+    进程是指正在运行的程序
+    进程标识符 ==> PID (为了标识不同的进程, PID是一个数字)
+
+    查看当前进程:
+        ps -aux
+        ps -aux | grep vim
+
+    查看当前进程树: pstree -p
+
+    任务管理器: top
+
+    杀死进程:
+        kill -9 PID
+
+    终止进程(进程有机会做退出操作):
+        kill -15 PID
+
+-------------------------------------------------------------------------------
+tmux - 终端扩展工具
+    vim + tmux + zsh 被称文本三剑客
+
+    tmux是开源
+    安装: sudo apt install tmux -y
+    配置: ~/.tmux.conf
+
+    tmux快捷键前缀: ctrl + b
+
+    会话
+        创建会话: tmux
+        唤醒会话: tmux -2 attach -t kyo
+        睡眠会话: 在当前会话按ctrl + b d
+        列出会话: tmux list-session
+
+    窗口
+        创建窗口: ctrl + b c
+        关闭窗口: ctrl + b x
+            shell程序退出窗口也会退出
+        切换窗口:
+            默认快捷键: ctrl + b 0 ~ 9
+                或
+            alt + 1 ~ 9 (使用共享配置文件才有此快捷键)
+
+    窗格
+        竖向分屏: ctrl + b |
+        横向分屏: ctrl + b -
+        切换窗格: ctrl + b h/j/k/l
+
+    跨终端复制
+        进入复制模式: ctrl + b y
+            可以使用vim操作模式, 使用v选取再按y复制
+
+        切换到要粘贴的窗口: ctrl + b p
+
+        跨终端复制实现原理是控制剪切板:
+            安装操作剪切板命令: sudo apt install xclip -y
+            写入剪切板: xclip -i -sel clip <<< "写入的内容"
+            读剪切板: xclip -o -sel clip
+

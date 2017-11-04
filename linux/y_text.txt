@@ -1,0 +1,359 @@
+查找命令
+    which                           查找$PATH变量指定的目录里的命令
+        which ifconfig              查出ifconfig命令的路径
+
+    whereis                         查找命令，显示命令更多的信息
+        whereis ifconfig            命令路径，帮助文档等
+
+    locate                          文件查找命令
+        速度快，通过系统自带的一个数据库去查找
+            /var/lib/mlocate/mlocate.db
+
+        locate hello                查找带hello的文件,如果hello是刚刚新建的就找不到，因为数据库还没有没保存现在的信息
+
+        updatedb                    手动更新查找数据库，然后再查找就会很快找到刚刚新建的hello文件
+
+
+    find                            文件查找命令，功能最强大，速度慢，因为会扫描整个硬盘
+        find /etc -name grub.conf   查找/etc目录下的grub.conf文件
+
+        find / -name "*.conf"       查找/下所有.conf文件
+
+        find  / -iname grub.conf    查找/目录下的grub.conf文件，忽略大小写
+
+        find / -maxdepth 2 -name grub.conf     可以使用-maxdepath参数来控制查找的层次，就是说只查当前目录和子目录,最多查2级目录
+        find / -mindepth 2 -name grub.conf     最少查二级目录
+
+        find /etc -type d           查找/etc/下所有的目录
+
+        find /etc -type f           查找/etc/下的所有普通文件
+
+        find /etc -type l -name *.conf      查找/etc/下软链接文件是.conf结尾的文件
+
+        find /etc -type s           查找/etc/下所有socket文件
+
+        find /etc -type c           查找/etc/下的所有字符设备文件
+
+        find /etc -type p           查找/etc/下所有管道文件
+
+        find /etc -user root        查找/etc/所属用户是root的文件
+
+        find /etc -group root       查找/etc/所属用户组是root的文件
+
+        find /etc -uid 500          查找/etc/下uid是500的文件,和-user类似
+
+        find /etc -gid 500          查找/etc/下gid是500的文件,和-group类似
+
+        find /etc -nouser           查找没有所属用户的文件
+
+        find /etc -nogroup          查找没有所属用户组的文件
+
+        find /etc -perm 777 -type d    查找/etc/下权限为777的目录
+
+        find . -perm  111           查找权限是111的文件
+
+        find . -size +10M           查找当前目录下大于10M的文件，单位可以有K,M,G,b等
+
+        find / -size -2M            查找根目录下少于2M的文件
+
+        find / -mtime 1             查找根目录下1小时以前修改的所有文件
+
+        find / -mtime +2            查找根目录下2个多小时以前修改的所有文件
+
+        find / -mtime -3            查找根目录下最近3小时内修改的所有文件
+
+        find / -atime 1             查找根目录下1天以前访问或读过的所有文件
+
+        find / -atime -1            查找根目录下最近1天内读过或访问的文件
+
+        find / -ctime -3            查找根目录下最近3天内状态发生改变的文件
+
+        find / -cmin -3             查找根目录下最近3分钟内状态发生改变的文件
+
+        find / -empty               查找根目录下所有空白文件或者空目录
+
+        find / -false               查找根目录下总是错误的文件
+
+        find / -false -exec ls -l {} \;   查找根目录下总是错误的文件并且用ls -l查看
+
+===============================================================================
+
+字符处理工具
+    wc                                      统计命令
+        wc -c /etc/passwd                   统计/etc/passwd文件里有多少个字符
+
+        wc -w /etc/passwd                   统计/etc/passwd文件里有多少个单词
+
+        wc -l /etc/passwd                   统计/etc/passwd文件里有多少行
+
+    sort                                    排序命令
+         sort -n /etc/passwd                按数据排序
+
+         sort -u /etc/passwd                去除重复行显示
+
+         sort -r /etc/passwd                反向排序
+
+         sort -n -k5 /etc/passwd            指定第五列进行按数字排序
+
+         sort -t: -n -k5 /etc/passwd        以:为分隔符指定第五列按数字排序
+
+    cut                                     字段载取
+        cut -f1 /etc/passwd                 只显示第一列数据
+
+        cut -f1,2,5 /etc/passwd             只显示第一列，第二列，第五列的数据
+
+        cut -d: -f1,2,5 /etc/passwd         以:为分隔符只显示第一列，第二列，第五列的数据
+
+    uniq                                    去除文件中相邻的重复行
+        uniq -u /etc/passwd                 只显示没有被重复过的行
+
+        uniq -d /etc/passwd                 只显示被重复过的行
+
+        uniq -i /etc/passwd                 忽略大小写去除文件中相邻的重复行
+
+        uniq -c /etc/passwd                 统计相邻重复行数
+
+    diff                                    比较文件差异
+        diff -B /etc/passwd passwd          忽略空行造成的不同
+
+    grep                                    搜索文本
+        grep -i hello /etc/passwd           在/etc/passwd文件里找hello并且忽略大写查找
+
+        grep -n hello /etc/passwd           在/etc/passwd文件里找hello并给结果排号，如果是对目录搜索可以显示在文件里出现的行号
+
+        grep -w hello /etc/passwd           在/etc/passwd文件里找完全匹配hello单词的行
+
+        grep -v hello /etc/passwd           显示出在/etc/passwd文件里没有hello的行
+
+        grep -r hello /etc/                 在etc目录里所有文件里找hello显示
+
+    tr                                      替换字符
+        cat /etc/passwd | tr a b            查看/etc/passwd文件并把里面的a替换成b
+
+        tr a-z A-Z  /etc/passwd             把/etc/passwd文件里的小写全转成大写
+
+===============================================================================
+
+正则表达式
+    .                               表示任何一个单一字符
+    .*                              表示零个或任意个字符
+    ^a                              表示以a为首的行
+    a$                              表示以a为尾的行
+    \<good                          表示以good开头的单词
+    sh\>                            表示以sh结尾的单词
+    [abc]                           表示当前位置为a或b或c其中任意一个
+    [^abc]                          表示当前位置除了a,b,c以外任意一个字符
+    a\{3\}                          匹配a为3次
+    a\{3,\}                         匹配a为至少3次
+    a\{3,100\}                      匹配a为3到100次
+    a*                              表示空、a、aa、aaa、以至更多个a, 等价于{0,}
+    a+                              表示a,aa,aaa，以至更多个a, 等价于{1,}, 扩展正则，需要egrep测试
+    a?                              表示零个或单独的a,等价于{0,1}, 扩展正则，需要egrep测试
+    x|y                             匹配x或y,扩展正则，用egrep测试
+
+
+    grep "r..t" passwd              搜索第一个字符是r，第二和第三个字符为任意字符，第四字符为t的字符串的行
+    grep "r.*t" passwd              搜索第一个字符是r，中间为任意长度任意字符，最后一个字符为t的字符串的行
+    grep "r*t"  passwd              搜索第一个是零个r或多个r,最后一个字符为t的字符串的行
+    grep "^r" passwd                搜索以r为首字符的行
+    grep "t$" passwd                搜索以t为尾字符的行
+    grep "^rt$" passwd              搜索只有两人字符为rt的行
+    grep "\<root" passwd            搜索以root开头的单词的行
+    grep "root\>" passwd            搜索以root结尾的单词的行
+    grep "\<root\>" passwd          搜索完全匹配root的单词的行
+    grep "[abc]" passwd             搜索有a或b或c字符的行
+    grep "[^abc]" passwd            搜索没有a或b或c字符的行
+    grep "ga\{3\}" passwd           搜索以g开头，后面跟3个a的字符串的行
+    grep "ga\{3,\}" passwd          搜索以g开头，后面跟3个以上的a字符的字符串的行
+    grep "ga\{3,6\}" passwd         搜索以g开头，后面跟3个到6个a字符的字符串的行
+
+    egrep "r+t" passwd              搜索以一个r或多个r,后面跟t的字符串的行
+    egrep "r?t" passwd              搜索以一个r或空,后面跟t的字符串的行
+    egrep "r|t" passwd              搜索出现r或t字符的行
+    egrep "root|kyo" passwd         搜索出现root或kyo单词的行
+    egrep "r(abc)+t" passwd         以r开头中间至少有一个或多个abc后面跟上t字符的字符串的行
+
+==============================================================================
+
+Sed 流编辑器
+
+    删除(过滤输出) d
+
+        指定删除第一行
+
+            sed -e '1d' /etc/passwd
+
+        删除第二行到第四行
+
+            sed -e '2,4d' /etc/passwd
+
+        删除第二和第四行
+
+            sed -e '2d;4d' /etc/passwd
+
+        删除第一行到第三行和第五行
+
+            sed -e '1,3d;5d' /etc/passwd
+
+        删除匹配root的行
+
+            sed -e '/root/d' /etc/passwd
+
+        删除匹配以ftp开头的行
+
+            sed -e '/^ftp/d' /etc/passwd
+
+        删除匹配以bash为结尾的行
+
+            sed -e '/bash$/d' /etc/passwd
+
+        删除空行
+
+            sed -e '/^$/d' /etc/passwd
+
+        删除以小写字母开头的行
+
+            sed -e '/^[a-z]/d' /etc/passwd
+
+            sed -e '/^[[:lower:]]/d' /etc/passwd
+
+        删除以大写字母开头的行
+
+            sed -e '/^[A-Z]/d' /etc/passwd
+
+            sed -e '/^[[:upper:]]/d' /etc/passwd
+
+        删除以数字开头的行
+
+            sed -e '/^[0-9]/d' /etc/passwd
+
+            sed -e '/^[[:digit:]]/d' /etc/passwd
+
+        删除以字母开头的行
+
+            sed -e '/^[A-Za-z]/d' /etc/passwd
+
+        删除以空格开头的行
+
+            sed -e '/^\ /d' /etc/passwd
+
+            sed -e '/^[[:blank:]]/d' /etc/passwd
+
+        删除以特殊符号开头的行
+
+            sed -e '/^[[:punct:]]/d' /etc/passwd
+
+    打印 p
+
+        打印第一行
+
+            sed -ne '1p' /etc/passwd        不加n参数没有效果
+
+        打印匹配root开头的行
+
+            sed -ne '/^root/p' /etc/passwd
+
+        打印以小写字母开头，和以nologin结尾的行
+
+            sed -ne '/^[a-z]/p;/nologin$/p'
+
+        打印以root开头和以ftp开头的行
+
+            sed -ne '/^root/p;/^ftp/p' /etc/passwd
+
+    替换 s
+
+        把每行的第一个root替换成kyo
+
+            sed -e 's/root/kyo/' /etc/passwd
+
+        把每行的root替换成kyo
+
+            sed -e 's/root/kyo/g' /etc/passwd
+
+        把每行的第二个root替换成kyo
+
+            sed -e 's/root/kyo/2' /etc/passwd
+
+        指定2到10行范围把root替换成kyo
+
+            sed -e '2,10s/root/kyo/g' /etc/passwd
+
+        把root替换成rootboot ,&代表前面被替换的字符
+
+            sed -e 's/root/&boot/' /etc/passwd
+
+        把以bin开头的行到以adm开头的行，把a换成abc
+
+            sed -e '/^bin/,/^adm/s/a/&bc/g'
+
+        支持扩展正则表达式把-e换成-r
+
+            sed -r '/^a+/&b/g'
+
+
+    对源文件内容进行实际操作 ,把-e换成-i
+
+        删除文件中第一行
+
+            sed -i '1d' /tmp/passwd
+
+
+    使用域进行定位
+
+        \(\)将\(和\)之间的字符串定义为一个域，并且将匹配这个表达式保存到一个区域,一个正则表达式最多可以保存9个域，访问域\1到\9来表示
+
+        -e 就要用\(\)
+        -r 不需要转义直接()
+
+        删除每行的第一个字符
+
+            sed -e 's/.\(.*\)/\1/'
+
+
+        删除每行的第二个字符
+
+            sed -e 's/\(.\).\(.*\)/\1\2/'
+
+        删除最行最后一个字符
+
+            sed -e 's/\(.*\)./\1/'
+
+        删除每行的倒数第二个字符
+
+            sed -e 's/.\(.\)$/\1/'
+
+        删除每行的第二个单词
+
+            sed -e 's/[a-zA-Z]*//2'
+
+        删除每行的最后一个单词
+
+            sed -r 's/[a-zA-Z]+$//'
+
+        交换每行的第一个字符和第二个字符
+
+            sed -r 's/^(.)(.)/\2\1/'
+
+        删除文件中所有的数字
+
+            sed -e 's/[0-9]//g'
+
+        把所有大写字母用括号()括起来
+
+            sed -r 's/[A-Z]/(&)/g'
+
+        只显示每行的第一个单词
+
+            sed -r 's/^([a-zA-Z]+).*/\1/'
+
+
+    basename `pwd`      取得当前目录名
+
+    dirname `pwd`       取得当前路径，不包含当前目录名
+
+    tac                 倒转文件里的内容
+
+    rev                 倒转文件里的单词顺序
+
+

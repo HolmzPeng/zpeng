@@ -1,0 +1,248 @@
+#!/bin/bash
+
+err_exit() {
+    echo $1
+    exit $2
+}
+
+cd /kyo/group
+
+# 对文件进行按行随机输出
+randFile() {
+    local line
+    while read line ; do
+        echo ${RANDOM}_$line
+    done < $1 | sort -n | sed -nr 's/^[0-9]+_//p'
+}
+
+# 对标准输入按行随机输出
+randStdin() {
+    local line
+    while read line ; do
+        echo ${RANDOM}_$line
+    done | sort -n | sed -nr 's/^[0-9]+_//p'
+}
+
+# 之前java班随机项目的函数，读取标准输入随机项目
+randProject() {
+    local line item
+    while read line ; do
+        item=$(randFile project.txt | tail -n 1)
+        echo "$line --> $item"
+    done
+}
+
+# 之前java班随机分组对应项目随机函数
+randGroupProject() {
+    while : ; do
+        randFile leader.txt | randProject > groupProject.txt
+        num=$(awk '{print $NF}' groupProject.txt | sort | uniq | wc -l)
+        test $num -eq 7 && break
+    done
+}
+
+# 随机班级学员, 随机学员要等到所有学员都随机完成后才再参与随机
+randMember() {
+    randNum=$(awk -F":" '{print $1}' member.txt | sort -n | head -n 1)
+    name=$(grep "$randNum" member.txt | randStdin | head -n 1 | awk -F":" '{print $2}')
+}
+
+# 随机指定文件一行记录，必须保证此记录在历史记录最后16行中不重复
+# 即2天内不再不重复随机
+randUniq() {
+    local key
+    while : ; do
+        key=$(randFile $1.txt | head -n 1)
+        tail -n 8 history.txt | grep -q "$key" || break
+    done
+    echo $key
+}
+
+# 解析下一个上台讲课日期 去除周末 workday.txt为特殊日期不去除
+parseNextDate() {
+    local date d
+
+    d=1
+    while : ; do
+        date=$(date -d "$1 $d day" "+%F %w")
+        let d++
+        grep -q ${date% *} workday.txt && break
+        test ${date##* } -eq 0 -o ${date##* } -eq 6 && continue
+        break
+    done
+
+    echo ${date% *}
+}
+
+# 解析上一次上台讲课日期时间生成此次随机的日期时间
+parseNextDateTime() {
+    case "$1" in
+        9)
+            echo $2 14
+            ;;
+        14)
+            echo $2 17
+            ;;
+        17)
+            echo $2 19
+            ;;
+        19)
+            echo $(parseNextDate $2) 9
+            ;;
+    esac
+}
+
+# 获取下一次上台讲课日期时间
+getTeachDateTime() {
+    local record lastdate lasttime
+    record=$(tail -n 1 lecture.txt)
+    lastdate=$(awk -F'|' '{print $1}' <<< $record)
+    lasttime=$(awk -F'|' '{print $2}' <<< $record)
+    # echo $lastdate
+    # echo $lasttime
+    test -z "$lastdate" && echo $(parseNextDate) "9"
+    parseNextDateTime $lasttime $lastdate
+}
+
+# 随机上台讲课人员
+randLecture() {
+    # local state
+    # 检查上一次记录是否改变状态，如果没有改变状态则不随机
+    # state=$(tail -n 1 history.txt | awk -F'|' '{print $NF}')
+    # if test ! -z "$state" ; then
+        # test "$state" -eq 0 && err_exit $(tail -n 1 history.txt)
+    # fi
+
+    # 随机上台讲课学员
+    randMember
+    # 获取本次上台讲课日期时间
+    date=$(getTeachDateTime)
+    # 随机历史知识点
+    point=$(tail -n 30 point.txt | randStdin | head -n 1)
+    # 随机奖励
+    awards=$(randFile awards.txt | head -n 1)
+    # 随机惩罚
+    punish=$(randUniq punish)
+    echo '------------------------------------------------'
+    echo -e "$date点 由 \033[34;1m$name\033[0m 上台讲 '\033[36;1m$point\033[0m'"
+    echo -e '\033[31;1mA级投票率60%以上奖励\033[0m: ' $awards
+    echo -e '\033[33;1mB级投票率60%以上惩罚\033[0m: ' $punish
+    echo '------------------------------------------------'
+
+    test "x$1" = "x1" || read -n 1 -p "是否确认本次随机(Y/n): " input
+    if test "x$1" = "x1" -o "x$input" = "xy" -o "x$input" = "xY" ; then
+        let randNum++
+        sed -i -r "s/^[0-9]+(:$name)$/$randNum\1/" member.txt
+        echo "${date% *}|${date##* }|$name|$point|$awards|$punish|0" >> lecture.txt
+    fi
+    echo
+}
+
+# 随机分组
+randGroup() {
+    join -a1 <(randStdin < leader.txt | cat -n)                         \
+             <(diff <(sed -n -r 's/^[0-9]+://p' member.txt | sort)      \
+                    <(sort leader.txt)                                  \
+                | grep '<' | sed 's/< //' | randStdin                   \
+                | awk '{s=int((NR-1)/2)+1; if (s>7)s=7; print s, $0}')
+}
+
+lectureEnd() {
+    local result ap bp punish award re state
+
+    read result
+    result=${result#*:}
+    bp=${result#*:}
+    ap=${result%:*}
+
+    record=$(head -n 1 lecture.txt)
+    award=$(awk -F'|' '{print $5}' <<< $record)
+    punish=$(awk -F'|' '{print $6}' <<< $record)
+    # echo $ap $bp
+
+    echo "=================================="
+    echo -n "$1 本期讲课结果: "
+    if test "$ap" -ge 60 ; then
+        echo "$award"
+        re="$punish|"
+        state=1
+    elif test "$bp" -ge 60 ; then
+        echo "$punish"
+        re="$award|"
+        state=1
+    else
+        echo "刚刚好"
+        re="$award|$punish|"
+        state=2
+    fi
+    record=$(sed -e "s/.$/$state/" -e "s/$re//" <<< $record)
+    sed -i '1d' lecture.txt
+    echo $record >> history.txt
+    echo "=================================="
+    echo
+    echo -e "\033[30;1m下一个上台者:\033[0m "
+
+    randLecture 1
+    rm $lectureID -f
+}
+
+run_vote_srv() {
+    votes $(k l | sort | uniq | wc -l) | lectureEnd $1
+}
+
+startVoteClient() {
+    for i in $(k l) ; do
+        send $i 'DISPLAY=:0 vote' &> /dev/null &
+    done
+}
+
+lectureID=/tmp/lecture.run
+
+startVote() {
+    run_vote_srv $name &
+    sleep 1     #等待服务器运行后才运行客户端
+
+    startVoteClient
+    exit 0
+}
+
+startLecture() {
+    test -e /tmp/lecture.run && err_exit "已经运行了...."
+    touch $lectureID
+    name=$(head -n 1 lecture.txt | awk -F'|' '{print $3}')
+    workdir=/Works/$(ls /Works/ | grep "$name")/lecture
+    test -d $workdir  || mkdir -p $workdir
+    gnome-terminal --working-directory=$workdir --full-screen -e "tmux"
+    trap startVote 2
+    sleep 600
+    startVote
+}
+
+cd $(pwd)
+
+if test -z "$1" ; then
+    randStdin
+else
+    case "$1" in
+        t|to)
+            randLecture
+            ;;
+        g|group)
+            randGroup
+            ;;
+        p|project)
+            randGroupProject
+            cat groupProject.txt
+            ;;
+        s|start)
+            startLecture
+            ;;
+        vote)
+            startVoteClient
+            ;;
+        *)
+            test -f "$1" && randFile $1
+            ;;
+    esac
+fi
+
