@@ -363,6 +363,72 @@ python调试 - pdb模块
                 p a, b 打印a和b的值
 
 -------------------------------------------------------------------------------
+vim操作补充
+    批量缩进    > <
+    自动排版    =
+
+    文件浏览器  F7
+        回车    直接打开
+        t       vim标签
+        gt/gT   vim标签切换
+
+    快速定位
+        ,,f
+        ,,j
+        ,,k
+        ,,w
+
+    注释
+        ,cs     批量注释
+        ,cc     单行注释
+        ,cu     取消注释
+
+    跨终端vim复制(依赖/tmp/kyo.vim文件)
+        "y      复制
+        "p      粘贴
+
+    高亮单词 #
+        再按n/N进行切换定位
+
+    取消高亮    :noh
+
+    命令组合:
+        dw      删除单词
+        d^      删除光标到行首字符位置
+        vip     选取一段代码
+        V10j    选取当前行及向下10行
+        xp      交换两个字符位置
+        di"     删除光标所在双引号包含的内容
+
+    vim命令历史操作界面: ,u
+
+    插入79个-/=作为分隔符
+        ,kl
+        ,kg
+
+    折叠
+        空格    自动折叠
+        zM      折叠所有可折叠内容
+        zR      打开所有折叠内容
+
+    去除window换行: cM
+
+    去除行尾空白字符: ,ws
+
+    打开Python文件自动生成主代码, 将以下代码复制到~/.vimrc.local文件里:
+function! KyoPythonEntry()
+    if getfsize(GetFileName()) != -1
+        return
+    endif
+    call setline(1, ['#!/usr/bin/env python3', '',
+\'def main():', '    pass', '',
+\'if __name__ == "__main__":', '    main()'])
+    return setpos('.', [bufnr('%'), 4, 4])
+endfunction
+
+autocmd FileType python call KyoPythonEntry()
+
+-------------------------------------------------------------------------------
 作业: (while + if + input + print + 变量)
     一个袋子里有3个红球， 3个绿球，6个黄球， 一次从袋子里取6个球，列出所有可能的颜色组合
     公鸡5元一只，母鸡3元一只，小鸡1元3只，现在打算用100元买一百只鸡，列出所有可能的组合
