@@ -4,3 +4,4 @@ tools/markdown-preview/*
 tools/kyo_vim/*
 __pycache__/*
 *.pyc
+oh-my-zsh.tar
