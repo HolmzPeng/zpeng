@@ -53,3 +53,7 @@ def countYearDays(sy, ey):
 
     return days
 
+
+if __name__ == "__main__":
+    print("isleap 2017 = ", isleap(2017))
+
