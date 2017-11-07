@@ -35,7 +35,7 @@ def toStr(inputStr):
 
 
 
-def ToStrTest():
+def toStrTest():
     """
     对输入的一个字符转换大小写(只需要使用三目运算符和函数)
         (考虑输入字符串进行同样转换)
@@ -106,31 +106,40 @@ def countBitTest():
 
 
 def main():
+    #  item = [swapVarTest, bitOpTest, countBitTest, toStrTest]
+    item = [
+            {"title":"交换两个变量的值(至少两种方法)", "call":swapVarTest},
+            {"title":"将输入的正整数二进制第5位置0, 第3位置1, 再输出", "call":bitOpTest},
+            {"title":"统计输入正整数的二进制中有多少个1", "call":countBitTest},
+            {"title":"对输入字符串转换大小写", "call":toStrTest},
+            {"title":"退出", "call":None}
+           ]
+    itemLen = len(item)
+
     while True:
-        print("\033[2J\033[1;1H=======  第二天作业题 =======")
-        #  print("=======  第二天作业题 =======")
-        print("1. 交换两个变量的值(至少两种方法)")
-        print("2. 将输入的正整数二进制第5位置0, 第3位置1, 再输出")
-        print("3. 统计输入正整数的二进制中有多少个1")
-        print("4. 对输入字符串转换大小写")
-        print("5. 退出")
-        num = input("请输入[1 - 5]: ")
+        try:
+            print("\033[2J\033[1;1H=======  第二天作业题 =======")
+            #  print("=======  第二天作业题 =======")
+            #  i = 1
+            #  for s in item:
+                #  print("%d. %s" % (i, s['title']))
+                #  i += 1
 
-        if num == "1":
-            swapVarTest()
-        elif num == "2":
-            bitOpTest()
-        elif num == "3":
-            countBitTest()
-        elif num == "4":
-            ToStrTest()
-        elif num == "5":
-            break
+            for i, s in enumerate(item):
+                print("%d. %s" % (i + 1, s['title']))
 
-        print("--------------------------------------------")
-        print("本题测试完成, 回车继续, q为退出: ", end='')
-        if input() == 'q':
-            break
+            num = int(input("请输入[1 - %d]: " % itemLen))
+            if num == itemLen:
+                break
+
+            item[int(num) - 1]['call']()
+
+            print("--------------------------------------------")
+            print("本题测试完成, 回车继续, q为退出: ", end='')
+            if input() == 'q':
+                break
+        except:
+            pass
 
 
 if __name__ == "__main__":
