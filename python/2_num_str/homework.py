@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+import menu
+
 def isChar(ch):
     """
     判断它是否26个英文字母
@@ -35,7 +37,7 @@ def toStr(inputStr):
 
 
 
-def toStrTest():
+def toStrTest(index, args):
     """
     对输入的一个字符转换大小写(只需要使用三目运算符和函数)
         (考虑输入字符串进行同样转换)
@@ -44,7 +46,7 @@ def toStrTest():
     print(toStr(s))
 
 
-def swapVarTest():
+def swapVarTest(index, args):
     """
     交换两个变量的值(至少两种方法)
     """
@@ -75,7 +77,7 @@ def inputNum(run):
             break
 
 
-def bitOpTest():
+def bitOpTest(index, args):
     """
     将输入的正整数二进制第5位置0, 第3位置1, 再输出
     """
@@ -88,7 +90,7 @@ def bitOpTest():
     inputNum(bitOp)
 
 
-def countBitTest():
+def countBitTest(index, args):
     """
     统计输入正整数的二进制中有多少个1
     """
@@ -106,40 +108,19 @@ def countBitTest():
 
 
 def main():
-    #  item = [swapVarTest, bitOpTest, countBitTest, toStrTest]
-    item = [
-            {"title":"交换两个变量的值(至少两种方法)", "call":swapVarTest},
-            {"title":"将输入的正整数二进制第5位置0, 第3位置1, 再输出", "call":bitOpTest},
-            {"title":"统计输入正整数的二进制中有多少个1", "call":countBitTest},
-            {"title":"对输入字符串转换大小写", "call":toStrTest},
-            {"title":"退出", "call":None}
-           ]
-    itemLen = len(item)
+    def end(index, args):
+        print("--------------------------------------------")
+        print("本题测试完成, 回车继续, q为退出: ", end='')
+        return True if input() == 'q' else False
 
-    while True:
-        try:
-            print("\033[2J\033[1;1H=======  第二天作业题 =======")
-            #  print("=======  第二天作业题 =======")
-            #  i = 1
-            #  for s in item:
-                #  print("%d. %s" % (i, s['title']))
-                #  i += 1
+    menuList = menu.add("交换两个变量的值(至少两种方法)", swapVarTest)
+    menu.add("将输入的正整数二进制第5位置0, 第3位置1, 再输出",
+                bitOpTest, items=menuList)
+    menu.add("统计输入正整数的二进制中有多少个1", countBitTest, items=menuList)
+    menu.add("对输入字符串转换大小写", toStrTest, items=menuList)
+    menu.add("退出", items=menuList)
 
-            for i, s in enumerate(item):
-                print("%d. %s" % (i + 1, s['title']))
-
-            num = int(input("请输入[1 - %d]: " % itemLen))
-            if num == itemLen:
-                break
-
-            item[int(num) - 1]['call']()
-
-            print("--------------------------------------------")
-            print("本题测试完成, 回车继续, q为退出: ", end='')
-            if input() == 'q':
-                break
-        except:
-            pass
+    menu.run(menuList, "=======  第二天作业题 =======", end)
 
 
 if __name__ == "__main__":
