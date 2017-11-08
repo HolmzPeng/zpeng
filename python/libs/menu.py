@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+import sys
+
 def add(title, call=None, args=None, items=None):
     """
     组合菜单项
@@ -44,7 +46,8 @@ def run(items, title=None, fixed=None):
                     or (callable(fixed) and fixed(num, items[num]['args']))):
                 break
         except:
-            pass
+            print("\033[1;31m错误: ", sys.exc_info()[1])
+            input("\033[0m回车继续....")
 
 
 def main():
