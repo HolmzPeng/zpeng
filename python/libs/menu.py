@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+import sys
+
 def add(title, call=None, args=None, items=None):
     """
     组合菜单项
@@ -44,7 +46,8 @@ def run(items, title=None, fixed=None):
                     or (callable(fixed) and fixed(num, items[num]['args']))):
                 break
         except:
-            pass
+            print("\033[1;31m错误: ", sys.exc_info()[1])
+            input("\033[0m回车继续....")
 
 
 def main():
@@ -56,12 +59,13 @@ def main():
         print("本题测试完成, 回车继续, q为退出: ", end='')
         return True if input() == 'q' else False
 
-    menu = []
+    #  menu = []
+    #  add("1111111", func, "tom", menu)
 
-    add(menu, "1111111", func, "tom")
-    add(menu, "2222222", func, "mary")
-    add(menu, "3333333", func, "kyo")
-    add(menu, "exit")
+    menu = add("1111111", func, "tom")
+    add("2222222", func, "mary", menu)
+    add("3333333", func, "kyo", menu)
+    add("exit", items=menu)
 
     run(menu, fixed=end)
 
