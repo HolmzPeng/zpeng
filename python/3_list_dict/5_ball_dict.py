@@ -140,12 +140,10 @@ def moveObstacles(win, obs):
         randObstacle(win, obs)
 
 
-def ballRun():
+def ballRun(ballPro):
     """
     弹球程序动画函数
     """
-    global ballPro
-
     while True:
         if not ballPro['pause']:
             showBg(**ballPro['win'])
@@ -165,7 +163,7 @@ def ballStart(ballPro):
     """
     弹球程序开始启动
     """
-    gt.run(ballRun)
+    gt.run(ballRun, args=(ballPro, ))
 
     while True:
         ch = gt.get()
