@@ -33,6 +33,20 @@ def addBall(win, num=1, balls=None):
 
     return balls
 
+def randObstacle(win, obs=None):
+    """
+    随机一个障碍物
+    """
+    if obs is None:
+        obs = {}
+    obs['r'] = randint(2, win['height'] - 1)
+    obs['c'] = randint(2, win['width'] - 1)
+    obs['color'] = randint(30, 37)
+    obs['ch'] = '#'
+    obs['count'] = 0
+    obs['total'] = randint(10, 50)
+
+    return obs
 
 def addObstacles(win, num=1, obstacles=None):
     """
@@ -42,15 +56,7 @@ def addObstacles(win, num=1, obstacles=None):
         obstacles = []
 
     for i in range(num):
-        obs = {}
-        obs['r'] = randint(2, win['height'] - 1)
-        obs['c'] = randint(2, win['width'] - 1)
-        obs['color'] = randint(30, 37)
-        obs['ch'] = '#'
-        obs['count'] = 0
-        obs['total'] = randint(10, 50)
-
-        obstacles.append(obs)
+        obstacles.append(randObstacle(win))
 
     return obstacles
 
@@ -72,6 +78,7 @@ def ballInit(w=30, h=10, ballNum=1, obsNum=1):
     print("\033[?25l\033[2J\033[1;1H", end="", flush=True)
 
     ballPro = {}
+    ballPro['pause'] = False
     ballPro['win'] = {'width': w, 'height': h}
     ballPro['balls'] = addBall(ballPro['win'], ballNum)
     ballPro['obstacles'] = addObstacles(ballPro['win'], obsNum)
@@ -102,7 +109,7 @@ def showObj(objs):
                % (o['r'], o['c'], o['color'], o['ch']), end="", flush=True)
 
 
-def moveBall(win, ball):
+def moveBall(win, ball, obstacles):
     """
     移动弹球
     """
@@ -114,8 +121,23 @@ def moveBall(win, ball):
             or ball['c'] + ball['c_inc'] > win['width']):
         ball['c_inc'] = -ball['c_inc']
 
+    for o in obstacles:
+        if ball['r'] == o['r'] and ball['c'] == o['c']:
+            ball['r_inc'] = -ball['r_inc']
+            ball['c_inc'] = -ball['c_inc']
+            #  ballExit(win)
+
     ball['r'] += ball['r_inc']
     ball['c'] += ball['c_inc']
+
+
+def moveObstacles(win, obs):
+    """
+    障碍物随机
+    """
+    obs['count'] += 1
+    if obs['count'] == obs['total']:
+        randObstacle(win, obs)
 
 
 def ballRun():
@@ -125,12 +147,16 @@ def ballRun():
     global ballPro
 
     while True:
-        showBg(**ballPro['win'])
-        showObj(ballPro['obstacles'])
-        showObj(ballPro['balls'])
+        if not ballPro['pause']:
+            showBg(**ballPro['win'])
+            showObj(ballPro['obstacles'])
+            showObj(ballPro['balls'])
 
-        for ball in ballPro['balls']:
-            moveBall(ballPro['win'], ball)
+            for obs in ballPro['obstacles']:
+                moveObstacles(ballPro['win'], obs)
+
+            for ball in ballPro['balls']:
+                moveBall(ballPro['win'], ball, ballPro['obstacles'])
 
         gt.sleep(0.1)
 
@@ -145,6 +171,27 @@ def ballStart(ballPro):
         ch = gt.get()
         if ch == 'q':
             break
+        elif ch == chr(10):
+            ballPro['pause'] = not ballPro['pause']
+        elif ch == ' ':
+            for b in ballPro['balls']:
+                b['color'] = randint(30, 37)
+        elif ch == 'w':
+            for b in ballPro['balls']:
+                b['r_inc'] = -1
+        elif ch == 's':
+            for b in ballPro['balls']:
+                b['r_inc'] = 1
+        elif ch == 'a':
+            for b in ballPro['balls']:
+                b['c_inc'] = -1
+        elif ch == 'd':
+            for b in ballPro['balls']:
+                b['c_inc'] = 1
+        elif ch == 'g':
+            for b in ballPro['balls']:
+                b['r_inc'] = [-1, 1][randint(0, 1)]
+                b['c_inc'] = [-1, 1][randint(0, 1)]
 
     ballExit(ballPro['win'])
 
