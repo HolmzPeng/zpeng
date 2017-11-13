@@ -1,0 +1,368 @@
+Pygame概述及安装
+    Pygame是利用C实现的SDL库写的Python游戏库
+
+    Pygame官网: www.pygame.org
+
+    安装Pygame
+        pip3 install pygame
+
+        测试安装: ipython3
+            输入以下代码测试是否打印版本号
+                import pygame
+                pygame.ver
+
+    pygame常用的模块
+        pygame.display      访问显示设备
+        pygame.camera       访问摄像头
+        pygame.draw         2D绘图
+        pygame.image        加载和存储图片
+        pygame.surface      管理图像和屏幕
+        pygame.transform    缩放、旋转和移动等图像
+        pygame.event        管理事件
+        pygame.joystick     描述游戏手柄
+        pygame.mouse        描述鼠标
+        pygame.key          描述键盘
+        pygame.font         使用字体
+        pygame.music        播放音频
+        pygame.cursors      加载光标
+        pygame.time         管理时间和帧信息
+        pygame.rect         描述矩形区域（x, y, w, h）
+        pygame.color        描述颜色(r, g, b)
+        pygame.locals       描述pygame所有常量
+
+        判断模块是否存在
+            if pygame.draw is None:
+                print("pygame.draw模块不存在")
+
+    pygame基本使用
+        #导入pygame模块
+        import pygame
+
+        #pygame模块资源初始化, 不初始化会导致很多资源要单独初始化
+        pygame.init()
+
+        #创建窗口
+        pygame.display.set_mode((600, 480))
+
+        #等待事件
+        while True:
+            e = pygame.event.wait()
+            if e.type == pygame.QUIT:
+                break
+
+        #pygame资源销毁
+        pygame.quit()
+
+-------------------------------------------------------------------------------
+Pygame窗口
+    pygame不能创建多窗口，只能创建一个窗口，因为依赖的是SDL1.2版本
+
+    创建窗口, 返回窗口对应的Surface对象
+        screen = pygame.display.set_mode((宽, 高), 标志位, 位深)
+            标志位取值(默认为0, 没有以下特性):
+                创建全屏窗口
+                    pygame.FULLSCREEN
+
+                创建一个硬件加速的窗口，必须和FULLSCREEN同时使用
+                    pygame.HWSURFACE
+
+                创建一个OPENGL渲染的窗口(3D)
+                    pygame.OPENGL
+
+                创建一个可以改变大小的窗口
+                    pygame.RESIZABLE
+
+                创建一个双缓冲容器(HWSURFACE和OPENGL同时使用)
+                    pygame.DOUBLEBUF
+
+                创建一个没有边框的窗口
+                    pygame.NOFRAME
+
+    返回所有全屏模式的列表(支持的标准分辨率)
+        pygame.display.list_modes()
+
+    窗口标题控制
+        设置标题信息
+            pygame.display.set_caption(标题信息, 标题图标)
+                标题图标为Surface对象，默认为None，可不传
+
+        获取标题信息
+            pygame.display.get_caption()
+
+        设置标题图标
+            pygame.display.set_icon(Surface)
+
+    获取窗口Surface对象
+        pygame.display.get_surface()
+
+    刷新窗口，将Surface对象的改变影响到屏幕上
+        pygame.display.update()              整个窗口刷新
+        pygame.display.update((x, y, w, h))  局部刷新
+
+    改变全屏窗口
+        pygame.display.toggle_fullscreen()
+            前提必须在set_mode设置了pygame.FULLSCREEN标志
+
+-------------------------------------------------------------------------------
+Pygame事件
+    事件类型对应返回事件对象成员
+        QUIT             用户按下关闭按钮   none
+        ACTIVEEVENT      窗口被激活或隐藏   gain, state
+        KEYDOWN          键盘被按下         unicode, key, mod
+        KEYUP            键盘被放开         key, mod
+        MOUSEMOTION      鼠标移动           pos, rel, buttons
+        MOUSEBUTTONUP    鼠标按下           pos, button
+        MOUSEBUTTONDOWN  鼠标放开           pos, button
+        JOYAXISMOTION    手柄板移动         joy, axis, value
+        JOYBALLMOTION    手柄球移动         joy, ball, rel
+        JOYHATMOTION     手柄移动           joy, hat, value
+        JOYBUTTONUP      手柄按下           joy, button
+        JOYBUTTONDOWN    手柄放开           joy, button
+        VIDEORESIZE      窗口缩放           size, w, h
+        USEREVENT        用户自定义事件     code
+
+    获取事件
+        pygame.event.poll()
+            到事件队列中获取事件，如果没有事件返回pygame.NOEVENT
+            马上返回结果，不阻塞，需要延时，否则CPU占有率很大
+
+    等待事件
+        pygame.event.wait()
+            阻塞等待事件
+
+    清除事件队列
+        pygame.event.clear()
+
+    禁用事件
+        禁用所有事件
+            pygame.event.set_blocked()
+        禁用鼠标按下事件
+            pygame.event.set_blocked(pygame.MOUSEBUTTONDOWN)
+
+        禁用鼠标按下事件和弹起事件
+            l = [pygame.MOUSEBUTTONDOWN, pygame.MOUSEBUTTONUP]
+            pygame.event.set_blocked(l)
+
+    开启事件(与禁用事件函数用法对应)
+        pygame.event.set_allowed()
+
+    自定义事件
+        创建事件
+            pygame.event.Event(事件自定义, 事件产生传递的参数)
+
+            例：
+                mtype = USEREVENT + 1
+                args = {'message': "hello new Event"}
+                my_event = pygame.event.Event(mtype, args)
+
+        触发事件
+            pygame.event.post(自定义事件对象)
+
+            例:
+                pygame.event.post(myevent)
+
+-------------------------------------------------------------------------------
+Pygame绘图
+    pygame.draw模块针对Surface对象绘制图形
+
+    绘制矩形
+        pygame.draw.rect(目标, 颜色, 区域, 宽度=0)
+            宽度默认为0，即绘制实心图形，如果设置则为空心图形
+
+    绘制多边形
+        pygame.draw.polygon(目标, 颜色，点坐标列表, 宽度=0)
+
+    绘制图
+        pygame.draw.circle(目标, 颜色，圆点坐标, 半径, 宽度=0)
+
+    绘制椭圆
+        pygame.draw.ellipse(目标，颜色，区域, 宽度=0)
+
+    绘制线
+        pygame.draw.line(目标, 颜色, 起始点，结束点, 宽度=1)
+            连接两个点(横线，竖线，斜线), 宽度为线的宽度
+
+        pygame.draw.lines(目标，颜色，是否连接起点和结点, 点坐标列表, 宽度=1)
+            连接多个点，第三个参数控制是否最后连接起点和结点
+
+        pygame.draw.aaline(目标，颜色，起点, 结点)
+            连接两个点，斜线处理的平滑些
+
+        pygame.draw.aalines(目标，颜色，是否连接点, 点坐标列表)
+            连接多个点，斜线处理的平滑些
+
+    绘制弧线
+        pygame.draw.arc(目标, 颜色，区域, 起始角度，结束角度, 宽度=1)
+            宽度不能超过半径，宽度如果为半径绘制出扇区
+            起始角度0  结束角度2*pi为整圆
+            起始角度0  结束角度pi/2为4/1整圆
+            起始角度0  结束角度pi为2/1整圆
+
+-------------------------------------------------------------------------------
+Pygame图像
+    pygame使用Surface对象表示图像数据, 创建窗口和加载图片都是返回Surface对象
+
+    图片加载
+        pygame.image.load(图片路径)
+
+    保存图片
+        pygame.image.save(Surface对象，保存图片路径)
+
+    创建Surface对象
+        Surface((宽, 高), 标志位=0, 位深=0, 掩码=None)
+        Surface((宽, 高), 标志位=0, 另一个Surface对象)
+
+    将Surface对象数据赋值到另一个Surface对象上
+        目标对象.blit(源对象, 目标位置, 源对象区域)
+            源对象区域默认为全图
+
+    转换Surface对象的像素格式, 返回新的Surface对象
+        目标对象.convert()
+        目标对象.convert_alpha()
+            带alpha通道的转换
+
+    填充Surface对象数据
+        目标对象.fill(颜色, 区域=None)
+            区域如果为None代表整个Surface全填充
+
+    复制Surface对象
+        目标对象.copy()
+
+    设置Surface过滤像素点
+        目标对象.set_colorkey(要过滤的颜色)
+
+    设置Surface透明度
+        目标对象.set_alpha(0-255)
+            0为透明， 255为不透明
+
+        目标对象.get_alpha()
+
+    锁定与解锁Surface对象(防止同时被修改)
+        锁定: 目标对象.lock()
+        解锁: 目标对象.unlock()
+        获取锁定状态: 目标对象.get_locked()
+
+    设置Surface对象像素点
+        获取像素点
+            目标对象.get_at((x, y))
+
+        设置像素点
+            目标对象.set_at((x, y), 颜色)
+
+    获取Surface大小
+        目标对象.get_size()
+        目标对象.get_width()
+        目标对象.get_height()
+
+    剪裁Surface
+        目标对象.set_clip(x, y, w, h)
+            设定一个区域像素可改变
+
+        目标对象.get_clip()
+            获取剪裁的区域
+
+    子表面
+        目标对象.subsurface(区域)
+            将Surface对象划分多个区域，方便各自操作
+            比如说人物多张动作合并一张图，加载后再使用子表面划分多个操作Surface对象
+
+    图像缩放
+        pygame.transform.scale(目标, 缩放宽高)
+            返回缩放后的Surface对象
+
+    图像旋转
+        pygame.transform.rotate(目标, 旋转度数)
+            返回旋转后的Surface对象
+
+-------------------------------------------------------------------------------
+Pygame字体使用流程
+    创建渲染字体对象
+        mfont = pygame.font.SysFont("字体名称", 字体大小, 是否加粗, 是否斜体)
+            返回指定系统字体对象
+
+        返回系统所有字体名称的列表
+            pygame.font.get_fonts()
+
+        返回默认字体名称
+            pygame.font.get_default_font()
+
+        创建自定义字体对象
+            mfont = pygame.font.Font("字体文件路径", 字体大小)
+
+    将字符串文本使用渲染字体对象转换成Surface对象
+        txt_surface = mfont.render(字符串文本, 是否抗锯齿, 前景颜色, 背景颜色)
+            返回Surface对象， 如果不要背景颜色可省略
+            mfont是pygame.font.Font对象, 是创建字体返回的对象名
+
+    将Surface对象渲染到屏幕Surface对象
+        screen.blit(txt_surface, (0, 0))
+
+    刷新屏幕设备
+        pygame.display.update()
+
+    其它常用字体对象操作方法
+        获取字体大小
+            mfont.size()
+            mfont.height()
+
+        加粗选项
+            mfont.get_bold()
+            mfont.set_bold(True/False)
+
+        斜体选项
+            mfont.get_italic()
+            mfont.set_italic(True/False)
+
+        下划线选项
+            mfont.get_underline()
+            mfont.set_underline(True/False)
+
+-------------------------------------------------------------------------------
+Pygame声音
+    加载音效
+        mixer = pygame.mixer.Sound("音效文件路径")
+
+    播放音效
+        mixer.play(播放次数, 播放最大时长)
+
+    停止播放音效
+        mixer.stop()
+
+    调节音效音量
+        mixer.set_volume(0.0 - 1.0之间的浮点数)
+
+        获取当前音效音量
+            mixer.get_volume()
+
+    加载音频
+        pygame.mixer.music.load(音频文件路径)
+
+    播放音频
+        pygame.mixer.music.play(循环次数, 播放起始位置)
+
+    停止播放音频
+        pygame.mixer.music.stop()
+
+    暂停/继续播放音频
+        pygame.mixer.music.pause()
+        pygame.mixer.music.unpause()
+
+    重头开始播放
+        pygame.mixer.music.rewind()
+
+    调节音频音量
+        pygame.mixer.music.set_volume(0.0 - 1.0之间的浮点数)
+
+        获取当前音效音量
+            pygame.mixer.music.get_volume()
+
+    调节播放进度
+        pygame.mixer.music.get_pos()
+            返回毫秒级进度
+        pygame.mixer.music.set_pos(位置)
+            不同文件，位置表示不一样，mp3以秒为单位, 相对位置定位
+
+    设置播放队列
+        pygame.mixer.music.queue('下一个播放文件路径')
+
+-------------------------------------------------------------------------------

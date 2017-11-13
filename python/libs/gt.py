@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import sys, os
 import time
 import threading
@@ -25,7 +27,16 @@ def sleep(sec=1):
     time.sleep(sec)
 
 def run(f, interval=0.01, args=None, kwargs=None):
-    t = threading.Timer(interval, f, args, kwargs)
+    t = threading.Timer(interval, f, args=args, kwargs=kwargs)
     t.start()
     return t
+
+if __name__ == '__main__':
+    def test(data):
+        print("test data: ", data)
+
+    run(test, args=("hello", ))
+
+    input()
+
 
