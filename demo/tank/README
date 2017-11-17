@@ -1,0 +1,30 @@
+Modified by tiancai_pgy 2004-10-11
+e-mail: pgy5@163.com
+
+how to use:
+1.  make
+2. run ./tank
+
+help:
+Player1's Key:
+w-----------UP
+a-----------LEFT
+s-----------DOWN
+d-----------RIGHT
+J-----------FIRE
+
+Player2's Key:
+KEY UP------UP
+KEY LEFT---LEFT
+KEY RIGHT--RIGHT
+KEY DOWN--DOWN
+Del----------FIRE
+
+
+THIS SOFTWARE IS UNDER  GPL ("GNU GENERAL PUBLIC LICENSE"),
+MORE INFOMATION PLEASE READ FILE COPYING.
+enjoy :-)
+本来是一个文件,但不利于二次开发,我把它分成了几个.cpp文件,请原作者不要介意.
+祝大家玩的愉快,谢谢!!
+(启动时有BUG,请多试几次.是初始化声音的函数Mix_OpenAudio (22050, AUDIO_S16, 1, 256)的错误,
+如果有高手知道如何解决,请一定要给我发E-MAIL!!)

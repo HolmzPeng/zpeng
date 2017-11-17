@@ -1,0 +1,102 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+ACT_BG	box.h	21;"	d	language:C++
+ACT_H	box.h	20;"	d	language:C++
+ACT_W	box.h	19;"	d	language:C++
+BG	box.h	36;"	d	language:C++
+BOX	box.h	/^}BOX;$/;"	t	language:C++	typeref:struct:__anon1
+BOX_SIZE	box.h	14;"	d	language:C++
+BPP	box.h	12;"	d	language:C++
+CC	Makefile	/^CC = gcc$/;"	m	language:Make
+CFLAGS	Makefile	/^CFLAGS = -I.$/;"	m	language:Make
+DATA_H	box.h	27;"	d	language:C++
+DATA_W	box.h	26;"	d	language:C++
+ERR	box.h	41;"	d	language:C++
+FALSE	box.h	39;"	d	language:C++
+GameEngine	box.h	/^}GameEngine;$/;"	t	language:C++	typeref:struct:__anon3
+HEIGHT	box.h	11;"	d	language:C++
+KEYSTATE	box.h	/^}KEYSTATE;$/;"	t	language:C++	typeref:struct:__anon2
+LDFLAGS	Makefile	/^LDFLAGS = -lSDL -lSDL_image -lSDL_ttf #-lSDL_mixer$/;"	m	language:Make
+LEVEL	box.h	34;"	d	language:C++
+NEXT_H	box.h	24;"	d	language:C++
+NEXT_W	box.h	23;"	d	language:C++
+PIXEL	box.h	32;"	d	language:C++
+START_X	box.h	16;"	d	language:C++
+START_Y	box.h	17;"	d	language:C++
+SUBLIBS	Makefile	/^SUBLIBS = main.o init.o game.o res.o gui.o #key.o$/;"	m	language:Make
+TARGET	Makefile	/^TARGET := box$/;"	m	language:Make
+TRUE	box.h	38;"	d	language:C++
+VIRT_H	box.h	30;"	d	language:C++
+VIRT_W	box.h	29;"	d	language:C++
+WIDTH	box.h	10;"	d	language:C++
+__BOX_H__	box.h	2;"	d	language:C++
+__RES_H__	res.h	2;"	d	language:C++
+box_buf	box.h	/^    int box_buf[VIRT_H][VIRT_W];$/;"	m	language:C++	struct:__anon3
+box_clear	game.c	/^void box_clear(GameEngine *ge)$/;"	f	language:C	signature:(GameEngine *ge)
+box_down	game.c	/^int box_down(GameEngine *ge)$/;"	f	language:C	signature:(GameEngine *ge)
+box_exit	init.c	/^int box_exit(GameEngine *ge)$/;"	f	language:C	signature:(GameEngine *ge)
+box_init	init.c	/^int box_init(GameEngine *ge)$/;"	f	language:C	signature:(GameEngine *ge)
+box_left	game.c	/^int box_left(GameEngine *ge)$/;"	f	language:C	signature:(GameEngine *ge)
+box_pixel	game.c	/^static int box_pixel(BOX *handle, int x, int y)$/;"	f	language:C	file:	signature:(BOX *handle, int x, int y)
+box_right	game.c	/^int box_right(GameEngine *ge)$/;"	f	language:C	signature:(GameEngine *ge)
+box_rotate	game.c	/^int box_rotate(GameEngine *ge)$/;"	f	language:C	signature:(GameEngine *ge)
+box_show	gui.c	/^int box_show(GameEngine *ge)$/;"	f	language:C	signature:(GameEngine *ge)
+box_show_bg	gui.c	/^void box_show_bg(GameEngine *ge)$/;"	f	language:C	signature:(GameEngine *ge)
+box_show_data	gui.c	/^void box_show_data(GameEngine *ge)$/;"	f	language:C	signature:(GameEngine *ge)
+box_show_next	gui.c	/^void box_show_next(GameEngine *ge)$/;"	f	language:C	signature:(GameEngine *ge)
+color	box.h	/^    int color;$/;"	m	language:C++	struct:__anon1
+curr_box	box.h	/^    BOX curr_box;$/;"	m	language:C++	struct:__anon3
+dir	box.h	/^    int dir;$/;"	m	language:C++	struct:__anon1
+down	box.h	/^    unsigned int down:1;$/;"	m	language:C++	struct:__anon2
+draw_box	gui.c	/^static void draw_box(SDL_Surface *dst, int x, int y, int w, int h, int color)$/;"	f	language:C	file:	signature:(SDL_Surface *dst, int x, int y, int w, int h, int color)
+draw_box_buf	gui.c	/^static void draw_box_buf(GameEngine *ge)$/;"	f	language:C	file:	signature:(GameEngine *ge)
+draw_hline	gui.c	/^static void draw_hline(SDL_Surface *dst, int x, int y, int len, int color)$/;"	f	language:C	file:	signature:(SDL_Surface *dst, int x, int y, int len, int color)
+draw_pixel	gui.c	/^static void draw_pixel(SDL_Surface *dst, int x, int y, int size, int color)$/;"	f	language:C	file:	signature:(SDL_Surface *dst, int x, int y, int size, int color)
+draw_rect	gui.c	/^static void draw_rect(SDL_Surface *dst, int x, int y, int w, int h, int color)$/;"	f	language:C	file:	signature:(SDL_Surface *dst, int x, int y, int w, int h, int color)
+draw_square	gui.c	/^static void draw_square(SDL_Surface *dst, int x, int y, BOX *box)$/;"	f	language:C	file:	signature:(SDL_Surface *dst, int x, int y, BOX *box)
+draw_txt	gui.c	/^static void draw_txt(SDL_Surface *dst, TTF_Font *pFont, int x, int y, const char *content, int color)$/;"	f	language:C	file:	signature:(SDL_Surface *dst, TTF_Font *pFont, int x, int y, const char *content, int color)
+draw_vline	gui.c	/^static void draw_vline(SDL_Surface *dst, int x, int y, int len, int color)$/;"	f	language:C	file:	signature:(SDL_Surface *dst, int x, int y, int len, int color)
+event	box.h	/^    SDL_Event event;$/;"	m	language:C++	struct:__anon3
+event_filter	key.c	/^int event_filter(const SDL_Event *event)$/;"	f	language:C	signature:(const SDL_Event *event)
+fullscreen	box.h	/^    int fullscreen;$/;"	m	language:C++	struct:__anon3
+game_over	box.h	/^    int game_over;$/;"	m	language:C++	struct:__anon3
+game_start	game.c	/^void game_start(GameEngine *ge)$/;"	f	language:C	signature:(GameEngine *ge)
+ge	game.c	/^    GameEngine *ge;$/;"	m	language:C	struct:key_t	file:
+key	game.c	/^    KEYSTATE key;$/;"	m	language:C	struct:key_t	file:
+key_handle	game.c	/^int key_handle(void *data)$/;"	f	language:C	signature:(void *data)
+key_state_handle	game.c	/^int key_state_handle(void *data)$/;"	f	language:C	signature:(void *data)
+key_t	game.c	/^struct key_t {$/;"	s	language:C	file:
+left	box.h	/^    unsigned int left:1;$/;"	m	language:C++	struct:__anon2
+level	box.h	/^    int level;$/;"	m	language:C++	struct:__anon3
+list_map	game.c	/^void list_map(GameEngine *ge)$/;"	f	language:C	signature:(GameEngine *ge)
+main	main.c	/^int main(void)$/;"	f	language:C	signature:(void)
+move_box	game.c	/^static void move_box(BOX *handle, int x, int y)$/;"	f	language:C	file:	signature:(BOX *handle, int x, int y)
+new_box	game.c	/^static void new_box(BOX *handle)$/;"	f	language:C	file:	signature:(BOX *handle)
+next_box	box.h	/^    BOX next_box;$/;"	m	language:C++	struct:__anon3
+pFont	box.h	/^    TTF_Font *pFont;$/;"	m	language:C++	struct:__anon3
+pause	box.h	/^    int pause;$/;"	m	language:C++	struct:__anon3
+pause	box.h	/^    unsigned int pause:1;$/;"	m	language:C++	struct:__anon2
+play_game	game.c	/^int play_game(GameEngine *ge)$/;"	f	language:C	signature:(GameEngine *ge)
+put_box	game.c	/^int put_box(GameEngine *ge)$/;"	f	language:C	signature:(GameEngine *ge)
+quit	box.h	/^    unsigned int quit:1;$/;"	m	language:C++	struct:__anon2
+remove_box	game.c	/^void remove_box(GameEngine *ge)$/;"	f	language:C	signature:(GameEngine *ge)
+right	box.h	/^    unsigned int right:1;$/;"	m	language:C++	struct:__anon2
+rotate	box.h	/^    unsigned int rotate:1;$/;"	m	language:C++	struct:__anon2
+score	box.h	/^    int score;$/;"	m	language:C++	struct:__anon3
+screen	box.h	/^    SDL_Surface *screen;$/;"	m	language:C++	struct:__anon3
+sound	box.h	/^    int sound;$/;"	m	language:C++	struct:__anon3
+square	res.c	/^const char square[7][4][4][4] = {$/;"	v	language:C
+th	box.h	/^    SDL_Thread *th;$/;"	m	language:C++	struct:__anon3
+type	box.h	/^    int type;$/;"	m	language:C++	struct:__anon1
+video_close	init.c	/^static void video_close(void)$/;"	f	language:C	file:	signature:(void)
+video_init	init.c	/^static int video_init(GameEngine *ge)$/;"	f	language:C	file:	signature:(GameEngine *ge)
+video_reset	init.c	/^static void video_reset(GameEngine *ge)$/;"	f	language:C	file:	signature:(GameEngine *ge)
+video_set	init.c	/^static int video_set(GameEngine *ge)$/;"	f	language:C	file:	signature:(GameEngine *ge)
+x	box.h	/^    int x;$/;"	m	language:C++	struct:__anon1
+x	box.h	/^    int x;$/;"	m	language:C++	struct:__anon3
+y	box.h	/^    int y;$/;"	m	language:C++	struct:__anon1
+y	box.h	/^    int y;$/;"	m	language:C++	struct:__anon3

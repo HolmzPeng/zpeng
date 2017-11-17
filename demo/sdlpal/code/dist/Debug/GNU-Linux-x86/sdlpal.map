@@ -1,0 +1,2380 @@
+Archive member included because of file (symbol)
+
+/usr/lib/libc_nonshared.a(elf-init.oS)
+                              /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o (__libc_csu_fini)
+
+Allocating common symbols
+Common symbol       size              file
+
+PAL_optarg          0x4               build/Debug/GNU-Linux-x86/getopt.o
+SLOT8_2             0x4               build/Debug/GNU-Linux-x86/adplug/fmopl.o
+SLOT7_1             0x4               build/Debug/GNU-Linux-x86/adplug/fmopl.o
+vib_table           0x4               build/Debug/GNU-Linux-x86/adplug/fmopl.o
+PAL_optopt          0x4               build/Debug/GNU-Linux-x86/getopt.o
+g_Battle            0x818             build/Debug/GNU-Linux-x86/battle.o
+PAL_optreset        0x4               build/Debug/GNU-Linux-x86/getopt.o
+g_InputState        0xc               build/Debug/GNU-Linux-x86/input.o
+SLOT7_2             0x4               build/Debug/GNU-Linux-x86/adplug/fmopl.o
+ams_table           0x4               build/Debug/GNU-Linux-x86/adplug/fmopl.o
+SLOT8_1             0x4               build/Debug/GNU-Linux-x86/adplug/fmopl.o
+
+Discarded input sections
+
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crti.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/crtbegin.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/rixplay.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/rixplay.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/rixplay.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/rixplay.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/rixplay.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/rixplay.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/rixplay.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/rixplay.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/rixplay.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/rixplay.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/rixplay.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/rixplay.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/text.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/font.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/player.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/player.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/player.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/player.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/player.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/player.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/player.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/player.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/player.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/player.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/player.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/player.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/player.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/player.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/player.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/player.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/player.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/player.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/player.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/player.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/player.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/player.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/player.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/player.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/player.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/player.o
+ .text._ZN7CPlayer8gettitleEv
+                0x0000000000000000       0x20 build/Debug/GNU-Linux-x86/adplug/player.o
+ .text._ZN7CPlayer9getauthorEv
+                0x0000000000000000       0x20 build/Debug/GNU-Linux-x86/adplug/player.o
+ .text._ZN7CPlayer7getdescEv
+                0x0000000000000000       0x20 build/Debug/GNU-Linux-x86/adplug/player.o
+ .text._ZN7CPlayer11getpatternsEv
+                0x0000000000000000        0xa build/Debug/GNU-Linux-x86/adplug/player.o
+ .text._ZN7CPlayer10getpatternEv
+                0x0000000000000000        0xa build/Debug/GNU-Linux-x86/adplug/player.o
+ .text._ZN7CPlayer9getordersEv
+                0x0000000000000000        0xa build/Debug/GNU-Linux-x86/adplug/player.o
+ .text._ZN7CPlayer8getorderEv
+                0x0000000000000000        0xa build/Debug/GNU-Linux-x86/adplug/player.o
+ .text._ZN7CPlayer6getrowEv
+                0x0000000000000000        0xa build/Debug/GNU-Linux-x86/adplug/player.o
+ .text._ZN7CPlayer8getspeedEv
+                0x0000000000000000        0xa build/Debug/GNU-Linux-x86/adplug/player.o
+ .text._ZN7CPlayer14getinstrumentsEv
+                0x0000000000000000        0xa build/Debug/GNU-Linux-x86/adplug/player.o
+ .text._ZN7CPlayer13getinstrumentEj
+                0x0000000000000000       0x20 build/Debug/GNU-Linux-x86/adplug/player.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/adplug/player.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/itemmenu.o
+ .group         0x0000000000000000        0xc build/Debug/GNU-Linux-x86/adplug/binio.o
+ .group         0x0000000000000000        0xc build/Debug/GNU-Linux-x86/adplug/binio.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/binio.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/binio.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/binio.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/binio.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/binio.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/binio.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/binio.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/adplug/binio.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/scene.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/palcommon.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/script.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/emuopl.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/emuopl.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/emuopl.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/emuopl.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/emuopl.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/emuopl.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/emuopl.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/emuopl.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/emuopl.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/emuopl.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/emuopl.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/emuopl.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/emuopl.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/emuopl.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/emuopl.o
+ .text._ZN4CoplD1Ev
+                0x0000000000000000       0x25 build/Debug/GNU-Linux-x86/adplug/emuopl.o
+ .text._ZN4CoplD0Ev
+                0x0000000000000000       0x25 build/Debug/GNU-Linux-x86/adplug/emuopl.o
+ .text._ZN4Copl5writeEii
+                0x0000000000000000        0x5 build/Debug/GNU-Linux-x86/adplug/emuopl.o
+ .text._ZN4Copl7setchipEi
+                0x0000000000000000       0x14 build/Debug/GNU-Linux-x86/adplug/emuopl.o
+ .text._ZN4Copl7getchipEv
+                0x0000000000000000        0xb build/Debug/GNU-Linux-x86/adplug/emuopl.o
+ .text._ZN4Copl4initEv
+                0x0000000000000000        0x5 build/Debug/GNU-Linux-x86/adplug/emuopl.o
+ .text._ZN4Copl6updateEPsi
+                0x0000000000000000        0x5 build/Debug/GNU-Linux-x86/adplug/emuopl.o
+ .rodata._ZTV4Copl
+                0x0000000000000000       0x24 build/Debug/GNU-Linux-x86/adplug/emuopl.o
+ .rodata._ZTS4Copl
+                0x0000000000000000        0x6 build/Debug/GNU-Linux-x86/adplug/emuopl.o
+ .rodata._ZTI4Copl
+                0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/emuopl.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/adplug/emuopl.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/util.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/play.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/getopt.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/input.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/uibattle.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/game.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/magicmenu.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/map.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/ending.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/adplug/fmopl.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/uigame.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/rngplay.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/ui.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/fprovide.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/fprovide.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/fprovide.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/fprovide.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/fprovide.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/fprovide.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/fprovide.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/fprovide.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/fprovide.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/fprovide.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/fprovide.o
+ .text._ZN13CFileProviderD2Ev
+                0x0000000000000000       0x25 build/Debug/GNU-Linux-x86/adplug/fprovide.o
+ .text._ZN13CFileProviderD1Ev
+                0x0000000000000000       0x25 build/Debug/GNU-Linux-x86/adplug/fprovide.o
+ .text._ZN13CFileProviderD0Ev
+                0x0000000000000000       0x25 build/Debug/GNU-Linux-x86/adplug/fprovide.o
+ .rodata._ZTV13CFileProvider
+                0x0000000000000000       0x18 build/Debug/GNU-Linux-x86/adplug/fprovide.o
+ .rodata._ZTS13CFileProvider
+                0x0000000000000000       0x10 build/Debug/GNU-Linux-x86/adplug/fprovide.o
+ .rodata._ZTI13CFileProvider
+                0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/fprovide.o
+ .text._ZN20CProvider_FilesystemD1Ev
+                0x0000000000000000       0x30 build/Debug/GNU-Linux-x86/adplug/fprovide.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/adplug/fprovide.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/global.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/main.o
+ .group         0x0000000000000000       0x20 build/Debug/GNU-Linux-x86/adplug/binfile.o
+ .group         0x0000000000000000       0x14 build/Debug/GNU-Linux-x86/adplug/binfile.o
+ .group         0x0000000000000000       0x14 build/Debug/GNU-Linux-x86/adplug/binfile.o
+ .group         0x0000000000000000        0xc build/Debug/GNU-Linux-x86/adplug/binfile.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/binfile.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/binfile.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/binfile.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/binfile.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/binfile.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/binfile.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/binfile.o
+ .group         0x0000000000000000        0x8 build/Debug/GNU-Linux-x86/adplug/binfile.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/adplug/binfile.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/video.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/palette.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/sound.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/res.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/battle.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/fight.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/Debug/GNU-Linux-x86/yj1.o
+ .group         0x0000000000000000        0x8 /usr/lib/libc_nonshared.a(elf-init.oS)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/libc_nonshared.a(elf-init.oS)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/crtend.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+LOAD /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crti.o
+LOAD /usr/lib/gcc/i486-linux-gnu/4.4.1/crtbegin.o
+LOAD /usr/lib/libSDL.so
+LOAD build/Debug/GNU-Linux-x86/rixplay.o
+LOAD build/Debug/GNU-Linux-x86/adplug/rix.o
+LOAD build/Debug/GNU-Linux-x86/text.o
+LOAD build/Debug/GNU-Linux-x86/font.o
+LOAD build/Debug/GNU-Linux-x86/adplug/player.o
+LOAD build/Debug/GNU-Linux-x86/itemmenu.o
+LOAD build/Debug/GNU-Linux-x86/adplug/binio.o
+LOAD build/Debug/GNU-Linux-x86/scene.o
+LOAD build/Debug/GNU-Linux-x86/palcommon.o
+LOAD build/Debug/GNU-Linux-x86/script.o
+LOAD build/Debug/GNU-Linux-x86/adplug/emuopl.o
+LOAD build/Debug/GNU-Linux-x86/util.o
+LOAD build/Debug/GNU-Linux-x86/play.o
+LOAD build/Debug/GNU-Linux-x86/getopt.o
+LOAD build/Debug/GNU-Linux-x86/input.o
+LOAD build/Debug/GNU-Linux-x86/uibattle.o
+LOAD build/Debug/GNU-Linux-x86/game.o
+LOAD build/Debug/GNU-Linux-x86/magicmenu.o
+LOAD build/Debug/GNU-Linux-x86/map.o
+LOAD build/Debug/GNU-Linux-x86/ending.o
+LOAD build/Debug/GNU-Linux-x86/adplug/fmopl.o
+LOAD build/Debug/GNU-Linux-x86/uigame.o
+LOAD build/Debug/GNU-Linux-x86/rngplay.o
+LOAD build/Debug/GNU-Linux-x86/ui.o
+LOAD build/Debug/GNU-Linux-x86/adplug/fprovide.o
+LOAD build/Debug/GNU-Linux-x86/global.o
+LOAD build/Debug/GNU-Linux-x86/main.o
+LOAD build/Debug/GNU-Linux-x86/adplug/binfile.o
+LOAD build/Debug/GNU-Linux-x86/video.o
+LOAD build/Debug/GNU-Linux-x86/palette.o
+LOAD build/Debug/GNU-Linux-x86/sound.o
+LOAD build/Debug/GNU-Linux-x86/res.o
+LOAD build/Debug/GNU-Linux-x86/battle.o
+LOAD build/Debug/GNU-Linux-x86/fight.o
+LOAD build/Debug/GNU-Linux-x86/yj1.o
+LOAD /usr/lib/gcc/i486-linux-gnu/4.4.1/libstdc++.so
+LOAD /usr/lib/libm.so
+LOAD /usr/lib/gcc/i486-linux-gnu/4.4.1/libgcc_s.so
+LOAD /usr/lib/gcc/i486-linux-gnu/4.4.1/libgcc.a
+LOAD /usr/lib/libc.so
+START GROUP
+LOAD /lib/libc.so.6
+LOAD /usr/lib/libc_nonshared.a
+LOAD /lib/ld-linux.so.2
+END GROUP
+LOAD /usr/lib/gcc/i486-linux-gnu/4.4.1/libgcc_s.so
+LOAD /usr/lib/gcc/i486-linux-gnu/4.4.1/libgcc.a
+LOAD /usr/lib/gcc/i486-linux-gnu/4.4.1/crtend.o
+LOAD /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crtn.o
+                0x0000000008048000                PROVIDE (__executable_start, 0x8048000)
+                0x0000000008048154                . = (0x8048000 + SIZEOF_HEADERS)
+
+.interp         0x0000000008048154       0x13
+ *(.interp)
+ .interp        0x0000000008048154       0x13 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+
+.note.ABI-tag   0x0000000008048168       0x20
+ .note.ABI-tag  0x0000000008048168       0x20 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+
+.note.gnu.build-id
+                0x0000000008048188       0x24
+ *(.note.gnu.build-id)
+ .note.gnu.build-id
+                0x0000000008048188       0x24 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+
+.hash           0x00000000080481ac      0x340
+ *(.hash)
+ .hash          0x00000000080481ac      0x340 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+
+.gnu.hash       0x00000000080484ec       0x60
+ *(.gnu.hash)
+ .gnu.hash      0x00000000080484ec       0x60 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+
+.dynsym         0x000000000804854c      0x6d0
+ *(.dynsym)
+ .dynsym        0x000000000804854c      0x6d0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+
+.dynstr         0x0000000008048c1c      0x5cf
+ *(.dynstr)
+ .dynstr        0x0000000008048c1c      0x5cf /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+
+.gnu.version    0x00000000080491ec       0xda
+ *(.gnu.version)
+ .gnu.version   0x00000000080491ec       0xda /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+
+.gnu.version_d  0x00000000080492c8        0x0 load address 0x00000000080492c6
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+
+.gnu.version_r  0x00000000080492c8       0xd0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x00000000080492c8       0xd0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+
+.rel.dyn        0x0000000008049398       0x28
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ .rel.text      0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.text._ZN13CFileProviderD2Ev
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.text._ZN13CFileProviderD1Ev
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.text._ZN13CFileProviderD0Ev
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.text._ZN12tagRIXPLAYERC1Ev
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.text._ZN12tagRIXPLAYERD1Ev
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.text._ZN13CFileProviderC2Ev
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.text._ZN20CProvider_FilesystemC1Ev
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.text._ZN20CProvider_FilesystemD1Ev
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.text._ZN7CPlayer8gettitleEv
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.text._ZN7CPlayer9getauthorEv
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.text._ZN7CPlayer7getdescEv
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.text._ZN7CPlayer13getinstrumentEj
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.text._ZN10CrixPlayer7gettypeEv
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.text._ZN10CrixPlayer11set_new_intEv
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.text._ZN10CrixPlayer12data_initialEv
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.text._ZN10CrixPlayer13int_08h_entryEv
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.text._ZN10CrixPlayer8rix_procEv
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.text._ZN10CrixPlayer10rix_90_proEt
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.text._ZN10CrixPlayer10rix_A0_proEtt
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.text._ZN10CrixPlayer12ad_a0b0l_regEttt
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.text._ZN10CrixPlayer10rix_B0_proEtt
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.text._ZN10CrixPlayer10rix_C0_proEtt
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.text._ZN10CrixPlayer12switch_ad_bdEt
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.text._ZN10CrixPlayer10ins_to_regEtPtt
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.text._ZN10CrixPlayer9ad_E0_regEt
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.text._ZN10CrixPlayer9ad_20_regEt
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.text._ZN10CrixPlayer9ad_80_regEt
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.text._ZN10CrixPlayer9ad_60_regEt
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.text._ZN10CrixPlayer9ad_C0_regEt
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.text._ZN10CrixPlayer9ad_40_regEt
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.text._ZN10CrixPlayer9ad_bd_regEv
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.text._ZN10CrixPlayer10music_ctrlEv
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.text._ZN4CoplC1Ev
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.text._ZN4CoplD1Ev
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.text._ZN4CoplD0Ev
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.text._ZN4CoplC2Ev
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.text._ZN4CoplD2Ev
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.text._ZN20CProvider_FilesystemD0Ev
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ .rel.rodata._ZTV13CFileProvider
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.rodata._ZTI13CFileProvider
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.rodata    0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.rodata._ZTV10CrixPlayer
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.rodata._ZTI10CrixPlayer
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.rodata._ZTV7CPlayer
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.rodata._ZTV4Copl
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.rodata._ZTI7CPlayer
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.rodata._ZTI4Copl
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.rodata._ZTV10binostream
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.rodata._ZTT10binostream
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.rodata._ZTV10binistream
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.rodata._ZTT10binistream
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.rodata._ZTV5binio
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.rodata._ZTI10binostream
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.rodata._ZTI10binistream
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.rodata._ZTI5binio
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.rodata._ZTV7CEmuopl
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.rodata._ZTI7CEmuopl
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.rodata._ZTV20CProvider_Filesystem
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.rodata._ZTI20CProvider_Filesystem
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.rodata._ZTV10binfstream
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.rodata._ZTT10binfstream
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.rodata._ZTC10binfstream0_11binifstream
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.rodata._ZTC10binfstream0_10binistream
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.rodata._ZTC10binfstream4_11binofstream
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.rodata._ZTC10binfstream4_10binostream
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.rodata._ZTC10binfstream20_8binfbase
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.rodata._ZTV11binofstream
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.rodata._ZTT11binofstream
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.rodata._ZTC11binofstream0_10binostream
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.rodata._ZTC11binofstream16_8binfbase
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.rodata._ZTV11binifstream
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.rodata._ZTT11binifstream
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.rodata._ZTC11binifstream0_10binistream
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.rodata._ZTC11binifstream16_8binfbase
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.rodata._ZTV8binfbase
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.rodata._ZTT8binfbase
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.rodata._ZTI10binfstream
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.rodata._ZTI11binofstream
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.rodata._ZTI11binifstream
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .rel.rodata._ZTI8binfbase
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ *(.rel.data.rel.ro* .rel.gnu.linkonce.d.rel.ro.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rel.dtors)
+ *(.rel.got)
+ .rel.got       0x0000000008049398        0x8 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ .rel.bss       0x00000000080493a0       0x20 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ *(.rel.ifunc)
+ .rel.eh_frame  0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+
+.rel.plt        0x00000000080493c0      0x308
+ *(.rel.plt)
+ .rel.plt       0x00000000080493c0      0x308 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+                0x00000000080496c8                PROVIDE (__rel_iplt_start, .)
+ *(.rel.iplt)
+ .rel.iplt      0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+                0x00000000080496c8                PROVIDE (__rel_iplt_end, .)
+
+.init           0x00000000080496c8       0x30
+ *(.init)
+ .init          0x00000000080496c8       0x22 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crti.o
+                0x00000000080496c8                _init
+ .init          0x00000000080496ea        0x5 /usr/lib/gcc/i486-linux-gnu/4.4.1/crtbegin.o
+ .init          0x00000000080496ef        0x5 /usr/lib/gcc/i486-linux-gnu/4.4.1/crtend.o
+ .init          0x00000000080496f4        0x4 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crtn.o
+
+.plt            0x00000000080496f8      0x620
+ *(.plt)
+ .plt           0x00000000080496f8      0x620 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+                0x0000000008049708                _Znwj@@GLIBCXX_3.4
+                0x0000000008049718                strcat@@GLIBC_2.0
+                0x0000000008049728                SDL_FillRect
+                0x0000000008049738                fread@@GLIBC_2.0
+                0x0000000008049748                SDL_Quit
+                0x0000000008049758                SDL_CDOpen
+                0x0000000008049768                sscanf@@GLIBC_2.0
+                0x0000000008049778                SDL_CDNumDrives
+                0x0000000008049788                SDL_CDClose
+                0x0000000008049798                SDL_SoftStretch
+                0x00000000080497a8                SDL_ConvertAudio
+                0x00000000080497b8                SDL_CDPlayTracks
+                0x00000000080497c8                strdup@@GLIBC_2.0
+                0x00000000080497d8                _ZNKSs6substrEjj@@GLIBCXX_3.4
+                0x00000000080497e8                pthread_cancel@@GLIBC_2.0
+                0x00000000080497f8                SDL_RWFromFile
+                0x0000000008049808                SDL_JoystickClose
+                0x0000000008049818                SDL_JoystickOpen
+                0x0000000008049828                calloc@@GLIBC_2.0
+                0x0000000008049838                fputc@@GLIBC_2.0
+                0x0000000008049848                fgets@@GLIBC_2.0
+                0x0000000008049858                fwrite@@GLIBC_2.0
+                0x0000000008049868                memcpy@@GLIBC_2.0
+                0x0000000008049878                malloc@@GLIBC_2.0
+                0x0000000008049888                frexp@@GLIBC_2.0
+                0x0000000008049898                SDL_EnableKeyRepeat
+                0x00000000080498a8                SDL_SaveBMP_RW
+                0x00000000080498b8                SDL_SetEventFilter
+                0x00000000080498c8                strlen@@GLIBC_2.0
+                0x00000000080498d8                _ZNSsC1ERKSs@@GLIBCXX_3.4
+                0x00000000080498e8                fprintf@@GLIBC_2.0
+                0x00000000080498f8                SDL_CloseAudio
+                0x0000000008049908                SDL_PollEvent
+                0x0000000008049918                SDL_NumJoysticks
+                0x0000000008049928                SDL_BuildAudioCVT
+                0x0000000008049938                SDL_Delay
+                0x0000000008049948                SDL_GetError
+                0x0000000008049958                time@@GLIBC_2.0
+                0x0000000008049968                SDL_PauseAudio
+                0x0000000008049978                _Znaj@@GLIBCXX_3.4
+                0x0000000008049988                __errno_location@@GLIBC_2.0
+                0x0000000008049998                SDL_UpperBlit
+                0x00000000080499a8                fseek@@GLIBC_2.0
+                0x00000000080499b8                SDL_Init
+                0x00000000080499c8                SDL_JoystickEventState
+                0x00000000080499d8                _ZNSsC1Ev@@GLIBCXX_3.4
+                0x00000000080499e8                sin@@GLIBC_2.0
+                0x00000000080499f8                SDL_FreeSurface
+                0x0000000008049a08                SDL_SetVideoMode
+                0x0000000008049a18                SDL_SetPalette
+                0x0000000008049a28                strchr@@GLIBC_2.0
+                0x0000000008049a38                _ZdlPv@@GLIBCXX_3.4
+                0x0000000008049a48                SDL_WM_SetCaption
+                0x0000000008049a58                __libc_start_main@@GLIBC_2.0
+                0x0000000008049a68                vsnprintf@@GLIBC_2.0
+                0x0000000008049a78                floor@@GLIBC_2.0
+                0x0000000008049a88                SDL_GetTicks
+                0x0000000008049a98                _ZNSaIcED1Ev@@GLIBCXX_3.4
+                0x0000000008049aa8                rand@@GLIBC_2.0
+                0x0000000008049ab8                __stack_chk_fail@@GLIBC_2.4
+                0x0000000008049ac8                _ZNSs6appendEPKcj@@GLIBCXX_3.4
+                0x0000000008049ad8                SDL_CDStop
+                0x0000000008049ae8                _ZNSsC1EPKcRKSaIcE@@GLIBCXX_3.4
+                0x0000000008049af8                SDL_CDStatus
+                0x0000000008049b08                free@@GLIBC_2.0
+                0x0000000008049b18                SDL_UpdateRect
+                0x0000000008049b28                _ZdaPv@@GLIBCXX_3.4
+                0x0000000008049b38                SDL_LockSurface
+                0x0000000008049b48                strcasecmp@@GLIBC_2.0
+                0x0000000008049b58                _ZNKSs5c_strEv@@GLIBCXX_3.4
+                0x0000000008049b68                fgetc@@GLIBC_2.0
+                0x0000000008049b78                SDL_CreateRGBSurface
+                0x0000000008049b88                SDL_UnlockSurface
+                0x0000000008049b98                exit@@GLIBC_2.0
+                0x0000000008049ba8                SDL_MixAudio
+                0x0000000008049bb8                atoi@@GLIBC_2.0
+                0x0000000008049bc8                _ZNSsD1Ev@@GLIBCXX_3.4
+                0x0000000008049bd8                SDL_OpenAudio
+                0x0000000008049be8                SDL_JoystickOpened
+                0x0000000008049bf8                memset@@GLIBC_2.0
+                0x0000000008049c08                __gxx_personality_v0@@CXXABI_1.3
+                0x0000000008049c18                ldexp@@GLIBC_2.0
+                0x0000000008049c28                _Unwind_Resume@@GCC_3.0
+                0x0000000008049c38                _ZNSaIcEC1Ev@@GLIBCXX_3.4
+                0x0000000008049c48                pow@@GLIBC_2.0
+                0x0000000008049c58                fclose@@GLIBC_2.1
+                0x0000000008049c68                memmove@@GLIBC_2.0
+                0x0000000008049c78                log10@@GLIBC_2.0
+                0x0000000008049c88                system@@GLIBC_2.0
+                0x0000000008049ca8                strcpy@@GLIBC_2.0
+                0x0000000008049cb8                __cxa_pure_virtual@@CXXABI_1.3
+                0x0000000008049cc8                __assert_fail@@GLIBC_2.0
+                0x0000000008049cd8                _ZNKSs6lengthEv@@GLIBCXX_3.4
+                0x0000000008049ce8                SDL_ShowCursor
+                0x0000000008049cf8                fopen@@GLIBC_2.1
+                0x0000000008049d08                ftell@@GLIBC_2.0
+ *(.iplt)
+ .iplt          0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+
+.text           0x0000000008049d20    0x375bc
+ *(.text.unlikely .text.*_unlikely)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x0000000008049d20       0x24 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+                0x0000000008049d20                _start
+ .text          0x0000000008049d44        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crti.o
+ *fill*         0x0000000008049d44        0xc 90909090
+ .text          0x0000000008049d50       0x83 /usr/lib/gcc/i486-linux-gnu/4.4.1/crtbegin.o
+ *fill*         0x0000000008049dd3        0x1 90909090
+ .text          0x0000000008049dd4      0x754 build/Debug/GNU-Linux-x86/rixplay.o
+                0x0000000008049dd4                RIX_FillBuffer
+                0x000000000804a283                RIX_Init
+                0x000000000804a435                RIX_Shutdown
+                0x000000000804a46f                RIX_Play
+ .text._ZN13CFileProviderD2Ev
+                0x000000000804a528       0x25 build/Debug/GNU-Linux-x86/rixplay.o
+                0x000000000804a528                _ZN13CFileProviderD2Ev
+ *fill*         0x000000000804a54d        0x1 90909090
+ .text._ZN13CFileProviderD1Ev
+                0x000000000804a54e       0x25 build/Debug/GNU-Linux-x86/rixplay.o
+                0x000000000804a54e                _ZN13CFileProviderD1Ev
+ *fill*         0x000000000804a573        0x1 90909090
+ .text._ZN13CFileProviderD0Ev
+                0x000000000804a574       0x25 build/Debug/GNU-Linux-x86/rixplay.o
+                0x000000000804a574                _ZN13CFileProviderD0Ev
+ *fill*         0x000000000804a599        0x1 90909090
+ .text._ZN12tagRIXPLAYERC1Ev
+                0x000000000804a59a       0x6f build/Debug/GNU-Linux-x86/rixplay.o
+                0x000000000804a59a                _ZN12tagRIXPLAYERC1Ev
+ *fill*         0x000000000804a609        0x1 90909090
+ .text._ZN12tagRIXPLAYERD1Ev
+                0x000000000804a60a       0x43 build/Debug/GNU-Linux-x86/rixplay.o
+                0x000000000804a60a                _ZN12tagRIXPLAYERD1Ev
+ *fill*         0x000000000804a64d        0x1 90909090
+ .text._ZN13CFileProviderC2Ev
+                0x000000000804a64e        0xe build/Debug/GNU-Linux-x86/rixplay.o
+                0x000000000804a64e                _ZN13CFileProviderC2Ev
+ .text._ZN20CProvider_FilesystemC1Ev
+                0x000000000804a65c       0x1c build/Debug/GNU-Linux-x86/rixplay.o
+                0x000000000804a65c                _ZN20CProvider_FilesystemC1Ev
+ .text._ZN20CProvider_FilesystemD1Ev
+                0x000000000804a678       0x30 build/Debug/GNU-Linux-x86/rixplay.o
+                0x000000000804a678                _ZN20CProvider_FilesystemD1Ev
+ .text          0x000000000804a6a8      0x7e1 build/Debug/GNU-Linux-x86/adplug/rix.o
+                0x000000000804a6a8                _ZN10CrixPlayer7factoryEP4Copl
+                0x000000000804a6f2                _ZN10CrixPlayerC2EP4Copl
+                0x000000000804a734                _ZN10CrixPlayerC1EP4Copl
+                0x000000000804a776                _ZN10CrixPlayerD2Ev
+                0x000000000804a7c8                _ZN10CrixPlayerD1Ev
+                0x000000000804a81a                _ZN10CrixPlayerD0Ev
+                0x000000000804a86c                _ZN10CrixPlayer4loadERKSsRK13CFileProvider
+                0x000000000804ab4e                _ZN10CrixPlayer6updateEv
+                0x000000000804ab70                _ZN10CrixPlayer6rewindEi
+                0x000000000804ae04                _ZN10CrixPlayer11getsubsongsEv
+                0x000000000804ae76                _ZN10CrixPlayer10getrefreshEv
+ *fill*         0x000000000804ae89        0x1 90909090
+ .text._ZN7CPlayer8gettitleEv
+                0x000000000804ae8a       0x20 build/Debug/GNU-Linux-x86/adplug/rix.o
+                0x000000000804ae8a                _ZN7CPlayer8gettitleEv
+ .text._ZN7CPlayer9getauthorEv
+                0x000000000804aeaa       0x20 build/Debug/GNU-Linux-x86/adplug/rix.o
+                0x000000000804aeaa                _ZN7CPlayer9getauthorEv
+ .text._ZN7CPlayer7getdescEv
+                0x000000000804aeca       0x20 build/Debug/GNU-Linux-x86/adplug/rix.o
+                0x000000000804aeca                _ZN7CPlayer7getdescEv
+ .text._ZN7CPlayer11getpatternsEv
+                0x000000000804aeea        0xa build/Debug/GNU-Linux-x86/adplug/rix.o
+                0x000000000804aeea                _ZN7CPlayer11getpatternsEv
+ .text._ZN7CPlayer10getpatternEv
+                0x000000000804aef4        0xa build/Debug/GNU-Linux-x86/adplug/rix.o
+                0x000000000804aef4                _ZN7CPlayer10getpatternEv
+ .text._ZN7CPlayer9getordersEv
+                0x000000000804aefe        0xa build/Debug/GNU-Linux-x86/adplug/rix.o
+                0x000000000804aefe                _ZN7CPlayer9getordersEv
+ .text._ZN7CPlayer8getorderEv
+                0x000000000804af08        0xa build/Debug/GNU-Linux-x86/adplug/rix.o
+                0x000000000804af08                _ZN7CPlayer8getorderEv
+ .text._ZN7CPlayer6getrowEv
+                0x000000000804af12        0xa build/Debug/GNU-Linux-x86/adplug/rix.o
+                0x000000000804af12                _ZN7CPlayer6getrowEv
+ .text._ZN7CPlayer8getspeedEv
+                0x000000000804af1c        0xa build/Debug/GNU-Linux-x86/adplug/rix.o
+                0x000000000804af1c                _ZN7CPlayer8getspeedEv
+ .text._ZN7CPlayer14getinstrumentsEv
+                0x000000000804af26        0xa build/Debug/GNU-Linux-x86/adplug/rix.o
+                0x000000000804af26                _ZN7CPlayer14getinstrumentsEv
+ .text._ZN7CPlayer13getinstrumentEj
+                0x000000000804af30       0x20 build/Debug/GNU-Linux-x86/adplug/rix.o
+                0x000000000804af30                _ZN7CPlayer13getinstrumentEj
+ .text._ZN10CrixPlayer7gettypeEv
+                0x000000000804af50       0x62 build/Debug/GNU-Linux-x86/adplug/rix.o
+                0x000000000804af50                _ZN10CrixPlayer7gettypeEv
+ .text._ZN10CrixPlayer11set_new_intEv
+                0x000000000804afb2       0x13 build/Debug/GNU-Linux-x86/adplug/rix.o
+                0x000000000804afb2                _ZN10CrixPlayer11set_new_intEv
+ *fill*         0x000000000804afc5        0x1 90909090
+ .text._ZN10CrixPlayer13ad_a0b0l_reg_Ettt
+                0x000000000804afc6       0x45 build/Debug/GNU-Linux-x86/adplug/rix.o
+                0x000000000804afc6                _ZN10CrixPlayer13ad_a0b0l_reg_Ettt
+ *fill*         0x000000000804b00b        0x1 90909090
+ .text._ZN10CrixPlayer12data_initialEv
+                0x000000000804b00c      0x10a build/Debug/GNU-Linux-x86/adplug/rix.o
+                0x000000000804b00c                _ZN10CrixPlayer12data_initialEv
+ .text._ZN10CrixPlayer10ad_initialEv
+                0x000000000804b116      0x15f build/Debug/GNU-Linux-x86/adplug/rix.o
+                0x000000000804b116                _ZN10CrixPlayer10ad_initialEv
+ *fill*         0x000000000804b275        0x1 90909090
+ .text._ZN10CrixPlayer6ad_bopEtt
+                0x000000000804b276       0x49 build/Debug/GNU-Linux-x86/adplug/rix.o
+                0x000000000804b276                _ZN10CrixPlayer6ad_bopEtt
+ *fill*         0x000000000804b2bf        0x1 90909090
+ .text._ZN10CrixPlayer13int_08h_entryEv
+                0x000000000804b2c0       0x89 build/Debug/GNU-Linux-x86/adplug/rix.o
+                0x000000000804b2c0                _ZN10CrixPlayer13int_08h_entryEv
+ *fill*         0x000000000804b349        0x1 90909090
+ .text._ZN10CrixPlayer8rix_procEv
+                0x000000000804b34a      0x263 build/Debug/GNU-Linux-x86/adplug/rix.o
+                0x000000000804b34a                _ZN10CrixPlayer8rix_procEv
+ *fill*         0x000000000804b5ad        0x1 90909090
+ .text._ZN10CrixPlayer11rix_get_insEv
+                0x000000000804b5ae       0x83 build/Debug/GNU-Linux-x86/adplug/rix.o
+                0x000000000804b5ae                _ZN10CrixPlayer11rix_get_insEv
+ *fill*         0x000000000804b631        0x1 90909090
+ .text._ZN10CrixPlayer10rix_90_proEt
+                0x000000000804b632      0x155 build/Debug/GNU-Linux-x86/adplug/rix.o
+                0x000000000804b632                _ZN10CrixPlayer10rix_90_proEt
+ *fill*         0x000000000804b787        0x1 90909090
+ .text._ZN10CrixPlayer10rix_A0_proEtt
+                0x000000000804b788       0x96 build/Debug/GNU-Linux-x86/adplug/rix.o
+                0x000000000804b788                _ZN10CrixPlayer10rix_A0_proEtt
+ .text._ZN10CrixPlayer12prepare_a0b0Ett
+                0x000000000804b81e      0x241 build/Debug/GNU-Linux-x86/adplug/rix.o
+                0x000000000804b81e                _ZN10CrixPlayer12prepare_a0b0Ett
+ *fill*         0x000000000804ba5f        0x1 90909090
+ .text._ZN10CrixPlayer12ad_a0b0l_regEttt
+                0x000000000804ba60      0x142 build/Debug/GNU-Linux-x86/adplug/rix.o
+                0x000000000804ba60                _ZN10CrixPlayer12ad_a0b0l_regEttt
+ .text._ZN10CrixPlayer10rix_B0_proEtt
+                0x000000000804bba2       0x9f build/Debug/GNU-Linux-x86/adplug/rix.o
+                0x000000000804bba2                _ZN10CrixPlayer10rix_B0_proEtt
+ *fill*         0x000000000804bc41        0x1 90909090
+ .text._ZN10CrixPlayer10rix_C0_proEtt
+                0x000000000804bc42      0x115 build/Debug/GNU-Linux-x86/adplug/rix.o
+                0x000000000804bc42                _ZN10CrixPlayer10rix_C0_proEtt
+ *fill*         0x000000000804bd57        0x1 90909090
+ .text._ZN10CrixPlayer12switch_ad_bdEt
+                0x000000000804bd58       0x88 build/Debug/GNU-Linux-x86/adplug/rix.o
+                0x000000000804bd58                _ZN10CrixPlayer12switch_ad_bdEt
+ .text._ZN10CrixPlayer10ins_to_regEtPtt
+                0x000000000804bde0      0x125 build/Debug/GNU-Linux-x86/adplug/rix.o
+                0x000000000804bde0                _ZN10CrixPlayer10ins_to_regEtPtt
+ *fill*         0x000000000804bf05        0x1 90909090
+ .text._ZN10CrixPlayer9ad_E0_regEt
+                0x000000000804bf06       0x7a build/Debug/GNU-Linux-x86/adplug/rix.o
+                0x000000000804bf06                _ZN10CrixPlayer9ad_E0_regEt
+ .text._ZN10CrixPlayer9ad_20_regEt
+                0x000000000804bf80      0x12f build/Debug/GNU-Linux-x86/adplug/rix.o
+                0x000000000804bf80                _ZN10CrixPlayer9ad_20_regEt
+ *fill*         0x000000000804c0af        0x1 90909090
+ .text._ZN10CrixPlayer9ad_80_regEt
+                0x000000000804c0b0       0x9d build/Debug/GNU-Linux-x86/adplug/rix.o
+                0x000000000804c0b0                _ZN10CrixPlayer9ad_80_regEt
+ *fill*         0x000000000804c14d        0x1 90909090
+ .text._ZN10CrixPlayer9ad_60_regEt
+                0x000000000804c14e       0x9c build/Debug/GNU-Linux-x86/adplug/rix.o
+                0x000000000804c14e                _ZN10CrixPlayer9ad_60_regEt
+ .text._ZN10CrixPlayer9ad_C0_regEt
+                0x000000000804c1ea       0xb0 build/Debug/GNU-Linux-x86/adplug/rix.o
+                0x000000000804c1ea                _ZN10CrixPlayer9ad_C0_regEt
+ .text._ZN10CrixPlayer9ad_40_regEt
+                0x000000000804c29a      0x100 build/Debug/GNU-Linux-x86/adplug/rix.o
+                0x000000000804c29a                _ZN10CrixPlayer9ad_40_regEt
+ .text._ZN10CrixPlayer9ad_bd_regEv
+                0x000000000804c39a       0x52 build/Debug/GNU-Linux-x86/adplug/rix.o
+                0x000000000804c39a                _ZN10CrixPlayer9ad_bd_regEv
+ .text._ZN10CrixPlayer10music_ctrlEv
+                0x000000000804c3ec       0x35 build/Debug/GNU-Linux-x86/adplug/rix.o
+                0x000000000804c3ec                _ZN10CrixPlayer10music_ctrlEv
+ *fill*         0x000000000804c421        0x3 90909090
+ .text          0x000000000804c424     0x118e build/Debug/GNU-Linux-x86/text.o
+                0x000000000804c424                PAL_InitText
+                0x000000000804c6e5                PAL_FreeText
+                0x000000000804c74d                PAL_GetWord
+                0x000000000804c7d9                PAL_GetMsg
+                0x000000000804c886                PAL_DrawText
+                0x000000000804cadf                PAL_DialogSetDelayTime
+                0x000000000804caec                PAL_StartDialog
+                0x000000000804cffe                PAL_ShowDialogText
+                0x000000000804d4f9                PAL_ClearDialog
+                0x000000000804d54c                PAL_EndDialog
+                0x000000000804d596                PAL_IsInDialog
+                0x000000000804d5a8                PAL_DialogIsPlayingRNG
+ *fill*         0x000000000804d5b2        0x2 90909090
+ .text          0x000000000804d5b4      0x474 build/Debug/GNU-Linux-x86/font.o
+                0x000000000804d5b4                PAL_InitFont
+                0x000000000804d7b8                PAL_FreeFont
+                0x000000000804d7ff                PAL_DrawCharOnSurface
+                0x000000000804d951                PAL_DrawASCIICharOnSurface
+ .text          0x000000000804da28      0x252 build/Debug/GNU-Linux-x86/adplug/player.o
+                0x000000000804da28                _ZN7CPlayerC2EP4Copl
+                0x000000000804da40                _ZN7CPlayerC1EP4Copl
+                0x000000000804da58                _ZN7CPlayerD2Ev
+                0x000000000804da7e                _ZN7CPlayerD1Ev
+                0x000000000804daa4                _ZN7CPlayerD0Ev
+                0x000000000804daca                _ZN7CPlayer10songlengthEi
+                0x000000000804dbe4                _ZN7CPlayer4seekEm
+ .text._ZN4CoplC1Ev
+                0x000000000804dc7a       0x22 build/Debug/GNU-Linux-x86/adplug/player.o
+                0x000000000804dc7a                _ZN4CoplC1Ev
+ .text._ZN4CoplD1Ev
+                0x000000000804dc9c       0x25 build/Debug/GNU-Linux-x86/adplug/player.o
+                0x000000000804dc9c                _ZN4CoplD1Ev
+ *fill*         0x000000000804dcc1        0x1 90909090
+ .text._ZN4CoplD0Ev
+                0x000000000804dcc2       0x25 build/Debug/GNU-Linux-x86/adplug/player.o
+                0x000000000804dcc2                _ZN4CoplD0Ev
+ *fill*         0x000000000804dce7        0x1 90909090
+ .text._ZN4Copl5writeEii
+                0x000000000804dce8        0x5 build/Debug/GNU-Linux-x86/adplug/player.o
+                0x000000000804dce8                _ZN4Copl5writeEii
+ *fill*         0x000000000804dced        0x1 90909090
+ .text._ZN4Copl7setchipEi
+                0x000000000804dcee       0x14 build/Debug/GNU-Linux-x86/adplug/player.o
+                0x000000000804dcee                _ZN4Copl7setchipEi
+ .text._ZN4Copl7getchipEv
+                0x000000000804dd02        0xb build/Debug/GNU-Linux-x86/adplug/player.o
+                0x000000000804dd02                _ZN4Copl7getchipEv
+ *fill*         0x000000000804dd0d        0x1 90909090
+ .text._ZN4Copl4initEv
+                0x000000000804dd0e        0x5 build/Debug/GNU-Linux-x86/adplug/player.o
+                0x000000000804dd0e                _ZN4Copl4initEv
+ *fill*         0x000000000804dd13        0x1 90909090
+ .text._ZN4Copl6updateEPsi
+                0x000000000804dd14        0x5 build/Debug/GNU-Linux-x86/adplug/player.o
+                0x000000000804dd14                _ZN4Copl6updateEPsi
+ *fill*         0x000000000804dd19        0x1 90909090
+ .text._ZN7CPlayer11getsubsongsEv
+                0x000000000804dd1a        0xa build/Debug/GNU-Linux-x86/adplug/player.o
+                0x000000000804dd1a                _ZN7CPlayer11getsubsongsEv
+ .text          0x000000000804dd24      0xd8e build/Debug/GNU-Linux-x86/itemmenu.o
+                0x000000000804dd24                PAL_ItemSelectMenuUpdate
+                0x000000000804e766                PAL_ItemSelectMenuInit
+                0x000000000804e94a                PAL_ItemSelectMenu
+ *fill*         0x000000000804eab2        0x2 90909090
+ .text          0x000000000804eab4     0x1770 build/Debug/GNU-Linux-x86/adplug/binio.o
+                0x000000000804eab4                _ZN5binio19detect_system_flagsEv
+                0x000000000804eb6a                _ZN5binioC2Ev
+                0x000000000804eb8e                _ZN5binioC1Ev
+                0x000000000804ebb2                _ZN5binioD2Ev
+                0x000000000804ebd8                _ZN5binioD1Ev
+                0x000000000804ebfe                _ZN5binioD0Ev
+                0x000000000804ec24                _ZN5binio7setFlagENS_4FlagEb
+                0x000000000804ec64                _ZN5binio7getFlagENS_4FlagE
+                0x000000000804ec7a                _ZN5binio5errorEv
+                0x000000000804ec98                _ZN5binio3eofEv
+                0x000000000804ecac                _ZN10binistreamC2Ev
+                0x000000000804ecd6                _ZN10binistreamC1Ev
+                0x000000000804ed08                _ZN10binistreamD2Ev
+                0x000000000804ed60                _ZTv0_n12_N10binistreamD1Ev
+                0x000000000804ed70                _ZN10binistreamD1Ev
+                0x000000000804edbe                _ZTv0_n12_N10binistreamD0Ev
+                0x000000000804edce                _ZN10binistreamD0Ev
+                0x000000000804ee1c                _ZN10binistream7readIntEj
+                0x000000000804ef1e                _ZN10binistream9readFloatEN5binio5FTypeE
+                0x000000000804f0d4                _ZN10binistream17ieee_single2floatEPh
+                0x000000000804f25a                _ZN10binistream17ieee_double2floatEPh
+                0x000000000804f4ba                _ZN10binistream10readStringEPcm
+                0x000000000804f52a                _ZN10binistream10readStringEPcmc
+                0x000000000804f5bc                _ZN10binistream10readStringEc
+                0x000000000804f690                _ZN10binistream7peekIntEj
+                0x000000000804f712                _ZN10binistream9peekFloatEN5binio5FTypeE
+                0x000000000804f7e2                _ZN10binistream5ateofEv
+                0x000000000804f848                _ZN10binistream6ignoreEm
+                0x000000000804f87c                _ZN10binostreamC2Ev
+                0x000000000804f8a6                _ZN10binostreamC1Ev
+                0x000000000804f8d8                _ZN10binostreamD2Ev
+                0x000000000804f930                _ZTv0_n12_N10binostreamD1Ev
+                0x000000000804f940                _ZN10binostreamD1Ev
+                0x000000000804f98e                _ZTv0_n12_N10binostreamD0Ev
+                0x000000000804f99e                _ZN10binostreamD0Ev
+                0x000000000804f9ec                _ZN10binostream8writeIntExj
+                0x000000000804faf2                _ZN10binostream10writeFloatEeN5binio5FTypeE
+                0x000000000804fcde                _ZN10binostream17float2ieee_singleEePh
+                0x000000000804fe50                _ZN10binostream17float2ieee_doubleEePh
+                0x0000000008050146                _ZN10binostream11writeStringEPKcm
+                0x00000000080501c0                _ZN10binostream11writeStringERKSs
+ .text          0x0000000008050224     0x19ae build/Debug/GNU-Linux-x86/scene.o
+                0x0000000008050b89                PAL_ApplyWave
+                0x0000000008050df9                PAL_MakeScene
+                0x0000000008050ee3                PAL_CheckObstacle
+                0x0000000008051113                PAL_UpdatePartyGestures
+                0x0000000008051892                PAL_UpdateParty
+                0x0000000008051a7b                PAL_NPCWalkOneStep
+ *fill*         0x0000000008051bd2        0x2 90909090
+ .text          0x0000000008051bd4      0xc30 build/Debug/GNU-Linux-x86/palcommon.o
+                0x0000000008051bd4                PAL_RLEBlitToSurface
+                0x0000000008051dcb                PAL_RLEBlitWithColorShift
+                0x0000000008052012                PAL_RLEBlitMonoColor
+                0x0000000008052256                PAL_FBPBlitToSurface
+                0x00000000080522eb                PAL_RLEGetWidth
+                0x000000000805234c                PAL_RLEGetHeight
+                0x00000000080523b0                PAL_SpriteGetNumFrames
+                0x00000000080523df                PAL_SpriteGetFrame
+                0x0000000008052457                PAL_MKFGetChunkCount
+                0x00000000080524c3                PAL_MKFGetChunkSize
+                0x0000000008052576                PAL_MKFReadChunk
+                0x000000000805269e                PAL_MKFGetDecompressedSize
+                0x0000000008052777                PAL_MKFDecompressChunk
+ .text          0x0000000008052804     0x6af6 build/Debug/GNU-Linux-x86/script.o
+                0x0000000008058a02                PAL_RunTriggerScript
+                0x00000000080590c4                PAL_RunAutoScript
+ *fill*         0x00000000080592fa        0x2 90909090
+ .text          0x00000000080592fc      0x6c2 build/Debug/GNU-Linux-x86/adplug/emuopl.o
+                0x00000000080592fc                _ZN7CEmuoplC2Eibb
+                0x00000000080593be                _ZN7CEmuoplC1Eibb
+                0x0000000008059480                _ZN7CEmuoplD2Ev
+                0x000000000805952a                _ZN7CEmuoplD1Ev
+                0x00000000080595d4                _ZN7CEmuoplD0Ev
+                0x000000000805967e                _ZN7CEmuopl6updateEPsi
+                0x000000000805991e                _ZN7CEmuopl5writeEii
+                0x0000000008059982                _ZN7CEmuopl4initEv
+                0x00000000080599b0                _ZN7CEmuopl7settypeEN4Copl8ChipTypeE
+ .text._ZN4CoplC2Ev
+                0x00000000080599be       0x22 build/Debug/GNU-Linux-x86/adplug/emuopl.o
+                0x00000000080599be                _ZN4CoplC2Ev
+ .text._ZN4CoplD2Ev
+                0x00000000080599e0       0x25 build/Debug/GNU-Linux-x86/adplug/emuopl.o
+                0x00000000080599e0                _ZN4CoplD2Ev
+ *fill*         0x0000000008059a05        0x3 90909090
+ .text          0x0000000008059a08      0x3bb build/Debug/GNU-Linux-x86/util.o
+                0x0000000008059a08                trim
+                0x0000000008059a97                va
+                0x0000000008059b2a                RandomLong
+                0x0000000008059b76                RandomFloat
+                0x0000000008059bb5                UTIL_Delay
+                0x0000000008059c00                TerminateOnError
+                0x0000000008059cb2                UTIL_malloc
+                0x0000000008059cfd                UTIL_calloc
+                0x0000000008059d52                UTIL_OpenRequiredFile
+                0x0000000008059daa                UTIL_CloseFile
+ *fill*         0x0000000008059dc3        0x1 90909090
+ .text          0x0000000008059dc4      0xe19 build/Debug/GNU-Linux-x86/play.o
+                0x0000000008059dc4                PAL_GameUpdate
+                0x000000000805a4ef                PAL_GameUseItem
+                0x000000000805a6be                PAL_GameEquipItem
+                0x000000000805a6f3                PAL_Search
+                0x000000000805aacf                PAL_StartFrame
+                0x000000000805ab8d                PAL_WaitForKey
+ *fill*         0x000000000805abdd        0x3 90909090
+ .text          0x000000000805abe0      0x25c build/Debug/GNU-Linux-x86/getopt.o
+                0x000000000805abe0                PAL_getopt
+ .text          0x000000000805ae3c      0x5fa build/Debug/GNU-Linux-x86/input.o
+                0x000000000805b340                PAL_ClearKeyState
+                0x000000000805b34f                PAL_InitInput
+                0x000000000805b3c2                PAL_ShutdownInput
+                0x000000000805b41e                PAL_ProcessEvent
+ *fill*         0x000000000805b436        0x2 90909090
+ .text          0x000000000805b438     0x2d1e build/Debug/GNU-Linux-x86/uibattle.o
+                0x000000000805b438                PAL_PlayerInfoBox
+                0x000000000805c1ae                PAL_BattleUIShowText
+                0x000000000805c210                PAL_BattleUIPlayerReady
+                0x000000000805c5a3                PAL_BattleUIUpdate
+                0x000000000805e0ab                PAL_BattleUIShowNum
+ *fill*         0x000000000805e156        0x2 90909090
+ .text          0x000000000805e158      0x101 build/Debug/GNU-Linux-x86/game.o
+                0x000000000805e1c1                PAL_GameMain
+ *fill*         0x000000000805e259        0x3 90909090
+ .text          0x000000000805e25c      0xb2f build/Debug/GNU-Linux-x86/magicmenu.o
+                0x000000000805e25c                PAL_MagicSelectionMenuUpdate
+                0x000000000805e9c8                PAL_MagicSelectionMenuInit
+                0x000000000805ec6a                PAL_MagicSelectionMenu
+ *fill*         0x000000000805ed8b        0x1 90909090
+ .text          0x000000000805ed8c      0x60b build/Debug/GNU-Linux-x86/map.o
+                0x000000000805ed8c                PAL_LoadMap
+                0x000000000805efd2                PAL_FreeMap
+                0x000000000805f00c                PAL_MapGetTileBitmap
+                0x000000000805f0d8                PAL_MapTileIsBlocked
+                0x000000000805f13d                PAL_MapGetTileHeight
+                0x000000000805f1b7                PAL_MapBlitToSurface
+ *fill*         0x000000000805f397        0x1 90909090
+ .text          0x000000000805f398      0xd02 build/Debug/GNU-Linux-x86/ending.o
+                0x000000000805f398                PAL_EndingSetEffectSprite
+                0x000000000805f3b1                PAL_ShowFBP
+                0x000000000805f7a7                PAL_ScrollFBP
+                0x000000000805fc26                PAL_EndingAnimation
+ *fill*         0x000000000806009a        0x2 90909090
+ .text          0x000000000806009c     0x2882 build/Debug/GNU-Linux-x86/adplug/fmopl.o
+                0x000000000806009c                Limit
+                0x00000000080600c2                OPL_STATUS_SET
+                0x000000000806013d                OPL_STATUS_RESET
+                0x00000000080601b8                OPL_STATUSMASK_SET
+                0x00000000080601f1                OPL_KEYON
+                0x0000000008060227                OPL_KEYOFF
+                0x000000000806026d                OPL_CALC_SLOT
+                0x00000000080603b0                CALC_FCSLOT
+                0x0000000008060482                set_mul
+                0x0000000008060532                set_ksl_tl
+                0x0000000008060613                set_ar_dr
+                0x000000000806071e                set_sl_rr
+                0x00000000080607e8                OPL_CALC_CH
+                0x0000000008060a09                OPL_CALC_RH
+                0x00000000080616ae                CSMKeyControll
+                0x0000000008062263                YM3812UpdateOne
+                0x0000000008062442                OPLResetChip
+                0x00000000080625be                OPLCreate
+                0x000000000806268f                OPLDestroy
+                0x00000000080626a7                OPLSetTimerHandler
+                0x00000000080626c4                OPLSetIRQHandler
+                0x00000000080626e1                OPLSetUpdateHandler
+                0x00000000080626fe                OPLWrite
+                0x0000000008062776                OPLRead
+                0x000000000806282d                OPLTimerOver
+ *fill*         0x000000000806291e        0x2 90909090
+ .text          0x0000000008062920     0x39e2 build/Debug/GNU-Linux-x86/uigame.o
+                0x0000000008062920                PAL_DrawOpeningMenuBackground
+                0x0000000008062991                PAL_OpeningMenu
+                0x0000000008062aa3                PAL_SaveSlotMenu
+                0x0000000008062d0d                PAL_ConfirmMenu
+                0x0000000008062e3d                PAL_SwitchMenu
+                0x00000000080630a8                PAL_ShowCash
+                0x0000000008063e68                PAL_InGameMenu
+                0x0000000008063fe6                PAL_PlayerStatus
+                0x00000000080649ce                PAL_ItemUseMenu
+                0x0000000008065599                PAL_BuyMenu
+                0x0000000008065a23                PAL_SellMenu
+                0x0000000008065abd                PAL_EquipItemMenu
+ *fill*         0x0000000008066302        0x2 90909090
+ .text          0x0000000008066304      0xd34 build/Debug/GNU-Linux-x86/rngplay.o
+                0x0000000008066f26                PAL_RNGPlay
+ .text          0x0000000008067038     0x121f build/Debug/GNU-Linux-x86/ui.o
+                0x0000000008067038                PAL_InitUI
+                0x00000000080670bd                PAL_FreeUI
+                0x00000000080670e5                PAL_CreateBox
+                0x0000000008067474                PAL_CreateSingleLineBox
+                0x0000000008067704                PAL_DeleteBox
+                0x0000000008067780                PAL_ReadMenu
+                0x0000000008067ed4                PAL_DrawNumber
+                0x0000000008068073                PAL_LoadObjectDesc
+                0x00000000080681e6                PAL_FreeObjectDesc
+                0x000000000806821e                PAL_GetObjectDesc
+ *fill*         0x0000000008068257        0x1 90909090
+ .text          0x0000000008068258      0x2a8 build/Debug/GNU-Linux-x86/adplug/fprovide.o
+                0x0000000008068258                _ZN13CFileProvider9extensionERKSsS1_
+                0x00000000080682de                _ZN13CFileProvider8filesizeEP10binistream
+                0x00000000080683c4                _ZNK20CProvider_Filesystem4openESs
+                0x00000000080684bc                _ZNK20CProvider_Filesystem5closeEP10binistream
+ .text._ZN20CProvider_FilesystemD0Ev
+                0x0000000008068500       0x30 build/Debug/GNU-Linux-x86/adplug/fprovide.o
+                0x0000000008068500                _ZN20CProvider_FilesystemD0Ev
+ .text          0x0000000008068530     0x325b build/Debug/GNU-Linux-x86/global.o
+                0x0000000008068530                PAL_InitGlobals
+                0x000000000806866f                PAL_FreeGlobals
+                0x0000000008069801                PAL_SaveGame
+                0x0000000008069b68                PAL_InitGameData
+                0x0000000008069c20                PAL_AddItemToInventory
+                0x0000000008069e6b                PAL_GetItemAmount
+                0x0000000008069efd                PAL_CompressInventory
+                0x000000000806a027                PAL_IncreaseHPMP
+                0x000000000806a1e3                PAL_UpdateEquipments
+                0x000000000806a2ca                PAL_RemoveEquipmentEffect
+                0x000000000806a4e0                PAL_AddPoisonForPlayer
+                0x000000000806a615                PAL_CurePoisonByKind
+                0x000000000806a7b3                PAL_CurePoisonByLevel
+                0x000000000806a935                PAL_IsPlayerPoisonedByLevel
+                0x000000000806aa29                PAL_IsPlayerPoisonedByKind
+                0x000000000806aaea                PAL_GetPlayerAttackStrength
+                0x000000000806ab4c                PAL_GetPlayerMagicStrength
+                0x000000000806abae                PAL_GetPlayerDefense
+                0x000000000806ac10                PAL_GetPlayerDexterity
+                0x000000000806ac72                PAL_GetPlayerFleeRate
+                0x000000000806acd4                PAL_GetPlayerPoisonResistance
+                0x000000000806ad43                PAL_GetPlayerElementalResistance
+                0x000000000806add4                PAL_GetPlayerBattleSprite
+                0x000000000806ae5b                PAL_GetPlayerCooperativeMagic
+                0x000000000806aee2                PAL_PlayerCanAttackAll
+                0x000000000806af3c                PAL_AddMagic
+                0x000000000806b00c                PAL_RemoveMagic
+                0x000000000806b086                PAL_SetPlayerStatus
+                0x000000000806b2c7                PAL_RemovePlayerStatus
+                0x000000000806b32c                PAL_ClearAllPlayerStatus
+                0x000000000806b3a5                PAL_PlayerLevelUp
+ *fill*         0x000000000806b78b        0x1 90909090
+ .text          0x000000000806b78c      0xd65 build/Debug/GNU-Linux-x86/main.o
+                0x000000000806b8ba                PAL_Shutdown
+                0x000000000806b8ef                PAL_TrademarkScreen
+                0x000000000806b947                PAL_SplashScreen
+                0x000000000806c387                main
+ *fill*         0x000000000806c4f1        0x3 90909090
+ .text          0x000000000806c4f4     0x2349 build/Debug/GNU-Linux-x86/adplug/binfile.o
+                0x000000000806c4f4                _ZN8binfbaseC2Ev
+                0x000000000806c528                _ZN8binfbaseC1Ev
+                0x000000000806c564                _ZN8binfbaseD2Ev
+                0x000000000806c601                _ZTv0_n12_N8binfbaseD1Ev
+                0x000000000806c610                _ZN8binfbaseD1Ev
+                0x000000000806c6a3                _ZTv0_n12_N8binfbaseD0Ev
+                0x000000000806c6b2                _ZN8binfbaseD0Ev
+                0x000000000806c746                _ZN8binfbase5closeEv
+                0x000000000806c7ce                _ZTv0_n16_N8binfbase4seekElN5binio6OffsetE
+                0x000000000806c7de                _ZN8binfbase4seekElN5binio6OffsetE
+                0x000000000806c8c0                _ZTv0_n20_N8binfbase3posEv
+                0x000000000806c8d0                _ZN8binfbase3posEv
+                0x000000000806c95a                _ZN11binifstreamC2Ev
+                0x000000000806c9be                _ZN11binifstreamC1Ev
+                0x000000000806ca78                _ZN11binifstreamC2EPKci
+                0x000000000806cb1c                _ZN11binifstreamC1EPKci
+                0x000000000806cc12                _ZN11binifstreamC2ERKSsi
+                0x000000000806ccb6                _ZN11binifstreamC1ERKSsi
+                0x000000000806cdac                _ZN11binifstreamD2Ev
+                0x000000000806ceb0                _ZTv0_n16_N11binifstreamD1Ev
+                0x000000000806cebf                _ZTv0_n12_N11binifstreamD1Ev
+                0x000000000806cece                _ZN11binifstreamD1Ev
+                0x000000000806cfc6                _ZTv0_n16_N11binifstreamD0Ev
+                0x000000000806cfd5                _ZTv0_n12_N11binifstreamD0Ev
+                0x000000000806cfe4                _ZN11binifstreamD0Ev
+                0x000000000806d0dc                _ZTv0_n20_N11binifstream4openEPKci
+                0x000000000806d0ec                _ZN11binifstream4openEPKci
+                0x000000000806d1c9                _ZTv0_n24_N11binifstream4openERKSsi
+                0x000000000806d1d8                _ZN11binifstream4openERKSsi
+                0x000000000806d20e                _ZN11binifstream7getByteEv
+                0x000000000806d2ac                _ZN11binofstreamC2Ev
+                0x000000000806d310                _ZN11binofstreamC1Ev
+                0x000000000806d3ca                _ZN11binofstreamC2EPKci
+                0x000000000806d46e                _ZN11binofstreamC1EPKci
+                0x000000000806d564                _ZN11binofstreamC2ERKSsi
+                0x000000000806d608                _ZN11binofstreamC1ERKSsi
+                0x000000000806d6fe                _ZN11binofstreamD2Ev
+                0x000000000806d802                _ZTv0_n16_N11binofstreamD1Ev
+                0x000000000806d811                _ZTv0_n12_N11binofstreamD1Ev
+                0x000000000806d820                _ZN11binofstreamD1Ev
+                0x000000000806d918                _ZTv0_n16_N11binofstreamD0Ev
+                0x000000000806d927                _ZTv0_n12_N11binofstreamD0Ev
+                0x000000000806d936                _ZN11binofstreamD0Ev
+                0x000000000806da2e                _ZTv0_n20_N11binofstream4openEPKci
+                0x000000000806da3e                _ZN11binofstream4openEPKci
+                0x000000000806db41                _ZTv0_n24_N11binofstream4openERKSsi
+                0x000000000806db50                _ZN11binofstream4openERKSsi
+                0x000000000806db86                _ZN11binofstream7putByteEh
+                0x000000000806dc2a                _ZN10binfstreamC2Ev
+                0x000000000806dcdc                _ZN10binfstreamC1Ev
+                0x000000000806dddc                _ZN10binfstreamC2EPKci
+                0x000000000806deca                _ZN10binfstreamC1EPKci
+                0x000000000806e00c                _ZN10binfstreamC2ERKSsi
+                0x000000000806e0fa                _ZN10binfstreamC1ERKSsi
+                0x000000000806e23c                _ZN10binfstreamD2Ev
+                0x000000000806e389                _ZTv0_n16_N10binfstreamD1Ev
+                0x000000000806e398                _ZTv0_n12_N10binfstreamD1Ev
+                0x000000000806e3a7                _ZThn4_N10binfstreamD1Ev
+                0x000000000806e3ae                _ZN10binfstreamD1Ev
+                0x000000000806e4ee                _ZTv0_n16_N10binfstreamD0Ev
+                0x000000000806e4fd                _ZTv0_n12_N10binfstreamD0Ev
+                0x000000000806e50c                _ZThn4_N10binfstreamD0Ev
+                0x000000000806e514                _ZN10binfstreamD0Ev
+                0x000000000806e654                _ZTv0_n20_N10binfstream4openEPKci
+                0x000000000806e663                _ZThn4_N10binfstream4openEPKci
+                0x000000000806e66a                _ZN10binfstream4openEPKci
+                0x000000000806e7f1                _ZTv0_n24_N10binfstream4openERKSsi
+                0x000000000806e800                _ZThn4_N10binfstream4openERKSsi
+                0x000000000806e808                _ZN10binfstream4openERKSsi
+ *fill*         0x000000000806e83d        0x3 90909090
+ .text          0x000000000806e840     0x1077 build/Debug/GNU-Linux-x86/video.o
+                0x000000000806e840                VIDEO_Init
+                0x000000000806ea3c                VIDEO_Shutdown
+                0x000000000806eaa4                VIDEO_UpdateScreen
+                0x000000000806ef2b                VIDEO_SetPalette
+                0x000000000806ef5f                VIDEO_Resize
+                0x000000000806f053                VIDEO_GetPalette
+                0x000000000806f065                VIDEO_ToggleScaleScreen
+                0x000000000806f06a                VIDEO_ToggleFullscreen
+                0x000000000806f14d                VIDEO_SaveScreenshot
+                0x000000000806f20b                VIDEO_BackupScreen
+                0x000000000806f23a                VIDEO_RestoreScreen
+                0x000000000806f269                VIDEO_ShakeScreen
+                0x000000000806f293                VIDEO_SwitchScreen
+                0x000000000806f421                VIDEO_FadeScreen
+ *fill*         0x000000000806f8b7        0x1 90909090
+ .text          0x000000000806f8b8      0xf7b build/Debug/GNU-Linux-x86/palette.o
+                0x000000000806f8b8                PAL_GetPalette
+                0x000000000806fa36                PAL_SetPalette
+                0x000000000806fa64                PAL_FadeOut
+                0x000000000806fbaf                PAL_FadeIn
+                0x000000000806fcc7                PAL_SceneFade
+                0x000000000806ff55                PAL_PaletteFade
+                0x0000000008070192                PAL_ColorFade
+                0x00000000080705be                PAL_FadeToRed
+ *fill*         0x0000000008070833        0x1 90909090
+ .text          0x0000000008070834      0x79b build/Debug/GNU-Linux-x86/sound.o
+                0x0000000008070a95                SOUND_OpenAudio
+                0x0000000008070c4d                SOUND_CloseAudio
+                0x0000000008070ce1                SOUND_PlayChannel
+                0x0000000008070f3e                SOUND_PlayCDA
+ *fill*         0x0000000008070fcf        0x1 90909090
+ .text          0x0000000008070fd0      0x67d build/Debug/GNU-Linux-x86/res.o
+                0x0000000008071083                PAL_InitResources
+                0x00000000080710a4                PAL_FreeResources
+                0x00000000080710e6                PAL_SetLoadFlags
+                0x0000000008071113                PAL_LoadResources
+                0x0000000008071592                PAL_GetCurrentMap
+                0x00000000080715af                PAL_GetPlayerSprite
+                0x00000000080715e2                PAL_GetEventObjectSprite
+ *fill*         0x000000000807164d        0x3 90909090
+ .text          0x0000000008071650     0x49ff build/Debug/GNU-Linux-x86/battle.o
+                0x0000000008071650                PAL_BattleMakeScene
+                0x0000000008071fd5                PAL_BattleBackupScene
+                0x0000000008072004                PAL_BattleFadeScene
+                0x0000000008072480                PAL_LoadBattleSprites
+                0x0000000008074fbd                PAL_BattleEnemyEscape
+                0x000000000807511b                PAL_BattlePlayerEscape
+                0x000000000807542b                PAL_StartBattle
+ *fill*         0x000000000807604f        0x1 90909090
+ .text          0x0000000008076050     0xabaa build/Debug/GNU-Linux-x86/fight.o
+                0x00000000080760a0                PAL_BattleSelectAutoTarget
+                0x000000000807644d                PAL_CalcPhysicalAttackDamage
+                0x000000000807669c                PAL_UpdateTimeChargingUnit
+                0x0000000008076765                PAL_GetTimeChargingSpeed
+                0x00000000080767c9                PAL_BattleDelay
+                0x00000000080776e7                PAL_BattleUpdateFighters
+                0x0000000008077aa0                PAL_BattlePlayerCheckReady
+                0x0000000008077bed                PAL_BattleStartFrame
+                0x0000000008078692                PAL_BattleCommitAction
+                0x0000000008079531                PAL_BattleShowPlayerPreMagicAnim
+                0x000000000807c33d                PAL_BattlePlayerPerformAction
+                0x000000000807e902                PAL_BattleEnemyPerformAction
+                0x000000000808043a                PAL_BattleStealFromEnemy
+                0x0000000008080955                PAL_BattleSimulateMagic
+ *fill*         0x0000000008080bfa        0x2 90909090
+ .text          0x0000000008080bfc      0x63e build/Debug/GNU-Linux-x86/yj1.o
+                0x0000000008080e0c                DecodeYJ1
+ *fill*         0x000000000808123a        0x6 90909090
+ .text          0x0000000008081240       0x6a /usr/lib/libc_nonshared.a(elf-init.oS)
+                0x0000000008081240                __libc_csu_fini
+                0x0000000008081250                __libc_csu_init
+ .text.__i686.get_pc_thunk.bx
+                0x00000000080812aa        0x4 /usr/lib/libc_nonshared.a(elf-init.oS)
+                0x00000000080812aa                __i686.get_pc_thunk.bx
+ *fill*         0x00000000080812ae        0x2 90909090
+ .text          0x00000000080812b0       0x2a /usr/lib/gcc/i486-linux-gnu/4.4.1/crtend.o
+ *fill*         0x00000000080812da        0x2 90909090
+ .text          0x00000000080812dc        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crtn.o
+ *(.gnu.warning)
+
+.fini           0x00000000080812dc       0x1c
+ *(.fini)
+ .fini          0x00000000080812dc       0x13 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crti.o
+                0x00000000080812dc                _fini
+ .fini          0x00000000080812ef        0x5 /usr/lib/gcc/i486-linux-gnu/4.4.1/crtbegin.o
+ .fini          0x00000000080812f4        0x4 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crtn.o
+                0x00000000080812f8                PROVIDE (__etext, .)
+                0x00000000080812f8                PROVIDE (_etext, .)
+                0x00000000080812f8                PROVIDE (etext, .)
+
+.rodata         0x0000000008081300     0x2230
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x0000000008081300        0x4 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+                0x0000000008081300                _fp_hw
+ .rodata.cst4   0x0000000008081304        0x4 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+                0x0000000008081304                _IO_stdin_used
+ .rodata._ZTV13CFileProvider
+                0x0000000008081308       0x18 build/Debug/GNU-Linux-x86/rixplay.o
+                0x0000000008081308                _ZTV13CFileProvider
+ .rodata._ZTS13CFileProvider
+                0x0000000008081320       0x10 build/Debug/GNU-Linux-x86/rixplay.o
+                0x0000000008081320                _ZTS13CFileProvider
+ .rodata._ZTI13CFileProvider
+                0x0000000008081330        0x8 build/Debug/GNU-Linux-x86/rixplay.o
+                0x0000000008081330                _ZTI13CFileProvider
+ .rodata        0x0000000008081338        0x8 build/Debug/GNU-Linux-x86/rixplay.o
+ .rodata        0x0000000008081340      0x120 build/Debug/GNU-Linux-x86/adplug/rix.o
+                0x000000000808135e                _ZN10CrixPlayer6adflagE
+                0x0000000008081370                _ZN10CrixPlayer8reg_dataE
+                0x0000000008081382                _ZN10CrixPlayer10ad_C0_offsE
+                0x0000000008081394                _ZN10CrixPlayer6modifyE
+                0x00000000080813c0                _ZN10CrixPlayer11bd_reg_dataE
+ .rodata._ZTV10CrixPlayer
+                0x0000000008081460       0x54 build/Debug/GNU-Linux-x86/adplug/rix.o
+                0x0000000008081460                _ZTV10CrixPlayer
+ .rodata._ZTI10CrixPlayer
+                0x00000000080814b4        0xc build/Debug/GNU-Linux-x86/adplug/rix.o
+                0x00000000080814b4                _ZTI10CrixPlayer
+ .rodata._ZTS10CrixPlayer
+                0x00000000080814c0        0xd build/Debug/GNU-Linux-x86/adplug/rix.o
+                0x00000000080814c0                _ZTS10CrixPlayer
+ *fill*         0x00000000080814cd       0x13 00
+ .rodata        0x00000000080814e0       0x70 build/Debug/GNU-Linux-x86/text.o
+ .rodata        0x0000000008081550       0x14 build/Debug/GNU-Linux-x86/font.o
+ .rodata        0x0000000008081564       0x2c build/Debug/GNU-Linux-x86/adplug/player.o
+                0x0000000008081564                _ZN7CPlayer10note_tableE
+                0x000000000808157c                _ZN7CPlayer8op_tableE
+ *fill*         0x0000000008081590       0x10 00
+ .rodata._ZTV7CPlayer
+                0x00000000080815a0       0x54 build/Debug/GNU-Linux-x86/adplug/player.o
+                0x00000000080815a0                _ZTV7CPlayer
+ *fill*         0x00000000080815f4        0xc 00
+ .rodata._ZTV4Copl
+                0x0000000008081600       0x24 build/Debug/GNU-Linux-x86/adplug/player.o
+                0x0000000008081600                _ZTV4Copl
+ .rodata._ZTI7CPlayer
+                0x0000000008081624        0x8 build/Debug/GNU-Linux-x86/adplug/player.o
+                0x0000000008081624                _ZTI7CPlayer
+ .rodata._ZTS7CPlayer
+                0x000000000808162c        0x9 build/Debug/GNU-Linux-x86/adplug/player.o
+                0x000000000808162c                _ZTS7CPlayer
+ .rodata._ZTS4Copl
+                0x0000000008081635        0x6 build/Debug/GNU-Linux-x86/adplug/player.o
+                0x0000000008081635                _ZTS4Copl
+ *fill*         0x000000000808163b        0x1 00
+ .rodata._ZTI4Copl
+                0x000000000808163c        0x8 build/Debug/GNU-Linux-x86/adplug/player.o
+                0x000000000808163c                _ZTI4Copl
+ .rodata        0x0000000008081644       0x13 build/Debug/GNU-Linux-x86/itemmenu.o
+ *fill*         0x0000000008081657        0x9 00
+ .rodata._ZTV10binostream
+                0x0000000008081660       0x3c build/Debug/GNU-Linux-x86/adplug/binio.o
+                0x0000000008081660                _ZTV10binostream
+ *fill*         0x000000000808169c        0x4 00
+ .rodata._ZTT10binostream
+                0x00000000080816a0        0x8 build/Debug/GNU-Linux-x86/adplug/binio.o
+                0x00000000080816a0                _ZTT10binostream
+ *fill*         0x00000000080816a8       0x18 00
+ .rodata._ZTV10binistream
+                0x00000000080816c0       0x3c build/Debug/GNU-Linux-x86/adplug/binio.o
+                0x00000000080816c0                _ZTV10binistream
+ *fill*         0x00000000080816fc        0x4 00
+ .rodata._ZTT10binistream
+                0x0000000008081700        0x8 build/Debug/GNU-Linux-x86/adplug/binio.o
+                0x0000000008081700                _ZTT10binistream
+ .rodata._ZTV5binio
+                0x0000000008081708       0x18 build/Debug/GNU-Linux-x86/adplug/binio.o
+                0x0000000008081708                _ZTV5binio
+ .rodata._ZTI10binostream
+                0x0000000008081720       0x18 build/Debug/GNU-Linux-x86/adplug/binio.o
+                0x0000000008081720                _ZTI10binostream
+ .rodata._ZTS10binostream
+                0x0000000008081738        0xd build/Debug/GNU-Linux-x86/adplug/binio.o
+                0x0000000008081738                _ZTS10binostream
+ *fill*         0x0000000008081745        0x3 00
+ .rodata._ZTI10binistream
+                0x0000000008081748       0x18 build/Debug/GNU-Linux-x86/adplug/binio.o
+                0x0000000008081748                _ZTI10binistream
+ .rodata._ZTS10binistream
+                0x0000000008081760        0xd build/Debug/GNU-Linux-x86/adplug/binio.o
+                0x0000000008081760                _ZTS10binistream
+ *fill*         0x000000000808176d        0x3 00
+ .rodata._ZTI5binio
+                0x0000000008081770        0x8 build/Debug/GNU-Linux-x86/adplug/binio.o
+                0x0000000008081770                _ZTI5binio
+ .rodata._ZTS5binio
+                0x0000000008081778        0x7 build/Debug/GNU-Linux-x86/adplug/binio.o
+                0x0000000008081778                _ZTS5binio
+ *fill*         0x000000000808177f        0x1 00
+ .rodata        0x0000000008081780       0xdc build/Debug/GNU-Linux-x86/adplug/binio.o
+ .rodata        0x000000000808185c       0x48 build/Debug/GNU-Linux-x86/scene.o
+ .rodata        0x00000000080818a4      0x398 build/Debug/GNU-Linux-x86/script.o
+ *fill*         0x0000000008081c3c        0x4 00
+ .rodata._ZTV7CEmuopl
+                0x0000000008081c40       0x24 build/Debug/GNU-Linux-x86/adplug/emuopl.o
+                0x0000000008081c40                _ZTV7CEmuopl
+ .rodata._ZTI7CEmuopl
+                0x0000000008081c64        0xc build/Debug/GNU-Linux-x86/adplug/emuopl.o
+                0x0000000008081c64                _ZTI7CEmuopl
+ .rodata._ZTS7CEmuopl
+                0x0000000008081c70        0x9 build/Debug/GNU-Linux-x86/adplug/emuopl.o
+                0x0000000008081c70                _ZTS7CEmuopl
+ *fill*         0x0000000008081c79        0x3 00
+ .rodata        0x0000000008081c7c      0x164 build/Debug/GNU-Linux-x86/util.o
+ .rodata        0x0000000008081de0       0x43 build/Debug/GNU-Linux-x86/getopt.o
+ *fill*         0x0000000008081e23        0x1 00
+ .rodata        0x0000000008081e24      0x51c build/Debug/GNU-Linux-x86/input.o
+ .rodata        0x0000000008082340       0x50 build/Debug/GNU-Linux-x86/uibattle.o
+ *fill*         0x0000000008082390       0x10 00
+ .rodata        0x00000000080823a0      0x3d0 build/Debug/GNU-Linux-x86/adplug/fmopl.o
+ *fill*         0x0000000008082770       0x10 00
+ .rodata        0x0000000008082780       0xa8 build/Debug/GNU-Linux-x86/uigame.o
+ .rodata        0x0000000008082828       0x58 build/Debug/GNU-Linux-x86/rngplay.o
+ .rodata        0x0000000008082880       0x14 build/Debug/GNU-Linux-x86/ui.o
+ *fill*         0x0000000008082894        0x4 00
+ .rodata._ZTV20CProvider_Filesystem
+                0x0000000008082898       0x18 build/Debug/GNU-Linux-x86/adplug/fprovide.o
+                0x0000000008082898                _ZTV20CProvider_Filesystem
+ .rodata._ZTI20CProvider_Filesystem
+                0x00000000080828b0        0xc build/Debug/GNU-Linux-x86/adplug/fprovide.o
+                0x00000000080828b0                _ZTI20CProvider_Filesystem
+ .rodata._ZTS20CProvider_Filesystem
+                0x00000000080828bc       0x17 build/Debug/GNU-Linux-x86/adplug/fprovide.o
+                0x00000000080828bc                _ZTS20CProvider_Filesystem
+ *fill*         0x00000000080828d3        0x1 00
+ .rodata        0x00000000080828d4       0xe4 build/Debug/GNU-Linux-x86/global.o
+ .rodata        0x00000000080829b8      0x138 build/Debug/GNU-Linux-x86/main.o
+ .rodata        0x0000000008082af0        0x7 build/Debug/GNU-Linux-x86/adplug/binfile.o
+ *fill*         0x0000000008082af7        0x9 00
+ .rodata._ZTV10binfstream
+                0x0000000008082b00       0xa4 build/Debug/GNU-Linux-x86/adplug/binfile.o
+                0x0000000008082b00                _ZTV10binfstream
+ *fill*         0x0000000008082ba4       0x1c 00
+ .rodata._ZTT10binfstream
+                0x0000000008082bc0       0x40 build/Debug/GNU-Linux-x86/adplug/binfile.o
+                0x0000000008082bc0                _ZTT10binfstream
+ .rodata._ZTC10binfstream0_11binifstream
+                0x0000000008082c00       0x80 build/Debug/GNU-Linux-x86/adplug/binfile.o
+                0x0000000008082c00                _ZTC10binfstream0_11binifstream
+ .rodata._ZTC10binfstream0_10binistream
+                0x0000000008082c80       0x3c build/Debug/GNU-Linux-x86/adplug/binfile.o
+                0x0000000008082c80                _ZTC10binfstream0_10binistream
+ *fill*         0x0000000008082cbc        0x4 00
+ .rodata._ZTC10binfstream4_11binofstream
+                0x0000000008082cc0       0x80 build/Debug/GNU-Linux-x86/adplug/binfile.o
+                0x0000000008082cc0                _ZTC10binfstream4_11binofstream
+ .rodata._ZTC10binfstream4_10binostream
+                0x0000000008082d40       0x3c build/Debug/GNU-Linux-x86/adplug/binfile.o
+                0x0000000008082d40                _ZTC10binfstream4_10binostream
+ *fill*         0x0000000008082d7c        0x4 00
+ .rodata._ZTC10binfstream20_8binfbase
+                0x0000000008082d80       0x48 build/Debug/GNU-Linux-x86/adplug/binfile.o
+                0x0000000008082d80                _ZTC10binfstream20_8binfbase
+ *fill*         0x0000000008082dc8       0x18 00
+ .rodata._ZTV11binofstream
+                0x0000000008082de0       0x80 build/Debug/GNU-Linux-x86/adplug/binfile.o
+                0x0000000008082de0                _ZTV11binofstream
+ .rodata._ZTT11binofstream
+                0x0000000008082e60       0x1c build/Debug/GNU-Linux-x86/adplug/binfile.o
+                0x0000000008082e60                _ZTT11binofstream
+ *fill*         0x0000000008082e7c        0x4 00
+ .rodata._ZTC11binofstream0_10binostream
+                0x0000000008082e80       0x3c build/Debug/GNU-Linux-x86/adplug/binfile.o
+                0x0000000008082e80                _ZTC11binofstream0_10binostream
+ *fill*         0x0000000008082ebc        0x4 00
+ .rodata._ZTC11binofstream16_8binfbase
+                0x0000000008082ec0       0x48 build/Debug/GNU-Linux-x86/adplug/binfile.o
+                0x0000000008082ec0                _ZTC11binofstream16_8binfbase
+ *fill*         0x0000000008082f08       0x18 00
+ .rodata._ZTV11binifstream
+                0x0000000008082f20       0x80 build/Debug/GNU-Linux-x86/adplug/binfile.o
+                0x0000000008082f20                _ZTV11binifstream
+ .rodata._ZTT11binifstream
+                0x0000000008082fa0       0x1c build/Debug/GNU-Linux-x86/adplug/binfile.o
+                0x0000000008082fa0                _ZTT11binifstream
+ *fill*         0x0000000008082fbc        0x4 00
+ .rodata._ZTC11binifstream0_10binistream
+                0x0000000008082fc0       0x3c build/Debug/GNU-Linux-x86/adplug/binfile.o
+                0x0000000008082fc0                _ZTC11binifstream0_10binistream
+ *fill*         0x0000000008082ffc        0x4 00
+ .rodata._ZTC11binifstream16_8binfbase
+                0x0000000008083000       0x48 build/Debug/GNU-Linux-x86/adplug/binfile.o
+                0x0000000008083000                _ZTC11binifstream16_8binfbase
+ *fill*         0x0000000008083048       0x18 00
+ .rodata._ZTV8binfbase
+                0x0000000008083060       0x48 build/Debug/GNU-Linux-x86/adplug/binfile.o
+                0x0000000008083060                _ZTV8binfbase
+ .rodata._ZTT8binfbase
+                0x00000000080830a8        0x8 build/Debug/GNU-Linux-x86/adplug/binfile.o
+                0x00000000080830a8                _ZTT8binfbase
+ *fill*         0x00000000080830b0       0x10 00
+ .rodata._ZTI10binfstream
+                0x00000000080830c0       0x20 build/Debug/GNU-Linux-x86/adplug/binfile.o
+                0x00000000080830c0                _ZTI10binfstream
+ .rodata._ZTS10binfstream
+                0x00000000080830e0        0xd build/Debug/GNU-Linux-x86/adplug/binfile.o
+                0x00000000080830e0                _ZTS10binfstream
+ *fill*         0x00000000080830ed       0x13 00
+ .rodata._ZTI11binofstream
+                0x0000000008083100       0x20 build/Debug/GNU-Linux-x86/adplug/binfile.o
+                0x0000000008083100                _ZTI11binofstream
+ .rodata._ZTS11binofstream
+                0x0000000008083120        0xe build/Debug/GNU-Linux-x86/adplug/binfile.o
+                0x0000000008083120                _ZTS11binofstream
+ *fill*         0x000000000808312e       0x12 00
+ .rodata._ZTI11binifstream
+                0x0000000008083140       0x20 build/Debug/GNU-Linux-x86/adplug/binfile.o
+                0x0000000008083140                _ZTI11binifstream
+ .rodata._ZTS11binifstream
+                0x0000000008083160        0xe build/Debug/GNU-Linux-x86/adplug/binfile.o
+                0x0000000008083160                _ZTS11binifstream
+ *fill*         0x000000000808316e        0x2 00
+ .rodata._ZTI8binfbase
+                0x0000000008083170       0x18 build/Debug/GNU-Linux-x86/adplug/binfile.o
+                0x0000000008083170                _ZTI8binfbase
+ .rodata._ZTS8binfbase
+                0x0000000008083188        0xa build/Debug/GNU-Linux-x86/adplug/binfile.o
+                0x0000000008083188                _ZTS8binfbase
+ .rodata        0x0000000008083192       0x18 build/Debug/GNU-Linux-x86/video.o
+ .rodata        0x00000000080831aa        0x8 build/Debug/GNU-Linux-x86/palette.o
+ *fill*         0x00000000080831b2        0x2 00
+ .rodata        0x00000000080831b4       0x20 build/Debug/GNU-Linux-x86/sound.o
+ .rodata        0x00000000080831d4       0x6e build/Debug/GNU-Linux-x86/res.o
+ *fill*         0x0000000008083242        0x6 00
+ .rodata        0x0000000008083248       0xb0 build/Debug/GNU-Linux-x86/battle.o
+ *fill*         0x00000000080832f8        0x8 00
+ .rodata        0x0000000008083300      0x230 build/Debug/GNU-Linux-x86/fight.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x0000000008083530      0x574
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x0000000008083530      0x574 build/Debug/GNU-Linux-x86/rixplay.o
+
+.eh_frame       0x0000000008083aa4     0x1490
+ *(.eh_frame)
+ .eh_frame      0x0000000008083aa4      0x1a4 build/Debug/GNU-Linux-x86/rixplay.o
+ .eh_frame      0x0000000008083c48      0x548 build/Debug/GNU-Linux-x86/adplug/rix.o
+                                        0x584 (size before relaxing)
+ .eh_frame      0x0000000008084190      0x1c8 build/Debug/GNU-Linux-x86/adplug/player.o
+                                        0x338 (size before relaxing)
+ .eh_frame      0x0000000008084358      0x44c build/Debug/GNU-Linux-x86/adplug/binio.o
+                                        0x488 (size before relaxing)
+ .eh_frame      0x00000000080847a4      0x15c build/Debug/GNU-Linux-x86/adplug/emuopl.o
+                                        0x25c (size before relaxing)
+ .eh_frame      0x0000000008084900       0x94 build/Debug/GNU-Linux-x86/adplug/fprovide.o
+                                        0x140 (size before relaxing)
+ .eh_frame      0x0000000008084994      0x59c build/Debug/GNU-Linux-x86/adplug/binfile.o
+                                        0x5d8 (size before relaxing)
+ .eh_frame      0x0000000008084f30        0x4 /usr/lib/gcc/i486-linux-gnu/4.4.1/crtend.o
+
+.gcc_except_table
+                0x0000000008084f34      0x353
+ *(.gcc_except_table .gcc_except_table.*)
+ .gcc_except_table
+                0x0000000008084f34       0x47 build/Debug/GNU-Linux-x86/rixplay.o
+ .gcc_except_table
+                0x0000000008084f7b       0x41 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .gcc_except_table
+                0x0000000008084fbc        0xe build/Debug/GNU-Linux-x86/adplug/player.o
+ .gcc_except_table
+                0x0000000008084fca       0x12 build/Debug/GNU-Linux-x86/adplug/binio.o
+ .gcc_except_table
+                0x0000000008084fdc       0x43 build/Debug/GNU-Linux-x86/adplug/emuopl.o
+ .gcc_except_table
+                0x000000000808501f       0x11 build/Debug/GNU-Linux-x86/adplug/fprovide.o
+ .gcc_except_table
+                0x0000000008085030      0x257 build/Debug/GNU-Linux-x86/adplug/binfile.o
+                0x0000000008085287                . = (ALIGN (0x1000) - ((0x1000 - .) & 0xfff))
+                0x0000000008086edf                . = (0x1000 DATA_SEGMENT_ALIGN 0x1000)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x0000000008086edf        0x0
+                0x0000000008086edf                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array)
+                0x0000000008086edf                PROVIDE (__preinit_array_end, .)
+
+.init_array     0x0000000008086edf        0x0
+                0x0000000008086edf                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*))
+ *(.init_array)
+                0x0000000008086edf                PROVIDE (__init_array_end, .)
+
+.fini_array     0x0000000008086edf        0x0
+                0x0000000008086edf                PROVIDE (__fini_array_start, .)
+ *(.fini_array)
+ *(SORT(.fini_array.*))
+                0x0000000008086edf                PROVIDE (__fini_array_end, .)
+
+.ctors          0x0000000008086ee0        0xc
+ *crtbegin.o(.ctors)
+ .ctors         0x0000000008086ee0        0x4 /usr/lib/gcc/i486-linux-gnu/4.4.1/crtbegin.o
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ .ctors         0x0000000008086ee4        0x4 build/Debug/GNU-Linux-x86/adplug/binio.o
+ *(SORT(.ctors.*))
+ *(.ctors)
+ .ctors         0x0000000008086ee8        0x4 /usr/lib/gcc/i486-linux-gnu/4.4.1/crtend.o
+
+.dtors          0x0000000008086eec        0x8
+ *crtbegin.o(.dtors)
+ .dtors         0x0000000008086eec        0x4 /usr/lib/gcc/i486-linux-gnu/4.4.1/crtbegin.o
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+ .dtors         0x0000000008086ef0        0x4 /usr/lib/gcc/i486-linux-gnu/4.4.1/crtend.o
+                0x0000000008086ef0                __DTOR_END__
+
+.jcr            0x0000000008086ef4        0x4
+ *(.jcr)
+ .jcr           0x0000000008086ef4        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/crtbegin.o
+ .jcr           0x0000000008086ef4        0x4 /usr/lib/gcc/i486-linux-gnu/4.4.1/crtend.o
+
+.data.rel.ro
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro* .gnu.linkonce.d.rel.ro.*)
+
+.dynamic        0x0000000008086ef8       0xf8
+ *(.dynamic)
+ .dynamic       0x0000000008086ef8       0xf8 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+                0x0000000008086ef8                _DYNAMIC
+
+.got            0x0000000008086ff0        0x4
+ *(.got)
+ .got           0x0000000008086ff0        0x4 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ *(.igot)
+                0x0000000008086ff4                . = (. DATA_SEGMENT_RELRO_END 0xc)
+
+.got.plt        0x0000000008086ff4      0x190
+ *(.got.plt)
+ .got.plt       0x0000000008086ff4      0x190 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+                0x0000000008086ff4                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+
+.data           0x00000000080871a0      0x804
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x00000000080871a0        0x4 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+                0x00000000080871a0                data_start
+                0x00000000080871a0                __data_start
+ .data          0x00000000080871a4        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crti.o
+ .data          0x00000000080871a4        0x4 /usr/lib/gcc/i486-linux-gnu/4.4.1/crtbegin.o
+                0x00000000080871a4                __dso_handle
+ .data          0x00000000080871a8        0x0 build/Debug/GNU-Linux-x86/rixplay.o
+ .data          0x00000000080871a8       0x14 build/Debug/GNU-Linux-x86/adplug/rix.o
+                0x00000000080871a8                _ZN10CrixPlayer8for40regE
+                0x00000000080871ba                _ZN10CrixPlayer8mus_timeE
+ .data          0x00000000080871bc        0x0 build/Debug/GNU-Linux-x86/text.o
+ *fill*         0x00000000080871bc        0x4 00
+ .data          0x00000000080871c0      0x780 build/Debug/GNU-Linux-x86/font.o
+                0x00000000080871c0                iso_font
+ .data          0x0000000008087940        0x0 build/Debug/GNU-Linux-x86/adplug/player.o
+ .data          0x0000000008087940        0x2 build/Debug/GNU-Linux-x86/itemmenu.o
+ *fill*         0x0000000008087942        0x2 00
+ .data          0x0000000008087944        0x0 build/Debug/GNU-Linux-x86/adplug/binio.o
+ .data          0x0000000008087944        0x8 build/Debug/GNU-Linux-x86/scene.o
+ .data          0x000000000808794c        0x0 build/Debug/GNU-Linux-x86/palcommon.o
+ .data          0x000000000808794c        0x8 build/Debug/GNU-Linux-x86/script.o
+                0x000000000808794c                g_fScriptSuccess
+ .data          0x0000000008087954        0x0 build/Debug/GNU-Linux-x86/adplug/emuopl.o
+ .data          0x0000000008087954        0x0 build/Debug/GNU-Linux-x86/util.o
+ .data          0x0000000008087954        0x0 build/Debug/GNU-Linux-x86/play.o
+ .data          0x0000000008087954        0xc build/Debug/GNU-Linux-x86/getopt.o
+                0x0000000008087954                PAL_opterr
+                0x0000000008087958                PAL_optind
+ .data          0x0000000008087960        0x0 build/Debug/GNU-Linux-x86/input.o
+ .data          0x0000000008087960        0x0 build/Debug/GNU-Linux-x86/uibattle.o
+ .data          0x0000000008087960        0x0 build/Debug/GNU-Linux-x86/game.o
+ .data          0x0000000008087960        0x0 build/Debug/GNU-Linux-x86/magicmenu.o
+ .data          0x0000000008087960        0x0 build/Debug/GNU-Linux-x86/map.o
+ .data          0x0000000008087960        0x0 build/Debug/GNU-Linux-x86/ending.o
+ .data          0x0000000008087960        0x0 build/Debug/GNU-Linux-x86/adplug/fmopl.o
+ .data          0x0000000008087960        0x0 build/Debug/GNU-Linux-x86/uigame.o
+ .data          0x0000000008087960        0x0 build/Debug/GNU-Linux-x86/rngplay.o
+ .data          0x0000000008087960        0x0 build/Debug/GNU-Linux-x86/ui.o
+ .data          0x0000000008087960        0x0 build/Debug/GNU-Linux-x86/adplug/fprovide.o
+ .data          0x0000000008087960        0x0 build/Debug/GNU-Linux-x86/global.o
+ .data          0x0000000008087960        0x0 build/Debug/GNU-Linux-x86/main.o
+ .data          0x0000000008087960        0x0 build/Debug/GNU-Linux-x86/adplug/binfile.o
+ .data          0x0000000008087960        0x8 build/Debug/GNU-Linux-x86/video.o
+ .data          0x0000000008087968        0x0 build/Debug/GNU-Linux-x86/palette.o
+ .data          0x0000000008087968        0x0 build/Debug/GNU-Linux-x86/sound.o
+ .data          0x0000000008087968        0x0 build/Debug/GNU-Linux-x86/res.o
+ *fill*         0x0000000008087968       0x18 00
+ .data          0x0000000008087980       0x24 build/Debug/GNU-Linux-x86/battle.o
+                0x0000000008087980                g_rgPlayerPos
+ .data          0x00000000080879a4        0x0 build/Debug/GNU-Linux-x86/fight.o
+ .data          0x00000000080879a4        0x0 build/Debug/GNU-Linux-x86/yj1.o
+ .data          0x00000000080879a4        0x0 /usr/lib/libc_nonshared.a(elf-init.oS)
+ .data          0x00000000080879a4        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/crtend.o
+ .data          0x00000000080879a4        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crtn.o
+
+.data1
+ *(.data1)
+                0x00000000080879a4                _edata = .
+                0x00000000080879a4                PROVIDE (edata, .)
+                0x00000000080879a4                __bss_start = .
+
+.bss            0x00000000080879c0     0xfbb8
+ *(.dynbss)
+ .dynbss        0x00000000080879c0       0xb0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+                0x00000000080879c0                _ZTVN10__cxxabiv117__class_type_infoE@@CXXABI_1.3
+                0x0000000008087a00                _ZTVN10__cxxabiv120__si_class_type_infoE@@CXXABI_1.3
+                0x0000000008087a40                _ZTVN10__cxxabiv121__vmi_class_type_infoE@@CXXABI_1.3
+                0x0000000008087a6c                stderr@@GLIBC_2.0
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x0000000008087a70        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .bss           0x0000000008087a70        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crti.o
+ .bss           0x0000000008087a70        0x8 /usr/lib/gcc/i486-linux-gnu/4.4.1/crtbegin.o
+ .bss           0x0000000008087a78        0x4 build/Debug/GNU-Linux-x86/rixplay.o
+ .bss           0x0000000008087a7c        0x0 build/Debug/GNU-Linux-x86/adplug/rix.o
+ *fill*         0x0000000008087a7c        0x4 00
+ .bss           0x0000000008087a80      0x28b build/Debug/GNU-Linux-x86/text.o
+                0x0000000008087a80                g_fUpdatedInBattle
+ *fill*         0x0000000008087d0b        0x1 00
+ .bss           0x0000000008087d0c        0x4 build/Debug/GNU-Linux-x86/font.o
+ .bss           0x0000000008087d10        0x0 build/Debug/GNU-Linux-x86/adplug/player.o
+ *fill*         0x0000000008087d10       0x10 00
+ .bss           0x0000000008087d20      0x820 build/Debug/GNU-Linux-x86/itemmenu.o
+ .bss           0x0000000008088540        0x4 build/Debug/GNU-Linux-x86/adplug/binio.o
+                0x0000000008088540                _ZN5binio12system_flagsE
+ *fill*         0x0000000008088544       0x1c 00
+ .bss           0x0000000008088560     0x600c build/Debug/GNU-Linux-x86/scene.o
+ .bss           0x000000000808e56c        0x0 build/Debug/GNU-Linux-x86/palcommon.o
+ .bss           0x000000000808e56c        0x2 build/Debug/GNU-Linux-x86/script.o
+ *fill*         0x000000000808e56e        0x2 00
+ .bss           0x000000000808e570        0x0 build/Debug/GNU-Linux-x86/adplug/emuopl.o
+ *fill*         0x000000000808e570       0x10 00
+ .bss           0x000000000808e580      0x120 build/Debug/GNU-Linux-x86/util.o
+ .bss           0x000000000808e6a0        0x0 build/Debug/GNU-Linux-x86/play.o
+ .bss           0x000000000808e6a0        0x0 build/Debug/GNU-Linux-x86/getopt.o
+ .bss           0x000000000808e6a0        0x4 build/Debug/GNU-Linux-x86/input.o
+ .bss           0x000000000808e6a4        0xc build/Debug/GNU-Linux-x86/uibattle.o
+ .bss           0x000000000808e6b0        0x0 build/Debug/GNU-Linux-x86/game.o
+ *fill*         0x000000000808e6b0       0x10 00
+ .bss           0x000000000808e6c0      0x10a build/Debug/GNU-Linux-x86/magicmenu.o
+ *fill*         0x000000000808e7ca        0x2 00
+ .bss           0x000000000808e7cc        0x0 build/Debug/GNU-Linux-x86/map.o
+ .bss           0x000000000808e7cc        0x2 build/Debug/GNU-Linux-x86/ending.o
+ *fill*         0x000000000808e7ce       0x12 00
+ .bss           0x000000000808e7e0     0x80a8 build/Debug/GNU-Linux-x86/adplug/fmopl.o
+ .bss           0x0000000008096888        0x6 build/Debug/GNU-Linux-x86/uigame.o
+ *fill*         0x000000000809688e        0x2 00
+ .bss           0x0000000008096890        0x0 build/Debug/GNU-Linux-x86/rngplay.o
+ .bss           0x0000000008096890        0x4 build/Debug/GNU-Linux-x86/ui.o
+                0x0000000008096890                gpSpriteUI
+ .bss           0x0000000008096894        0x0 build/Debug/GNU-Linux-x86/adplug/fprovide.o
+ .bss           0x0000000008096894        0x4 build/Debug/GNU-Linux-x86/global.o
+                0x0000000008096894                gpGlobals
+ .bss           0x0000000008096898        0x0 build/Debug/GNU-Linux-x86/main.o
+ .bss           0x0000000008096898        0x0 build/Debug/GNU-Linux-x86/adplug/binfile.o
+ .bss           0x0000000008096898       0x10 build/Debug/GNU-Linux-x86/video.o
+                0x0000000008096898                gpScreen
+                0x000000000809689c                gpScreenBak
+ *fill*         0x00000000080968a8       0x18 00
+ .bss           0x00000000080968c0      0x400 build/Debug/GNU-Linux-x86/palette.o
+ .bss           0x0000000008096cc0       0x58 build/Debug/GNU-Linux-x86/sound.o
+                0x0000000008096cc0                g_fNoSound
+                0x0000000008096cc4                g_fNoMusic
+ .bss           0x0000000008096d18        0x4 build/Debug/GNU-Linux-x86/res.o
+ .bss           0x0000000008096d1c        0x0 build/Debug/GNU-Linux-x86/battle.o
+ .bss           0x0000000008096d1c        0x0 build/Debug/GNU-Linux-x86/fight.o
+ .bss           0x0000000008096d1c        0x0 build/Debug/GNU-Linux-x86/yj1.o
+ .bss           0x0000000008096d1c        0x0 /usr/lib/libc_nonshared.a(elf-init.oS)
+ .bss           0x0000000008096d1c        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/crtend.o
+ .bss           0x0000000008096d1c        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crtn.o
+ *(COMMON)
+ COMMON         0x0000000008096d1c        0xc build/Debug/GNU-Linux-x86/getopt.o
+                0x0000000008096d1c                PAL_optarg
+                0x0000000008096d20                PAL_optopt
+                0x0000000008096d24                PAL_optreset
+ COMMON         0x0000000008096d28        0xc build/Debug/GNU-Linux-x86/input.o
+                0x0000000008096d28                g_InputState
+ COMMON         0x0000000008096d34       0x18 build/Debug/GNU-Linux-x86/adplug/fmopl.o
+                0x0000000008096d34                SLOT8_2
+                0x0000000008096d38                SLOT7_1
+                0x0000000008096d3c                vib_table
+                0x0000000008096d40                SLOT7_2
+                0x0000000008096d44                ams_table
+                0x0000000008096d48                SLOT8_1
+ *fill*         0x0000000008096d4c       0x14 00
+ COMMON         0x0000000008096d60      0x818 build/Debug/GNU-Linux-x86/battle.o
+                0x0000000008096d60                g_Battle
+                0x0000000008097578                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x0000000008097578                . = ALIGN (0x4)
+                0x0000000008097578                . = ALIGN (0x4)
+                0x0000000008097578                _end = .
+                0x0000000008097578                PROVIDE (end, .)
+                0x0000000008097578                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x46
+ *(.comment)
+ .comment       0x0000000000000000       0x23 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+                                         0x24 (size before relaxing)
+ .comment       0x0000000000000000       0x24 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crti.o
+ .comment       0x0000000000000023       0x23 /usr/lib/gcc/i486-linux-gnu/4.4.1/crtbegin.o
+                                         0x24 (size before relaxing)
+ .comment       0x0000000000000000       0x24 build/Debug/GNU-Linux-x86/rixplay.o
+ .comment       0x0000000000000000       0x24 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .comment       0x0000000000000000       0x24 build/Debug/GNU-Linux-x86/text.o
+ .comment       0x0000000000000000       0x24 build/Debug/GNU-Linux-x86/font.o
+ .comment       0x0000000000000000       0x24 build/Debug/GNU-Linux-x86/adplug/player.o
+ .comment       0x0000000000000000       0x24 build/Debug/GNU-Linux-x86/itemmenu.o
+ .comment       0x0000000000000000       0x24 build/Debug/GNU-Linux-x86/adplug/binio.o
+ .comment       0x0000000000000000       0x24 build/Debug/GNU-Linux-x86/scene.o
+ .comment       0x0000000000000000       0x24 build/Debug/GNU-Linux-x86/palcommon.o
+ .comment       0x0000000000000000       0x24 build/Debug/GNU-Linux-x86/script.o
+ .comment       0x0000000000000000       0x24 build/Debug/GNU-Linux-x86/adplug/emuopl.o
+ .comment       0x0000000000000000       0x24 build/Debug/GNU-Linux-x86/util.o
+ .comment       0x0000000000000000       0x24 build/Debug/GNU-Linux-x86/play.o
+ .comment       0x0000000000000000       0x24 build/Debug/GNU-Linux-x86/getopt.o
+ .comment       0x0000000000000000       0x24 build/Debug/GNU-Linux-x86/input.o
+ .comment       0x0000000000000000       0x24 build/Debug/GNU-Linux-x86/uibattle.o
+ .comment       0x0000000000000000       0x24 build/Debug/GNU-Linux-x86/game.o
+ .comment       0x0000000000000000       0x24 build/Debug/GNU-Linux-x86/magicmenu.o
+ .comment       0x0000000000000000       0x24 build/Debug/GNU-Linux-x86/map.o
+ .comment       0x0000000000000000       0x24 build/Debug/GNU-Linux-x86/ending.o
+ .comment       0x0000000000000000       0x24 build/Debug/GNU-Linux-x86/adplug/fmopl.o
+ .comment       0x0000000000000000       0x24 build/Debug/GNU-Linux-x86/uigame.o
+ .comment       0x0000000000000000       0x24 build/Debug/GNU-Linux-x86/rngplay.o
+ .comment       0x0000000000000000       0x24 build/Debug/GNU-Linux-x86/ui.o
+ .comment       0x0000000000000000       0x24 build/Debug/GNU-Linux-x86/adplug/fprovide.o
+ .comment       0x0000000000000000       0x24 build/Debug/GNU-Linux-x86/global.o
+ .comment       0x0000000000000000       0x24 build/Debug/GNU-Linux-x86/main.o
+ .comment       0x0000000000000000       0x24 build/Debug/GNU-Linux-x86/adplug/binfile.o
+ .comment       0x0000000000000000       0x24 build/Debug/GNU-Linux-x86/video.o
+ .comment       0x0000000000000000       0x24 build/Debug/GNU-Linux-x86/palette.o
+ .comment       0x0000000000000000       0x24 build/Debug/GNU-Linux-x86/sound.o
+ .comment       0x0000000000000000       0x24 build/Debug/GNU-Linux-x86/res.o
+ .comment       0x0000000000000000       0x24 build/Debug/GNU-Linux-x86/battle.o
+ .comment       0x0000000000000000       0x24 build/Debug/GNU-Linux-x86/fight.o
+ .comment       0x0000000000000000       0x24 build/Debug/GNU-Linux-x86/yj1.o
+ .comment       0x0000000000000000       0x24 /usr/lib/libc_nonshared.a(elf-init.oS)
+ .comment       0x0000000000000000       0x24 /usr/lib/gcc/i486-linux-gnu/4.4.1/crtend.o
+ .comment       0x0000000000000000       0x24 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crtn.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x6f0
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x20 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .debug_aranges
+                0x0000000000000020       0x60 build/Debug/GNU-Linux-x86/rixplay.o
+ .debug_aranges
+                0x0000000000000080      0x140 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .debug_aranges
+                0x00000000000001c0       0x20 build/Debug/GNU-Linux-x86/text.o
+ .debug_aranges
+                0x00000000000001e0       0x20 build/Debug/GNU-Linux-x86/font.o
+ .debug_aranges
+                0x0000000000000200       0xc0 build/Debug/GNU-Linux-x86/adplug/player.o
+ .debug_aranges
+                0x00000000000002c0       0x20 build/Debug/GNU-Linux-x86/itemmenu.o
+ .debug_aranges
+                0x00000000000002e0       0x20 build/Debug/GNU-Linux-x86/adplug/binio.o
+ .debug_aranges
+                0x0000000000000300       0x20 build/Debug/GNU-Linux-x86/scene.o
+ .debug_aranges
+                0x0000000000000320       0x20 build/Debug/GNU-Linux-x86/palcommon.o
+ .debug_aranges
+                0x0000000000000340       0x20 build/Debug/GNU-Linux-x86/script.o
+ .debug_aranges
+                0x0000000000000360       0x68 build/Debug/GNU-Linux-x86/adplug/emuopl.o
+ .debug_aranges
+                0x00000000000003c8       0x20 build/Debug/GNU-Linux-x86/util.o
+ .debug_aranges
+                0x00000000000003e8       0x20 build/Debug/GNU-Linux-x86/play.o
+ .debug_aranges
+                0x0000000000000408       0x20 build/Debug/GNU-Linux-x86/getopt.o
+ .debug_aranges
+                0x0000000000000428       0x20 build/Debug/GNU-Linux-x86/input.o
+ .debug_aranges
+                0x0000000000000448       0x20 build/Debug/GNU-Linux-x86/uibattle.o
+ .debug_aranges
+                0x0000000000000468       0x20 build/Debug/GNU-Linux-x86/game.o
+ .debug_aranges
+                0x0000000000000488       0x20 build/Debug/GNU-Linux-x86/magicmenu.o
+ .debug_aranges
+                0x00000000000004a8       0x20 build/Debug/GNU-Linux-x86/map.o
+ .debug_aranges
+                0x00000000000004c8       0x20 build/Debug/GNU-Linux-x86/ending.o
+ .debug_aranges
+                0x00000000000004e8       0x20 build/Debug/GNU-Linux-x86/adplug/fmopl.o
+ .debug_aranges
+                0x0000000000000508       0x20 build/Debug/GNU-Linux-x86/uigame.o
+ .debug_aranges
+                0x0000000000000528       0x20 build/Debug/GNU-Linux-x86/rngplay.o
+ .debug_aranges
+                0x0000000000000548       0x20 build/Debug/GNU-Linux-x86/ui.o
+ .debug_aranges
+                0x0000000000000568       0x48 build/Debug/GNU-Linux-x86/adplug/fprovide.o
+ .debug_aranges
+                0x00000000000005b0       0x20 build/Debug/GNU-Linux-x86/global.o
+ .debug_aranges
+                0x00000000000005d0       0x20 build/Debug/GNU-Linux-x86/main.o
+ .debug_aranges
+                0x00000000000005f0       0x20 build/Debug/GNU-Linux-x86/adplug/binfile.o
+ .debug_aranges
+                0x0000000000000610       0x20 build/Debug/GNU-Linux-x86/video.o
+ .debug_aranges
+                0x0000000000000630       0x20 build/Debug/GNU-Linux-x86/palette.o
+ .debug_aranges
+                0x0000000000000650       0x20 build/Debug/GNU-Linux-x86/sound.o
+ .debug_aranges
+                0x0000000000000670       0x20 build/Debug/GNU-Linux-x86/res.o
+ .debug_aranges
+                0x0000000000000690       0x20 build/Debug/GNU-Linux-x86/battle.o
+ .debug_aranges
+                0x00000000000006b0       0x20 build/Debug/GNU-Linux-x86/fight.o
+ .debug_aranges
+                0x00000000000006d0       0x20 build/Debug/GNU-Linux-x86/yj1.o
+
+.debug_pubnames
+                0x0000000000000000     0x2a90
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x0000000000000000       0x25 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .debug_pubnames
+                0x0000000000000025      0x175 build/Debug/GNU-Linux-x86/rixplay.o
+ .debug_pubnames
+                0x000000000000019a      0x582 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .debug_pubnames
+                0x000000000000071c      0x115 build/Debug/GNU-Linux-x86/text.o
+ .debug_pubnames
+                0x0000000000000831       0x7a build/Debug/GNU-Linux-x86/font.o
+ .debug_pubnames
+                0x00000000000008ab      0x273 build/Debug/GNU-Linux-x86/adplug/player.o
+ .debug_pubnames
+                0x0000000000000b1e       0x61 build/Debug/GNU-Linux-x86/itemmenu.o
+ .debug_pubnames
+                0x0000000000000b7f      0x3d1 build/Debug/GNU-Linux-x86/adplug/binio.o
+ .debug_pubnames
+                0x0000000000000f50       0x93 build/Debug/GNU-Linux-x86/scene.o
+ .debug_pubnames
+                0x0000000000000fe3      0x156 build/Debug/GNU-Linux-x86/palcommon.o
+ .debug_pubnames
+                0x0000000000001139       0x56 build/Debug/GNU-Linux-x86/script.o
+ .debug_pubnames
+                0x000000000000118f      0x15f build/Debug/GNU-Linux-x86/adplug/emuopl.o
+ .debug_pubnames
+                0x00000000000012ee       0xb2 build/Debug/GNU-Linux-x86/util.o
+ .debug_pubnames
+                0x00000000000013a0       0x84 build/Debug/GNU-Linux-x86/play.o
+ .debug_pubnames
+                0x0000000000001424       0x6e build/Debug/GNU-Linux-x86/getopt.o
+ .debug_pubnames
+                0x0000000000001492       0x76 build/Debug/GNU-Linux-x86/input.o
+ .debug_pubnames
+                0x0000000000001508       0x8c build/Debug/GNU-Linux-x86/uibattle.o
+ .debug_pubnames
+                0x0000000000001594       0x23 build/Debug/GNU-Linux-x86/game.o
+ .debug_pubnames
+                0x00000000000015b7       0x6d build/Debug/GNU-Linux-x86/magicmenu.o
+ .debug_pubnames
+                0x0000000000001624       0x96 build/Debug/GNU-Linux-x86/map.o
+ .debug_pubnames
+                0x00000000000016ba       0x6a build/Debug/GNU-Linux-x86/ending.o
+ .debug_pubnames
+                0x0000000000001724      0x200 build/Debug/GNU-Linux-x86/adplug/fmopl.o
+ .debug_pubnames
+                0x0000000000001924      0x108 build/Debug/GNU-Linux-x86/uigame.o
+ .debug_pubnames
+                0x0000000000001a2c       0x22 build/Debug/GNU-Linux-x86/rngplay.o
+ .debug_pubnames
+                0x0000000000001a4e       0xe7 build/Debug/GNU-Linux-x86/ui.o
+ .debug_pubnames
+                0x0000000000001b35      0x150 build/Debug/GNU-Linux-x86/adplug/fprovide.o
+ .debug_pubnames
+                0x0000000000001c85      0x34c build/Debug/GNU-Linux-x86/global.o
+ .debug_pubnames
+                0x0000000000001fd1       0x59 build/Debug/GNU-Linux-x86/main.o
+ .debug_pubnames
+                0x000000000000202a      0x47b build/Debug/GNU-Linux-x86/adplug/binfile.o
+ .debug_pubnames
+                0x00000000000024a5      0x164 build/Debug/GNU-Linux-x86/video.o
+ .debug_pubnames
+                0x0000000000002609       0xa1 build/Debug/GNU-Linux-x86/palette.o
+ .debug_pubnames
+                0x00000000000026aa       0x81 build/Debug/GNU-Linux-x86/sound.o
+ .debug_pubnames
+                0x000000000000272b       0xb4 build/Debug/GNU-Linux-x86/res.o
+ .debug_pubnames
+                0x00000000000027df       0xde build/Debug/GNU-Linux-x86/battle.o
+ .debug_pubnames
+                0x00000000000028bd      0x1b3 build/Debug/GNU-Linux-x86/fight.o
+ .debug_pubnames
+                0x0000000000002a70       0x20 build/Debug/GNU-Linux-x86/yj1.o
+
+.debug_info     0x0000000000000000    0x427d4
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000       0xef /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .debug_info    0x00000000000000ef     0x2f4c build/Debug/GNU-Linux-x86/rixplay.o
+ .debug_info    0x000000000000303b     0x3ed9 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .debug_info    0x0000000000006f14     0x28db build/Debug/GNU-Linux-x86/text.o
+ .debug_info    0x00000000000097ef      0x923 build/Debug/GNU-Linux-x86/font.o
+ .debug_info    0x000000000000a112     0x30e1 build/Debug/GNU-Linux-x86/adplug/player.o
+ .debug_info    0x000000000000d1f3     0x1e6e build/Debug/GNU-Linux-x86/itemmenu.o
+ .debug_info    0x000000000000f061     0x3798 build/Debug/GNU-Linux-x86/adplug/binio.o
+ .debug_info    0x00000000000127f9     0x214d build/Debug/GNU-Linux-x86/scene.o
+ .debug_info    0x0000000000014946      0xce3 build/Debug/GNU-Linux-x86/palcommon.o
+ .debug_info    0x0000000000015629     0x28a3 build/Debug/GNU-Linux-x86/script.o
+ .debug_info    0x0000000000017ecc      0xcda build/Debug/GNU-Linux-x86/adplug/emuopl.o
+ .debug_info    0x0000000000018ba6      0x6ee build/Debug/GNU-Linux-x86/util.o
+ .debug_info    0x0000000000019294     0x1abc build/Debug/GNU-Linux-x86/play.o
+ .debug_info    0x000000000001ad50      0x3be build/Debug/GNU-Linux-x86/getopt.o
+ .debug_info    0x000000000001b10e     0x25d2 build/Debug/GNU-Linux-x86/input.o
+ .debug_info    0x000000000001d6e0     0x2958 build/Debug/GNU-Linux-x86/uibattle.o
+ .debug_info    0x0000000000020038     0x16e5 build/Debug/GNU-Linux-x86/game.o
+ .debug_info    0x000000000002171d     0x1e82 build/Debug/GNU-Linux-x86/magicmenu.o
+ .debug_info    0x000000000002359f      0x9eb build/Debug/GNU-Linux-x86/map.o
+ .debug_info    0x0000000000023f8a     0x1d6a build/Debug/GNU-Linux-x86/ending.o
+ .debug_info    0x0000000000025cf4     0x13bc build/Debug/GNU-Linux-x86/adplug/fmopl.o
+ .debug_info    0x00000000000270b0     0x252d build/Debug/GNU-Linux-x86/uigame.o
+ .debug_info    0x00000000000295dd     0x1c01 build/Debug/GNU-Linux-x86/rngplay.o
+ .debug_info    0x000000000002b1de     0x2206 build/Debug/GNU-Linux-x86/ui.o
+ .debug_info    0x000000000002d3e4     0x2b8b build/Debug/GNU-Linux-x86/adplug/fprovide.o
+ .debug_info    0x000000000002ff6f     0x23da build/Debug/GNU-Linux-x86/global.o
+ .debug_info    0x0000000000032349     0x1dbb build/Debug/GNU-Linux-x86/main.o
+ .debug_info    0x0000000000034104     0x392d build/Debug/GNU-Linux-x86/adplug/binfile.o
+ .debug_info    0x0000000000037a31      0xbf6 build/Debug/GNU-Linux-x86/video.o
+ .debug_info    0x0000000000038627     0x1e41 build/Debug/GNU-Linux-x86/palette.o
+ .debug_info    0x000000000003a468      0x9d1 build/Debug/GNU-Linux-x86/sound.o
+ .debug_info    0x000000000003ae39     0x1a73 build/Debug/GNU-Linux-x86/res.o
+ .debug_info    0x000000000003c8ac     0x26a7 build/Debug/GNU-Linux-x86/battle.o
+ .debug_info    0x000000000003ef53     0x339b build/Debug/GNU-Linux-x86/fight.o
+ .debug_info    0x00000000000422ee      0x4e6 build/Debug/GNU-Linux-x86/yj1.o
+
+.debug_abbrev   0x0000000000000000     0x5d78
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000       0x5f /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .debug_abbrev  0x000000000000005f      0x5b4 build/Debug/GNU-Linux-x86/rixplay.o
+ .debug_abbrev  0x0000000000000613      0x5c2 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .debug_abbrev  0x0000000000000bd5      0x2b5 build/Debug/GNU-Linux-x86/text.o
+ .debug_abbrev  0x0000000000000e8a      0x190 build/Debug/GNU-Linux-x86/font.o
+ .debug_abbrev  0x000000000000101a      0x549 build/Debug/GNU-Linux-x86/adplug/player.o
+ .debug_abbrev  0x0000000000001563      0x219 build/Debug/GNU-Linux-x86/itemmenu.o
+ .debug_abbrev  0x000000000000177c      0x611 build/Debug/GNU-Linux-x86/adplug/binio.o
+ .debug_abbrev  0x0000000000001d8d      0x253 build/Debug/GNU-Linux-x86/scene.o
+ .debug_abbrev  0x0000000000001fe0      0x1a1 build/Debug/GNU-Linux-x86/palcommon.o
+ .debug_abbrev  0x0000000000002181      0x287 build/Debug/GNU-Linux-x86/script.o
+ .debug_abbrev  0x0000000000002408      0x299 build/Debug/GNU-Linux-x86/adplug/emuopl.o
+ .debug_abbrev  0x00000000000026a1      0x202 build/Debug/GNU-Linux-x86/util.o
+ .debug_abbrev  0x00000000000028a3      0x209 build/Debug/GNU-Linux-x86/play.o
+ .debug_abbrev  0x0000000000002aac      0x109 build/Debug/GNU-Linux-x86/getopt.o
+ .debug_abbrev  0x0000000000002bb5      0x22d build/Debug/GNU-Linux-x86/input.o
+ .debug_abbrev  0x0000000000002de2      0x290 build/Debug/GNU-Linux-x86/uibattle.o
+ .debug_abbrev  0x0000000000003072      0x177 build/Debug/GNU-Linux-x86/game.o
+ .debug_abbrev  0x00000000000031e9      0x212 build/Debug/GNU-Linux-x86/magicmenu.o
+ .debug_abbrev  0x00000000000033fb      0x1ad build/Debug/GNU-Linux-x86/map.o
+ .debug_abbrev  0x00000000000035a8      0x1e1 build/Debug/GNU-Linux-x86/ending.o
+ .debug_abbrev  0x0000000000003789      0x223 build/Debug/GNU-Linux-x86/adplug/fmopl.o
+ .debug_abbrev  0x00000000000039ac      0x275 build/Debug/GNU-Linux-x86/uigame.o
+ .debug_abbrev  0x0000000000003c21      0x1e2 build/Debug/GNU-Linux-x86/rngplay.o
+ .debug_abbrev  0x0000000000003e03      0x26c build/Debug/GNU-Linux-x86/ui.o
+ .debug_abbrev  0x000000000000406f      0x4da build/Debug/GNU-Linux-x86/adplug/fprovide.o
+ .debug_abbrev  0x0000000000004549      0x25d build/Debug/GNU-Linux-x86/global.o
+ .debug_abbrev  0x00000000000047a6      0x234 build/Debug/GNU-Linux-x86/main.o
+ .debug_abbrev  0x00000000000049da      0x556 build/Debug/GNU-Linux-x86/adplug/binfile.o
+ .debug_abbrev  0x0000000000004f30      0x1da build/Debug/GNU-Linux-x86/video.o
+ .debug_abbrev  0x000000000000510a      0x206 build/Debug/GNU-Linux-x86/palette.o
+ .debug_abbrev  0x0000000000005310      0x20e build/Debug/GNU-Linux-x86/sound.o
+ .debug_abbrev  0x000000000000551e      0x21b build/Debug/GNU-Linux-x86/res.o
+ .debug_abbrev  0x0000000000005739      0x275 build/Debug/GNU-Linux-x86/battle.o
+ .debug_abbrev  0x00000000000059ae      0x2ba build/Debug/GNU-Linux-x86/fight.o
+ .debug_abbrev  0x0000000000005c68      0x110 build/Debug/GNU-Linux-x86/yj1.o
+
+.debug_line     0x0000000000000000     0x8321
+ *(.debug_line)
+ .debug_line    0x0000000000000000       0x82 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+ .debug_line    0x0000000000000082      0x3ae build/Debug/GNU-Linux-x86/rixplay.o
+ .debug_line    0x0000000000000430      0x6f3 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .debug_line    0x0000000000000b23      0x342 build/Debug/GNU-Linux-x86/text.o
+ .debug_line    0x0000000000000e65      0x1ba build/Debug/GNU-Linux-x86/font.o
+ .debug_line    0x000000000000101f      0x3e7 build/Debug/GNU-Linux-x86/adplug/player.o
+ .debug_line    0x0000000000001406      0x278 build/Debug/GNU-Linux-x86/itemmenu.o
+ .debug_line    0x000000000000167e      0x437 build/Debug/GNU-Linux-x86/adplug/binio.o
+ .debug_line    0x0000000000001ab5      0x3bf build/Debug/GNU-Linux-x86/scene.o
+ .debug_line    0x0000000000001e74      0x2b0 build/Debug/GNU-Linux-x86/palcommon.o
+ .debug_line    0x0000000000002124      0xbb6 build/Debug/GNU-Linux-x86/script.o
+ .debug_line    0x0000000000002cda      0x193 build/Debug/GNU-Linux-x86/adplug/emuopl.o
+ .debug_line    0x0000000000002e6d      0x163 build/Debug/GNU-Linux-x86/util.o
+ .debug_line    0x0000000000002fd0      0x26f build/Debug/GNU-Linux-x86/play.o
+ .debug_line    0x000000000000323f       0xe8 build/Debug/GNU-Linux-x86/getopt.o
+ .debug_line    0x0000000000003327      0x240 build/Debug/GNU-Linux-x86/input.o
+ .debug_line    0x0000000000003567      0x5c1 build/Debug/GNU-Linux-x86/uibattle.o
+ .debug_line    0x0000000000003b28      0x103 build/Debug/GNU-Linux-x86/game.o
+ .debug_line    0x0000000000003c2b      0x263 build/Debug/GNU-Linux-x86/magicmenu.o
+ .debug_line    0x0000000000003e8e      0x1c1 build/Debug/GNU-Linux-x86/map.o
+ .debug_line    0x000000000000404f      0x278 build/Debug/GNU-Linux-x86/ending.o
+ .debug_line    0x00000000000042c7      0x3d6 build/Debug/GNU-Linux-x86/adplug/fmopl.o
+ .debug_line    0x000000000000469d      0x65b build/Debug/GNU-Linux-x86/uigame.o
+ .debug_line    0x0000000000004cf8      0x2a6 build/Debug/GNU-Linux-x86/rngplay.o
+ .debug_line    0x0000000000004f9e      0x309 build/Debug/GNU-Linux-x86/ui.o
+ .debug_line    0x00000000000052a7      0x2de build/Debug/GNU-Linux-x86/adplug/fprovide.o
+ .debug_line    0x0000000000005585      0x594 build/Debug/GNU-Linux-x86/global.o
+ .debug_line    0x0000000000005b19      0x290 build/Debug/GNU-Linux-x86/main.o
+ .debug_line    0x0000000000005da9      0x400 build/Debug/GNU-Linux-x86/adplug/binfile.o
+ .debug_line    0x00000000000061a9      0x2da build/Debug/GNU-Linux-x86/video.o
+ .debug_line    0x0000000000006483      0x2cc build/Debug/GNU-Linux-x86/palette.o
+ .debug_line    0x000000000000674f      0x1f6 build/Debug/GNU-Linux-x86/sound.o
+ .debug_line    0x0000000000006945      0x1c6 build/Debug/GNU-Linux-x86/res.o
+ .debug_line    0x0000000000006b0b      0x60d build/Debug/GNU-Linux-x86/battle.o
+ .debug_line    0x0000000000007118     0x112f build/Debug/GNU-Linux-x86/fight.o
+ .debug_line    0x0000000000008247       0xda build/Debug/GNU-Linux-x86/yj1.o
+
+.debug_frame    0x0000000000000000     0x20b8
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000      0x150 build/Debug/GNU-Linux-x86/text.o
+ .debug_frame   0x0000000000000150       0x80 build/Debug/GNU-Linux-x86/font.o
+ .debug_frame   0x00000000000001d0       0x6c build/Debug/GNU-Linux-x86/itemmenu.o
+ .debug_frame   0x000000000000023c      0x118 build/Debug/GNU-Linux-x86/scene.o
+ .debug_frame   0x0000000000000354      0x14c build/Debug/GNU-Linux-x86/palcommon.o
+ .debug_frame   0x00000000000004a0       0xf0 build/Debug/GNU-Linux-x86/script.o
+ .debug_frame   0x0000000000000590      0x13c build/Debug/GNU-Linux-x86/util.o
+ .debug_frame   0x00000000000006cc       0xb8 build/Debug/GNU-Linux-x86/play.o
+ .debug_frame   0x0000000000000784       0x30 build/Debug/GNU-Linux-x86/getopt.o
+ .debug_frame   0x00000000000007b4       0xd4 build/Debug/GNU-Linux-x86/input.o
+ .debug_frame   0x0000000000000888      0x15c build/Debug/GNU-Linux-x86/uibattle.o
+ .debug_frame   0x00000000000009e4       0x48 build/Debug/GNU-Linux-x86/game.o
+ .debug_frame   0x0000000000000a2c       0x68 build/Debug/GNU-Linux-x86/magicmenu.o
+ .debug_frame   0x0000000000000a94       0xc0 build/Debug/GNU-Linux-x86/map.o
+ .debug_frame   0x0000000000000b54       0x8c build/Debug/GNU-Linux-x86/ending.o
+ .debug_frame   0x0000000000000be0      0x360 build/Debug/GNU-Linux-x86/adplug/fmopl.o
+ .debug_frame   0x0000000000000f40      0x23c build/Debug/GNU-Linux-x86/uigame.o
+ .debug_frame   0x000000000000117c       0x5c build/Debug/GNU-Linux-x86/rngplay.o
+ .debug_frame   0x00000000000011d8      0x124 build/Debug/GNU-Linux-x86/ui.o
+ .debug_frame   0x00000000000012fc      0x3e0 build/Debug/GNU-Linux-x86/global.o
+ .debug_frame   0x00000000000016dc       0x94 build/Debug/GNU-Linux-x86/main.o
+ .debug_frame   0x0000000000001770      0x178 build/Debug/GNU-Linux-x86/video.o
+ .debug_frame   0x00000000000018e8       0xe8 build/Debug/GNU-Linux-x86/palette.o
+ .debug_frame   0x00000000000019d0       0xb0 build/Debug/GNU-Linux-x86/sound.o
+ .debug_frame   0x0000000000001a80       0xf4 build/Debug/GNU-Linux-x86/res.o
+ .debug_frame   0x0000000000001b74      0x14c build/Debug/GNU-Linux-x86/battle.o
+ .debug_frame   0x0000000000001cc0      0x378 build/Debug/GNU-Linux-x86/fight.o
+ .debug_frame   0x0000000000002038       0x80 build/Debug/GNU-Linux-x86/yj1.o
+
+.debug_str      0x0000000000000000     0x85b5
+ *(.debug_str)
+ .debug_str     0x0000000000000000       0x92 /usr/lib/gcc/i486-linux-gnu/4.4.1/../../../../lib/crt1.o
+                                         0xcb (size before relaxing)
+ .debug_str     0x0000000000000092     0x1d94 build/Debug/GNU-Linux-x86/rixplay.o
+                                       0x2065 (size before relaxing)
+ .debug_str     0x0000000000001e26      0x976 build/Debug/GNU-Linux-x86/adplug/rix.o
+                                       0x272d (size before relaxing)
+ .debug_str     0x000000000000279c     0x19b3 build/Debug/GNU-Linux-x86/text.o
+                                       0x1ed7 (size before relaxing)
+ .debug_str     0x000000000000414f       0xa9 build/Debug/GNU-Linux-x86/font.o
+                                        0x66e (size before relaxing)
+ .debug_str     0x00000000000041f8      0x122 build/Debug/GNU-Linux-x86/adplug/player.o
+                                       0x2085 (size before relaxing)
+ .debug_str     0x000000000000431a      0x1b4 build/Debug/GNU-Linux-x86/itemmenu.o
+                                       0x170b (size before relaxing)
+ .debug_str     0x00000000000044ce      0x5b1 build/Debug/GNU-Linux-x86/adplug/binio.o
+                                       0x2180 (size before relaxing)
+ .debug_str     0x0000000000004a7f      0x225 build/Debug/GNU-Linux-x86/scene.o
+                                       0x16d5 (size before relaxing)
+ .debug_str     0x0000000000004ca4      0x1bc build/Debug/GNU-Linux-x86/palcommon.o
+                                        0x600 (size before relaxing)
+ .debug_str     0x0000000000004e60      0x2ba build/Debug/GNU-Linux-x86/script.o
+                                       0x1e09 (size before relaxing)
+ .debug_str     0x000000000000511a      0x2ea build/Debug/GNU-Linux-x86/adplug/emuopl.o
+                                        0x4fb (size before relaxing)
+ .debug_str     0x0000000000005404       0xce build/Debug/GNU-Linux-x86/util.o
+                                        0x54a (size before relaxing)
+ .debug_str     0x00000000000054d2       0x80 build/Debug/GNU-Linux-x86/play.o
+                                       0x1370 (size before relaxing)
+ .debug_str     0x0000000000005552       0x5e build/Debug/GNU-Linux-x86/getopt.o
+                                        0x2b4 (size before relaxing)
+ .debug_str     0x00000000000055b0      0xd74 build/Debug/GNU-Linux-x86/input.o
+                                       0x2162 (size before relaxing)
+ .debug_str     0x0000000000006324      0x3f8 build/Debug/GNU-Linux-x86/uibattle.o
+                                       0x20bf (size before relaxing)
+ .debug_str     0x000000000000671c       0x1b build/Debug/GNU-Linux-x86/game.o
+                                       0x1023 (size before relaxing)
+ .debug_str     0x0000000000006737       0xb1 build/Debug/GNU-Linux-x86/magicmenu.o
+                                       0x16ab (size before relaxing)
+ .debug_str     0x00000000000067e8       0xd2 build/Debug/GNU-Linux-x86/map.o
+                                        0x50c (size before relaxing)
+ .debug_str     0x00000000000068ba       0xda build/Debug/GNU-Linux-x86/ending.o
+                                       0x1493 (size before relaxing)
+ .debug_str     0x0000000000006994      0x306 build/Debug/GNU-Linux-x86/adplug/fmopl.o
+                                        0x685 (size before relaxing)
+ .debug_str     0x0000000000006c9a      0x28d build/Debug/GNU-Linux-x86/uigame.o
+                                       0x1780 (size before relaxing)
+ .debug_str     0x0000000000006f27       0xa2 build/Debug/GNU-Linux-x86/rngplay.o
+                                       0x1267 (size before relaxing)
+ .debug_str     0x0000000000006fc9      0x182 build/Debug/GNU-Linux-x86/ui.o
+                                       0x17ec (size before relaxing)
+ .debug_str     0x000000000000714b       0x73 build/Debug/GNU-Linux-x86/adplug/fprovide.o
+                                       0x1e93 (size before relaxing)
+ .debug_str     0x00000000000071be      0x3b6 build/Debug/GNU-Linux-x86/global.o
+                                       0x16bf (size before relaxing)
+ .debug_str     0x0000000000007574       0xfc build/Debug/GNU-Linux-x86/main.o
+                                       0x1401 (size before relaxing)
+ .debug_str     0x0000000000007670      0x1c4 build/Debug/GNU-Linux-x86/adplug/binfile.o
+                                       0x1f90 (size before relaxing)
+ .debug_str     0x0000000000007834      0x191 build/Debug/GNU-Linux-x86/video.o
+                                        0x84e (size before relaxing)
+ .debug_str     0x00000000000079c5       0xb0 build/Debug/GNU-Linux-x86/palette.o
+                                       0x12b3 (size before relaxing)
+ .debug_str     0x0000000000007a75      0x214 build/Debug/GNU-Linux-x86/sound.o
+                                        0x6e0 (size before relaxing)
+ .debug_str     0x0000000000007c89      0x13e build/Debug/GNU-Linux-x86/res.o
+                                       0x13fa (size before relaxing)
+ .debug_str     0x0000000000007dc7      0x147 build/Debug/GNU-Linux-x86/battle.o
+                                       0x1d3e (size before relaxing)
+ .debug_str     0x0000000000007f0e      0x50d build/Debug/GNU-Linux-x86/fight.o
+                                       0x2003 (size before relaxing)
+ .debug_str     0x000000000000841b      0x19a build/Debug/GNU-Linux-x86/yj1.o
+                                        0x2b3 (size before relaxing)
+
+.debug_loc      0x0000000000000000     0x53e0
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000      0x210 build/Debug/GNU-Linux-x86/rixplay.o
+ .debug_loc     0x0000000000000210      0x814 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .debug_loc     0x0000000000000a24      0x23c build/Debug/GNU-Linux-x86/text.o
+ .debug_loc     0x0000000000000c60       0xb0 build/Debug/GNU-Linux-x86/font.o
+ .debug_loc     0x0000000000000d10      0x4a4 build/Debug/GNU-Linux-x86/adplug/player.o
+ .debug_loc     0x00000000000011b4       0x84 build/Debug/GNU-Linux-x86/itemmenu.o
+ .debug_loc     0x0000000000001238      0x6b4 build/Debug/GNU-Linux-x86/adplug/binio.o
+ .debug_loc     0x00000000000018ec      0x18c build/Debug/GNU-Linux-x86/scene.o
+ .debug_loc     0x0000000000001a78      0x23c build/Debug/GNU-Linux-x86/palcommon.o
+ .debug_loc     0x0000000000001cb4      0x160 build/Debug/GNU-Linux-x86/script.o
+ .debug_loc     0x0000000000001e14      0x318 build/Debug/GNU-Linux-x86/adplug/emuopl.o
+ .debug_loc     0x000000000000212c      0x210 build/Debug/GNU-Linux-x86/util.o
+ .debug_loc     0x000000000000233c      0x108 build/Debug/GNU-Linux-x86/play.o
+ .debug_loc     0x0000000000002444       0x2c build/Debug/GNU-Linux-x86/getopt.o
+ .debug_loc     0x0000000000002470      0x160 build/Debug/GNU-Linux-x86/input.o
+ .debug_loc     0x00000000000025d0      0x210 build/Debug/GNU-Linux-x86/uibattle.o
+ .debug_loc     0x00000000000027e0       0x58 build/Debug/GNU-Linux-x86/game.o
+ .debug_loc     0x0000000000002838       0x84 build/Debug/GNU-Linux-x86/magicmenu.o
+ .debug_loc     0x00000000000028bc      0x108 build/Debug/GNU-Linux-x86/map.o
+ .debug_loc     0x00000000000029c4       0xb0 build/Debug/GNU-Linux-x86/ending.o
+ .debug_loc     0x0000000000002a74      0x5ac build/Debug/GNU-Linux-x86/adplug/fmopl.o
+ .debug_loc     0x0000000000003020      0x370 build/Debug/GNU-Linux-x86/uigame.o
+ .debug_loc     0x0000000000003390       0x84 build/Debug/GNU-Linux-x86/rngplay.o
+ .debug_loc     0x0000000000003414      0x1b8 build/Debug/GNU-Linux-x86/ui.o
+ .debug_loc     0x00000000000035cc      0x18c build/Debug/GNU-Linux-x86/adplug/fprovide.o
+ .debug_loc     0x0000000000003758      0x604 build/Debug/GNU-Linux-x86/global.o
+ .debug_loc     0x0000000000003d5c       0xdc build/Debug/GNU-Linux-x86/main.o
+ .debug_loc     0x0000000000003e38      0x764 build/Debug/GNU-Linux-x86/adplug/binfile.o
+ .debug_loc     0x000000000000459c      0x268 build/Debug/GNU-Linux-x86/video.o
+ .debug_loc     0x0000000000004804      0x160 build/Debug/GNU-Linux-x86/palette.o
+ .debug_loc     0x0000000000004964      0x108 build/Debug/GNU-Linux-x86/sound.o
+ .debug_loc     0x0000000000004a6c      0x18c build/Debug/GNU-Linux-x86/res.o
+ .debug_loc     0x0000000000004bf8      0x1e4 build/Debug/GNU-Linux-x86/battle.o
+ .debug_loc     0x0000000000004ddc      0x554 build/Debug/GNU-Linux-x86/fight.o
+ .debug_loc     0x0000000000005330       0xb0 build/Debug/GNU-Linux-x86/yj1.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x0000000000000000      0x4e8
+ *(.debug_ranges)
+ .debug_ranges  0x0000000000000000       0x70 build/Debug/GNU-Linux-x86/rixplay.o
+ .debug_ranges  0x0000000000000070      0x188 build/Debug/GNU-Linux-x86/adplug/rix.o
+ .debug_ranges  0x00000000000001f8      0x100 build/Debug/GNU-Linux-x86/adplug/player.o
+ .debug_ranges  0x00000000000002f8       0x18 build/Debug/GNU-Linux-x86/scene.o
+ .debug_ranges  0x0000000000000310       0xa0 build/Debug/GNU-Linux-x86/adplug/emuopl.o
+ .debug_ranges  0x00000000000003b0       0x18 build/Debug/GNU-Linux-x86/play.o
+ .debug_ranges  0x00000000000003c8       0x18 build/Debug/GNU-Linux-x86/uibattle.o
+ .debug_ranges  0x00000000000003e0       0x18 build/Debug/GNU-Linux-x86/magicmenu.o
+ .debug_ranges  0x00000000000003f8       0x18 build/Debug/GNU-Linux-x86/adplug/fmopl.o
+ .debug_ranges  0x0000000000000410       0x58 build/Debug/GNU-Linux-x86/adplug/fprovide.o
+ .debug_ranges  0x0000000000000468       0x18 build/Debug/GNU-Linux-x86/global.o
+ .debug_ranges  0x0000000000000480       0x68 build/Debug/GNU-Linux-x86/fight.o
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(dist/Debug/GNU-Linux-x86/sdlpal elf32-i386)
