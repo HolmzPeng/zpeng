@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import pygame
+from random import randint
 from pygame.locals import *
 
 def toColor(color):
@@ -10,6 +11,12 @@ def toColor(color):
     if type(color) == tuple:
         return color
     return color >> 16 & 0xFF, color >> 8 & 0xFF, color & 0xFF
+
+def getColor():
+    """
+    返回随机颜色
+    """
+    return randint(0, 255), randint(0, 255), randint(0, 255)
 
 def create(**karg):
     """
